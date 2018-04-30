@@ -1,0 +1,82 @@
+.main-aside{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width: 200px;
+	height:100%;
+	background-color: #333;
+}
+
+.main-aside .profile{
+margin: 13px;
+}
+
+.main-aside .profile .info{
+margin-left: 50px;
+}
+
+.main-aside .profile img{
+float: left;
+width:40px;
+height: auto;
+border-radius: 50%;
+}
+
+.main-aside .searchbox{
+	background-color: #444;
+	border-radius: 5px;
+	padding: 8px;
+	margin: 13px;
+}
+
+.main-aside .searchbox input{
+	background: transparent;
+	border: none;
+	width: 130px;
+}
+
+
+.main-aside ul>li{
+	position: relative;
+	line-height: 2.5em;
+	margin-left: -15px;
+	padding: 0 20px 0 15px;
+}
+
+.main-aside ul>li:hover{
+	background-color: #252525;
+	color: #fff;
+}
+
+.main-aside ul>li>a{
+	text-decoration: none;
+}
+
+
+
+
+.main-aside .main-nav>p{
+	color: #888;
+	margin: 13px;
+}
+
+
+.main-aside ul{
+list-style:none;
+padding: 0px;
+}
+
+.main-aside ul a{
+color: #ccc;
+margin-left:10px;
+}
+
+.main-aside li .fa,
+.main-aside li .far,
+.main-aside li .fas{
+	line-height: 2.5em
+}
+
+
+
+

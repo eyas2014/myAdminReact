@@ -1,0 +1,12 @@
+.main-content .visitors-report{
+	overflow: hidden;
+	border-top: solid 3px #11aa11;
+	background-color: #fff;
+	border-radius: 3px;
+	margin-top: 15px
+
+}
+
+.main-content .visitors-report #world-map{
+	height: 300px
+}

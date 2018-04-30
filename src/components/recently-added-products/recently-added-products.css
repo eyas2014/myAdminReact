@@ -1,0 +1,15 @@
+.recently-added-products{
+	border-top: solid 3px #00f;
+	color:black;
+	margin-top: 15px;
+	background-color: #fff;
+	border-radius: 3px;
+	overflow: hidden
+
+}
+
+.recently-added-products .preview-box{
+	height: 60px;
+	line-height: 60px;
+	display: inline-block
+}

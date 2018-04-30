@@ -1,0 +1,55 @@
+.main-content .todo-list{
+	margin: 15px;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px #888;
+	border-radius: 3px;
+	border-top: solid 3px #55e;
+	&>header{
+		&>div:first-child{
+			margin-top: 5px;
+			span{
+				padding-left: 10px;
+			}
+		}
+		.pagination{
+			a{color: black}
+			margin: 10px;
+		}
+
+	}
+
+	&>main>ul{
+		padding: 10px;
+		clear: both;
+		margin: 0px;
+		li{
+			margin: 5px;
+			background-color: #eee;
+			span, input{
+				margin-right: 10px
+			}
+			small{
+				color: #fff;
+			}
+			.tools{
+				padding: 8px;
+				color:  #eee;
+				i{
+					padding-right: 5px;
+				}
+				&:hover{color: #a22 }
+			}
+		}
+
+	}
+
+	&>footer{
+		text-align: right;
+		padding: 10px;
+		button{
+			background-color: #eee;
+			border: 1px solid rgba(0,0,0,0.15);
+		}
+	}
+
+}

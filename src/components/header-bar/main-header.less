@@ -1,0 +1,159 @@
+.main-header{
+	height: 50px;
+	&>.logo{
+		line-height: 50px;
+		text-align: center;
+		font-size: 20px;
+		float:left;
+		background-color: rgba(0,0,0,0.1);
+		span{
+			color: #fff
+		}
+
+	}
+
+	&>nav{
+		height: 50px;
+		line-height: 50px;
+		span, i{
+			color: white;
+		}
+		.dropdown-menu{
+			span, i{
+				color: black;
+			}
+			img {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	&>nav>.collapse-toggler{
+		font-size: 20px;
+		padding-left: 20px;
+		display: inline-block
+	}
+
+	.badge{
+		position: absolute;
+		top: 10px;
+		right: 11px;
+	}
+
+	.messages-menu>.dropdown-menu>li:nth-child(2),
+	.tasks-menu .dropdown-menu>li:nth-child(2){
+		line-height: 2;
+		width: 280px;
+	}
+
+	.messages-menu>.dropdown-menu>li:first-child,
+	.messages-menu .dropdown-menu>li:nth-child(3),
+	.tasks-menu>.dropdown-menu>li:first-child,
+	.tasks-menu .dropdown-menu>li:nth-child(3),
+	.notifications-menu .dropdown-menu,
+	.tasks-menu .dropdown-menu,
+	.profile .dropdown-menu{
+		line-height: 40px;
+		width: 280px;
+	}
+
+	.notifications-menu .dropdown-menu>li>div>ul>li{
+		overflow: hidden ;
+		white-space:  nowrap;
+		display: block;
+		text-overflow: ellipsis
+	}
+
+	.info-panel{
+		position: relative;
+		margin-left: 50px;
+		min-height: 40px
+	}
+
+	.info-panel .message-title{
+	font-size: 15px;
+	}
+
+	.info-panel small{
+		position: absolute;
+		top: 3px;
+		right: 5px;
+	}
+
+	.info-panel .message-content{
+	font-size: 12px;
+	}
+
+	.profile .dropdown-menu .user-header{
+		line-height: 1.45;
+	}
+	
+	.navbar-custom-menu>ul>li{
+		padding-right: 15px;
+	}
+
+	.dropdown-menu-right {
+   		right: 0;
+   		left: auto;
+	}
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+	.main-header.expand{
+		&>.logo{
+			width: 200px;
+			.logo-mini{
+				display: none
+			}
+			.logo-lg{
+				display: inline
+			}
+		}
+		&>nav{
+			margin-left: 200px;
+		}
+	}
+
+	.main-header.shrink{
+		&>.logo{
+			width: 50px;
+			.logo-mini{
+				display: inline
+			}
+			.logo-lg{
+				display: none
+			}
+		}
+		&>nav{
+			margin-left: 50px;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 992px) {
+	.main-header{
+		&>nav{
+			margin-left: 0px;
+		}
+
+		&>.logo{
+			display:none;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+@nice-blue: #fff;
+
+
+.main-content .latest-orders{
+	margin-top: 15px;
+	border-top: solid 3px @nice-blue;
+	border-radius: 3px;
+	overflow: hidden;
+	background-color: 
+	color: #222;
+
+}

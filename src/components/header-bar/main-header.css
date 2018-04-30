@@ -1,0 +1,120 @@
+.main-header>.logo{
+	line-height: 50px;
+	text-align: center;
+	width: 200px;
+	font-size: 20px;
+	float:left;
+	background-color: rgba(0,0,0,0.1)
+
+}
+
+.main-header>.logo .logo-mini{
+	display: none
+}
+
+.main-header>nav{
+	height: 50px;
+	margin-left: 200px;
+	line-height: 50px;
+}
+
+
+.main-header>nav>.collapse-toggler{
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+
+.navbar-custom-menu>ul>li{
+	padding-right: 15px;
+}
+
+.main-header .badge{
+	position: absolute;
+	top: 10px;
+	right: 11px;
+}
+
+.main-header .messages-menu>.dropdown-menu>li:nth-child(2),
+.main-header .tasks-menu .dropdown-menu>li:nth-child(2){
+	line-height: 2;
+	width: 280px;
+}
+
+
+
+.main-header .messages-menu>.dropdown-menu>li:first-child,
+.main-header .messages-menu .dropdown-menu>li:nth-child(3),
+.main-header .tasks-menu>.dropdown-menu>li:first-child,
+.main-header .tasks-menu .dropdown-menu>li:nth-child(3),
+.main-header .notifications-menu .dropdown-menu,
+.main-header .tasks-menu .dropdown-menu,
+.main-header .profile .dropdown-menu{
+	line-height: 40px;
+	width: 280px;
+}
+
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
+.main-header .notifications-menu .dropdown-menu>li>div>ul>li{
+	overflow: hidden ;
+	white-space:  nowrap;
+	display: block;
+	text-overflow: ellipsis
+}
+
+
+.main-header .info-panel{
+	position: relative;
+	margin-left: 50px;
+	min-height: 40px
+}
+
+.main-header .info-panel .message-title{
+	font-size: 15px;
+}
+
+.main-header .info-panel small{
+	position: absolute;
+	top: 3px;
+	right: 5px;
+}
+
+
+.main-header .info-panel .message-content{
+	font-size: 12px;
+}
+
+.main-header .profile .dropdown-menu .user-header{
+	line-height: 1.45;
+}
+
+
+
+//////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-border-outer{
+	overflow: hidden;
+	border-top: solid 3px;
+	border-radius: 3px;
+}
+
+
+
+

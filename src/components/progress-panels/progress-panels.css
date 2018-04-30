@@ -1,0 +1,10 @@
+.main-content .progress-panel{
+	margin-top: 15px;
+
+}
+
+.main-content .progress-panel .info-box{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
