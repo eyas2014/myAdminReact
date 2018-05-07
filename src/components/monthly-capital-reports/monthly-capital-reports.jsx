@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Chart from 'chart.js';
-import "./monthly-capital-reports.css";
-
-
-
 
 export default class MonthlyCapReports extends React.Component{
 	componentDidMount(){

@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './progress-panels.less';
-
-
 
 export default class ProgressPanels extends React.Component{
 	render(){

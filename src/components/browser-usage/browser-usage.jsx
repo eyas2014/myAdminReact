@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Chart from 'chart.js';
-import './browser-usage.less';
-
 
 export default class BrowserUsage extends React.Component{
 	componentDidMount(){

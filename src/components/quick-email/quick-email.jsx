@@ -1,5 +1,5 @@
 import React from 'react';
-import './quick-email.less';
+
 
 export default class QuickEmail extends React.Component{
 

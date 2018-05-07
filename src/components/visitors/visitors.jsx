@@ -1,6 +1,5 @@
 import React from 'react';
 import 'velocity-animate';
-import './visitors.less';
 import WorldMap from './world-map.jsx';
 import SparkLine from './sparkline.jsx';
 

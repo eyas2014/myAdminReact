@@ -1,6 +1,5 @@
 import React from 'react';
 import Morris from '../../library/morris/morris.js';
-import './sales-graph.less';
 import 'jquery-knob';
 
 export default class SalesGraph extends React.Component{

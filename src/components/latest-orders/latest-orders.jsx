@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../../../node_modules/sparkline/jquery.sparkline.js';
-import './latest-orders.less';
-
 
 
 export default class LatestOrders extends React.Component{

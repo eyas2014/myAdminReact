@@ -1,9 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './info-panel.css'
-
-
-
 
 export default class InfoPanel extends React.Component{
 	componentDidMount(){

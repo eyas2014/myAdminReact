@@ -1,10 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './direct-chat.css';
-
-
-
-
 
 export default class DirectChat extends React.Component{
 	render(){

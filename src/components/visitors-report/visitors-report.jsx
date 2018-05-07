@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../../../node_modules/sparkline/jquery.sparkline.js';
-
 import '../../../node_modules/jqvmap/dist/jqvmap.js';
-import './visitors-report.css';
-
-
 
 
 export default class VisitorsReport extends React.Component{

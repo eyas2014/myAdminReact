@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './recently-added-products.css';
-
-
 
 export default class RecentlyAP extends React.Component{
 	render(){

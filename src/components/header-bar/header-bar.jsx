@@ -1,6 +1,5 @@
 import React from 'react';
 import $ from 'jquery';
-import './main-header.less';
 import HeaderMessages from './header-messages/header-messages.jsx';
 import HeaderNotifications from './header-notifications/header-notifications.jsx';
 import HeaderTasks from './header-tasks/header-tasks.jsx';

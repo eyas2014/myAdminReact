@@ -1,7 +1,4 @@
 import React from 'react';
-import './stat-tiles.less';
-
-
 
 export default class StatTiles extends React.Component{
 	render(){

@@ -1,7 +1,4 @@
 import React from 'react';
-import './sales.less';
-import Morris from '../../library/morris/morris.css';
-
 
 
 export default class Sales extends React.Component{

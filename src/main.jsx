@@ -4,7 +4,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import HeaderBar from './components/header-bar/header-bar.jsx';
 import MainNavigation from './components/main-navigation/main-navigation.jsx';
-import './main.less';
+import './styles.jsx';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Boxed from './pages/boxed.jsx';
 import Charts from './pages/charts.jsx';

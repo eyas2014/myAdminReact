@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import './todo-list.less';
+
 
 export default class TodoList extends React.Component{
     		render(){

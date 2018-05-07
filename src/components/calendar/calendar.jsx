@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap-datepicker';
-import './calendar.less';
-import './datepicker3.css';
-
 
 
 export default class App extends React.Component{

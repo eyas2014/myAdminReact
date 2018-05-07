@@ -1,6 +1,5 @@
 import React from 'react';
 import 'jquery-slimscroll';
-import './chat.less';
 import Conversations from './conversations.jsx';
 
 
