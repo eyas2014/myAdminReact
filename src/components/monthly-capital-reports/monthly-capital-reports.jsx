@@ -31,8 +31,8 @@ export default class MonthlyCapReports extends React.Component{
 		this.refs.remove.onclick=()=>{this.refs.monthlyCapReports.parentNode.removeChild(this.refs.monthlyCapReports)};
 		this.refs.toggle.onclick=()=>{
 			if(this.refs.monthlyCapReports.childNodes[1].style.display=="none"){
-				this.refs.monthlyCapReports.childNodes[1].style.display="block";
-				this.refs.monthlyCapReports.childNodes[2].style.display="block";
+				this.refs.monthlyCapReports.childNodes[1].style.display="";
+				this.refs.monthlyCapReports.childNodes[2].style.display="";
 			}else {
 				this.refs.monthlyCapReports.childNodes[1].style.display="none";
 				this.refs.monthlyCapReports.childNodes[2].style.display="none";

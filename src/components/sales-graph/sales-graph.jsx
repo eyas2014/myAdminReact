@@ -34,8 +34,8 @@ export default class SalesGraph extends React.Component{
 		this.refs.remove.onclick=()=>{this.refs.salesGraph.parentNode.removeChild(this.refs.salesGraph)};
 		this.refs.toggle.onclick=()=>{
 			if(this.refs.salesGraph.childNodes[1].style.display=="none"){
-				this.refs.salesGraph.childNodes[1].style.display="block";
-				this.refs.salesGraph.childNodes[2].style.display="block";
+				this.refs.salesGraph.childNodes[1].style.display="";
+				this.refs.salesGraph.childNodes[2].style.display="";
 			}else {
 				this.refs.salesGraph.childNodes[1].style.display="none";
 				this.refs.salesGraph.childNodes[2].style.display="none";

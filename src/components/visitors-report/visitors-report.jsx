@@ -49,12 +49,11 @@ export default class VisitorsReport extends React.Component{
 
 		this.refs.remove.onclick=()=>{this.refs.visitorsReport.parentNode.removeChild(this.refs.visitorsReport)};
 		this.refs.toggle.onclick=()=>{
+			console.log(this.refs.visitorsReport.childNodes[1].style.display);
 			if(this.refs.visitorsReport.childNodes[1].style.display=="none"){
-				this.refs.visitorsReport.childNodes[1].style.display="block";
-				this.refs.visitorsReport.childNodes[2].style.display="block";
+				this.refs.visitorsReport.childNodes[1].style.display="";
 			}else {
 				this.refs.visitorsReport.childNodes[1].style.display="none";
-				this.refs.visitorsReport.childNodes[2].style.display="none";
 			}
 		};
 
