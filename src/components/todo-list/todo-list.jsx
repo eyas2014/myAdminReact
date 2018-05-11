@@ -2,10 +2,8 @@
 
 
 export default class TodoList extends React.Component{
-    		render(){
-
+    render(){
 		const itemList=this.props.data
-
 		const todoList=itemList.map((todo, iterator)=>{
 			return (<li key={iterator}>
 					<div className="btn">

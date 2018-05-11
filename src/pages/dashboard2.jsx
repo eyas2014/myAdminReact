@@ -8,13 +8,10 @@ import LatestOrders from '../components/latest-orders/latest-orders.jsx';
 import ProgressPanels from '../components/progress-panels/progress-panels.jsx';
 import BrowserUsage from '../components/browser-usage/browser-usage.jsx';
 import RecentlyAP from '../components/recently-added-products/recently-added-products.jsx';
-import BoxWidgets from '../widgets/box-widgets.jsx';
+
+
 
 class Dashboard2 extends React.Component{
-	componentDidMount(){
-		BoxWidgets('.browser-usage,.direct-chat,.latest-orders,.monthly-capital-reports,.recently-added-products,.visitors-report');
-	}
-
 	render(){
 		const {monthlyCapReportsData, visitorsReportData, progressPanelsData, 
 		       directChatData, latestOrdersData, browserUsageData, recentlyAPData}=this.props;

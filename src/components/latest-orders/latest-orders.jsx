@@ -12,16 +12,27 @@ export default class LatestOrders extends React.Component{
 				      height  : $this.data('height') ? $this.data('height') : '30',
 				      barColor: $this.data('color') });
 		});
+		this.refs.remove.onclick=()=>{this.refs.latestOrders.parentNode.removeChild(this.refs.latestOrders)};
+		this.refs.toggle.onclick=()=>{
+			if(this.refs.latestOrders.childNodes[1].style.display=="none"){
+				this.refs.latestOrders.childNodes[1].style.display="block";
+				this.refs.latestOrders.childNodes[2].style.display="block";
+			}else {
+				this.refs.latestOrders.childNodes[1].style.display="none";
+				this.refs.latestOrders.childNodes[2].style.display="none";
+			}
+		};
+
 	}
 
 	render(){
 		var orderList=this.props.data;
 		return(
-		<div className="latest-orders box-shadow">
+		<div className="latest-orders box-shadow" ref="latestOrders">
 			<header className="box-border-bottom">
 				<div className="float-right btn-group text-muted">
-					<div className="btn pull-right" datawidget="toggle"><i className="fas fa-minus"></i></div>
-					<div className="btn pull-right" datawidget="remove"><i className="fas fa-times"></i></div>
+					<div className="btn pull-right" ref="toggle"><i className="fas fa-minus"></i></div>
+					<div className="btn pull-right" ref="remove"><i className="fas fa-times"></i></div>
 				</div>
 				<div className="btn"><span>Latest Orders</span></div>
 			</header>

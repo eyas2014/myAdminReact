@@ -31,6 +31,18 @@ export default class SalesGraph extends React.Component{
 			gridTextFamily   : 'Open Sans',
 			gridTextSize     : 10	}); 
 
+		this.refs.remove.onclick=()=>{this.refs.salesGraph.parentNode.removeChild(this.refs.salesGraph)};
+		this.refs.toggle.onclick=()=>{
+			if(this.refs.salesGraph.childNodes[1].style.display=="none"){
+				this.refs.salesGraph.childNodes[1].style.display="block";
+				this.refs.salesGraph.childNodes[2].style.display="block";
+			}else {
+				this.refs.salesGraph.childNodes[1].style.display="none";
+				this.refs.salesGraph.childNodes[2].style.display="none";
+			}
+		};
+
+
 	}  
 
 	render(){
@@ -39,16 +51,16 @@ export default class SalesGraph extends React.Component{
                 };
 
     			return (
-    				<div className="sales-graph">
+    				<div className="sales-graph" ref="salesGraph">
 					<header className="">
 						<div className="btn">
 							<i className="fa fa-th"></i><span> Sales Graph</span>
 						</div>
 						<div className="tools float-right">
-							<button className="btn btn-sm" datawidget="toggle">
+							<button className="btn btn-sm" ref="toggle">
 								<i className="fa fa-minus"></i>
 							</button>
-							<button className="ml-1 btn btn-sm" datawidget="remove">
+							<button className="ml-1 btn btn-sm" ref="remove">
 								<i className="fa fa-times"></i>
 							</button>
 						</div>

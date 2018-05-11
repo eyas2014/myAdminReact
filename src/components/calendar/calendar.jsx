@@ -8,20 +8,30 @@ export default class App extends React.Component{
 		$('#calendar').datepicker();
 		$('#calendar').children('.datepicker').css('width','100%');
 		$('#calendar').children('.datepicker').children('.datepicker-days').children('table').css('width','100%');
+		this.refs.remove.onclick=()=>{this.refs.calendar.parentNode.removeChild(this.refs.calendar)};
+		this.refs.toggle.onclick=()=>{
+			if(this.refs.calendar.childNodes[1].style.display=="none"){
+				this.refs.calendar.childNodes[1].style.display="block";
+				this.refs.calendar.childNodes[2].style.display="block";
+			}else {
+				this.refs.calendar.childNodes[1].style.display="none";
+				this.refs.calendar.childNodes[2].style.display="none";
+			}
+		};
 	}
 
 	render(){
 
 
 		return(
-		<div className="calendar">
+		<div className="calendar" ref="calendar">
 		    <header className='bg-success'>
 	                <button type="button" className="btn btn-success btn-sm"><i className="fa fa-calendar"></i>
 	                </button> 
 	                <button type="button" className="btn btn-success  btn-sm">Calendar</button>
 				<div className='float-right tools'>
-					<button type="button" className="btn btn-success btn-sm ml-1" datawidget="remove"><i className="fa fa-times"></i></button> 
-					<button type="button" className="btn btn-success btn-sm ml-1" datawidget="toggle"><i className="fa fa-minus"></i></button> 
+					<button type="button" className="btn btn-success btn-sm ml-1" ref="remove"><i className="fa fa-times"></i></button> 
+					<button type="button" className="btn btn-success btn-sm ml-1" ref="toggle"><i className="fa fa-minus"></i></button> 
 					<button type="button" className="btn btn-success btn-sm ml-1"><i className="fa fa-bars"></i></button>
 				</div>
 		    </header>

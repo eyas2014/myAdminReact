@@ -4,31 +4,41 @@ import Chart from 'chart.js';
 
 export default class BrowserUsage extends React.Component{
 	componentDidMount(){
-  var pieChartCanvas = $('#pieChart').get(0).getContext('2d');
-  var PieData = this.props.data.data;
-
-  var pieOptions = {cutoutPercentage: 45 };
+	var pieChartCanvas = this.refs.pieChart.getContext('2d');
+	var PieData = this.props.data.data;
+	var pieOptions = {cutoutPercentage: 45 };
 	new Chart(pieChartCanvas, {
 		type: 'pie',
 		data: PieData,
 		options: pieOptions
 	});
+	
+	this.refs.remove.onclick=()=>{this.refs.browserUsage.parentNode.removeChild(this.refs.browserUsage)};
+	this.refs.toggle.onclick= ()=>{
+		if(this.refs.browserUsage.childNodes[1].style.display=="none") {
+			this.refs.browserUsage.childNodes[1].style.display="block";
+			this.refs.browserUsage.childNodes[2].style.display="block";			
+		}else {
+			this.refs.browserUsage.childNodes[1].style.display="none";
+			this.refs.browserUsage.childNodes[2].style.display="none";
+		}
+	}
 
 	}
 
 
 	render(){
-		return(<div className="browser-usage">
+		return(<div className="browser-usage" ref="browserUsage">
 				<header className="box-header box-border-bottom clearfix">
 					<div className="btn"><span>Browser Usage</span></div>
 					<div className="btn-group float-right">
-						<div className="btn" datawidget="toggle"><i className="fas fa-minus text-muted"></i></div>
-						<div className="btn" datawidget="remove"><i className="fas fa-times text-muted"></i></div>
+						<div className="btn" ref ="toggle"><i className="fas fa-minus text-muted"></i></div>
+						<div className="btn" ref ="remove"><i className="fas fa-times text-muted"></i></div>
 					</div>
 				</header>
 				<main className="box-border-bottom">
 					<div className="chart-responsive">
-						<canvas id="pieChart" height="150"></canvas>
+						<canvas ref="pieChart" height="150"></canvas>
 					</div>
 
 					<div>

@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import HeaderBar from './components/header-bar/header-bar.jsx';
 import MainNavigation from './components/main-navigation/main-navigation.jsx';
 import './styles.jsx';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import Boxed from './pages/boxed.jsx';
 import Charts from './pages/charts.jsx';
 import CollapsedSidebar from './pages/collapsed-sidebar.jsx';
@@ -34,15 +34,15 @@ class App extends React.Component{
 					<div className="main-content shrink">
 					<Provider store={store}>
 						<Switch>
-							<Route exact path="/boxed" component={Boxed} />
-							<Route exact path="/charts" component={Charts} />
-							<Route exact path="/collapsed-sidebar" component={CollapsedSidebar} />
-							<Route exact path="/dashboard1" component={Dashboard1} />
+							<Route path="/boxed" component={Boxed} />
+							<Route path="/charts" component={Charts} />
+							<Route path="/collapsed-sidebar" component={CollapsedSidebar} />
+							<Route path="/dashboard1" component={Dashboard1} />
 							<Route exact path="/" component={Dashboard1} />
-							<Route exact path="/dashboard2" component={Dashboard2} />
-							<Route exact path="/fixed" component={Fixed} />
-							<Route exact path="/top-navigation" component={TopNavigation} />
-							<Route exact path="/widgets" component={Widgets} />
+							<Route path="/dashboard2" component={Dashboard2} />
+							<Route path="/fixed" component={Fixed} />
+							<Route path="/top-navigation" component={TopNavigation} />
+							<Route path="/widgets" component={Widgets} />
 						</Switch>
 					</Provider>
 					<footer className="box-border-top bg-white">

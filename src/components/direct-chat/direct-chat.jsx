@@ -2,18 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 export default class DirectChat extends React.Component{
+	componentDidMount(){
+		this.refs.remove.onclick=()=>{this.refs.directChat.parentNode.removeChild(this.refs.directChat)};
+		this.refs.toggle.onclick=()=>{
+			if(this.refs.directChat.childNodes[1].style.display=="none"){
+				this.refs.directChat.childNodes[1].style.display="block";
+				this.refs.directChat.childNodes[2].style.display="block";
+			}else {
+				this.refs.directChat.childNodes[1].style.display="none";
+				this.refs.directChat.childNodes[2].style.display="none";
+			}
+		};
+	}
+	
 	render(){
 		var message=this.props.data;
 
 		return(
-		<div className="direct-chat box-shadow">
+		<div className="direct-chat box-shadow" ref="directChat">
 			<header className='box-border-bottom'>
 				<div className="btn"><span>Direct Chat</span></div>
 				<div className="float-right btn-group">
 					<div className="btn"><span className="bg-warning badge badge-pill text-white font-weight-bold">3</span></div>
-					<div className="btn" datawidget="toggle"><i className="fa fa-minus text-muted"></i></div>
+					<div className="btn" ref="toggle"><i className="fa fa-minus text-muted"></i></div>
 					<div className="btn"><i className="fas fa-comments text-muted"></i></div>
-					<div className="btn" datawidget="remove"><i className="fa fa-times text-muted"></i></div>
+					<div className="btn" ref="remove"><i className="fa fa-times text-muted"></i></div>
 				</div> 
 			
 			</header>

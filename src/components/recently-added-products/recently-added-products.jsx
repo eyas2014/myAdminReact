@@ -2,14 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 export default class RecentlyAP extends React.Component{
+	componentDidMount(){
+		this.refs.remove.onclick=()=>{this.refs.recentlyAP.parentNode.removeChild(this.refs.recentlyAP)};
+		this.refs.toggle.onclick=()=>{
+			if(this.refs.recentlyAP.childNodes[1].style.display=="none"){
+				this.refs.recentlyAP.childNodes[1].style.display="block";
+				this.refs.recentlyAP.childNodes[2].style.display="block";
+			}else {
+				this.refs.recentlyAP.childNodes[1].style.display="none";
+				this.refs.recentlyAP.childNodes[2].style.display="none";
+			}
+		};
+	}
+	
 	render(){
 		var products=this.props.products;
-		return(<div className="recently-added-products box-shadow">
+		return(<div className="recently-added-products box-shadow" ref="recentlyAP">
 				<header className="box-border-bottom clearfix">
 					<div className="btn"><span>Recently Added Products</span></div>
 					<div className="btn-group float-right">
-						<div className="btn" datawidget="toggle"><i className="fas fa-minus text-muted"></i></div>
-						<div className="btn" datawidget="remove"><i className="fas fa-times text-muted"></i></div>
+						<div className="btn" ref="toggle"><i className="fas fa-minus text-muted"></i></div>
+						<div className="btn" ref="remove"><i className="fas fa-times text-muted"></i></div>
 					</div>
 				</header>
 				<main className="">

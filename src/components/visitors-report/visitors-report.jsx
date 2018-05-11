@@ -39,23 +39,34 @@ export default class VisitorsReport extends React.Component{
 		});
 
 		$('.inlineSparkLine').each(function () {
-    var $this = $(this);
-    $this.sparkline('html', {
-      type    : 'bar',
-      height  : $this.data('height') ? $this.data('height') : '30',
-      barColor: $this.data('color')
-    });
-  });
+    		var $this = $(this);
+    		$this.sparkline('html', {
+    			type    : 'bar',
+    			height  : $this.data('height') ? $this.data('height') : '30',
+    			barColor: $this.data('color')
+    		});
+		});
+
+		this.refs.remove.onclick=()=>{this.refs.visitorsReport.parentNode.removeChild(this.refs.visitorsReport)};
+		this.refs.toggle.onclick=()=>{
+			if(this.refs.visitorsReport.childNodes[1].style.display=="none"){
+				this.refs.visitorsReport.childNodes[1].style.display="block";
+				this.refs.visitorsReport.childNodes[2].style.display="block";
+			}else {
+				this.refs.visitorsReport.childNodes[1].style.display="none";
+				this.refs.visitorsReport.childNodes[2].style.display="none";
+			}
+		};
 
 	}
 
 	render(){
 		return(
-		<div className="visitors-report box-shadow">
+		<div className="visitors-report box-shadow" ref="visitorsReport">
 			<header className="box-border-bottom" >
 				<div className="float-right btn-group">
-					<div className="btn" datawidget="remove"><i className="fa fa-times text-muted"></i></div>
-					<div className="btn" datawidget="toggle"><i className="fa fa-minus text-muted"></i></div>
+					<div className="btn" ref="remove"><i className="fa fa-times text-muted"></i></div>
+					<div className="btn" ref="toggle"><i className="fa fa-minus text-muted"></i></div>
 				</div> 
 				<div className="btn"><p  className="mb-0 text-black">Visitors Report</p></div>
 			</header>

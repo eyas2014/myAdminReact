@@ -10,12 +10,10 @@ import Visitors from '../components/visitors/visitors.jsx';
 import Calendar from '../components/calendar/calendar.jsx';
 import Chat from '../components/chat/chat.jsx';
 import SalesGraph from '../components/sales-graph/sales-graph.jsx';
-import BoxWidgets from '../widgets/box-widgets.jsx';
 
 
 class Dashboard1 extends React.Component{
 	componentDidMount(){
-		BoxWidgets('.visitors,.sales-graph,.calendar,.quick-email');
 		this.dispatch({type: 'ADD_MESSAGE', message: {
 						displayName: "Alexander Pierce",
 						displayPicture: "dist/img/user3-128x128.jpg",

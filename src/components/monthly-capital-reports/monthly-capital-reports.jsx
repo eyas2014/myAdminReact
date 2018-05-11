@@ -5,30 +5,40 @@ import Chart from 'chart.js';
 export default class MonthlyCapReports extends React.Component{
 	componentDidMount(){
 		var ctx=document.getElementById('salesChart');
+		var salesChartData = this.props.data.salesChartData;
+		var salesChartOptions = {
+			scales: {
+    			xAxes: [{
+                	gridLines: {
+                    	display:false
+                	}
+            	}],
+    			yAxes: [{
+                	gridLines: {
+                    	display:false
+                	}   
+            	}]
+    		}
+		};
 
-  var salesChartData = this.props.data.salesChartData;
+		//Create the line chart
+		new Chart(ctx, {
+			type: 'line',
+			data: salesChartData,
+			options: salesChartOptions
+		});
 
-  var salesChartOptions = {
-scales: {
-    xAxes: [{
-                gridLines: {
-                    display:false
-                }
-            }],
-    yAxes: [{
-                gridLines: {
-                    display:false
-                }   
-            }]
-    }
-  };
+		this.refs.remove.onclick=()=>{this.refs.monthlyCapReports.parentNode.removeChild(this.refs.monthlyCapReports)};
+		this.refs.toggle.onclick=()=>{
+			if(this.refs.monthlyCapReports.childNodes[1].style.display=="none"){
+				this.refs.monthlyCapReports.childNodes[1].style.display="block";
+				this.refs.monthlyCapReports.childNodes[2].style.display="block";
+			}else {
+				this.refs.monthlyCapReports.childNodes[1].style.display="none";
+				this.refs.monthlyCapReports.childNodes[2].style.display="none";
+			}
+		};
 
-  // Create the line chart
-   new Chart(ctx, {
-	type: 'line',
-	data: salesChartData,
-	options: salesChartOptions
-	     });
 
 
 	}
@@ -67,12 +77,12 @@ scales: {
 						});
 
 		return(
-		<div className="monthly-capital-reports bg-white text-black box-shadow">
+		<div className="monthly-capital-reports bg-white text-black box-shadow" ref="monthlyCapReports">
 			<header className='bg-white box-border-bottom'>
 				<div className="btn"><span>Monthly Recap Report</span></div>
 				<div className='btn-group float-right text-muted'>
-					<div className='btn' datawidget="remove"><i className='fa fa-times'></i></div>
-					<div className='btn' datawidget="toggle"><i className='fa fa-minus'></i></div>
+					<div className='btn' ref="remove"><i className='fa fa-times'></i></div>
+					<div className='btn' ref="toggle"><i className='fa fa-minus'></i></div>
 					<div className='btn'><i className='fa fa-bars'></i></div>
 				</div>
 				<div>

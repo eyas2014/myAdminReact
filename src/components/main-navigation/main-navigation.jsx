@@ -97,7 +97,7 @@ class NavigationItem extends React.Component{
 				(<ul style={{display: 'none'}}>
 					{this.props.data.sub.map(function(item, index){
 						return(<li key={index}>
-								<Link to={'/'+item.toLowerCase().replace(' ', '-')}>
+								<Link to={item.toLowerCase().replace(' ', '-')}>
 									<i className="far fa-circle"></i>
 									<span onClick={e=>this.activate(e.target.parentNode.parentNode)}>{item}</span>
 								</Link>
@@ -114,7 +114,7 @@ class NavigationItem extends React.Component{
 				</li>)
 		} else {
 			return(<li>
-				<Link to={'/'+this.props.data.name.toLowerCase()}>
+				<Link to={this.props.data.name.toLowerCase()}>
 					<i className={this.props.data.logo}></i>
 					<span  onClick={e=>{this.activate(e.target);this.expand(e.target)}}>{this.props.data.name}</span>
 					<i className="fas fa-angle-left"></i>

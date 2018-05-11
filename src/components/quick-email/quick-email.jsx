@@ -3,35 +3,33 @@ import React from 'react';
 
 export default class QuickEmail extends React.Component{
 
-/*		componentDidMount: function(){
-			require("../widgets/bootstrap-wysihtml5");
-			$("#textarea").wysihtml5();
-			console.log("did it work?");
-		},  */
+	componentDidMount(){
+		this.refs.remove.onclick=()=>{this.refs.quickEmail.parentNode.removeChild(this.refs.quickEmail)};
+	}
 
-    		render(){
-                var style = {
+    render(){
+        var style = {
 			width:"100%", 
 			height: "125px", 
 			fontSize: "14px", 
 			lineHeight: "18px", 
 			border: "1px solid #dddddd", 
 			padding: "10px"
-			}
+		}
 
     			return (
-    				<div className="quick-email">
-					<header className="">
+    				<div className="quick-email" ref="quickEmail">
+					<header>
 						<div className="btn">
 							<i className="fa fa-envelope"></i>
 							<span className=""> Quick Email</span>
 						</div>
-                            			<div className="float-right tools">
-                                			<button className="btn btn-sm" datawidget="remove" data-toggle="tooltip" title="" data-original-title="Remove">
+                        <div className="float-right tools">
+							<button className="btn btn-sm" ref="remove">
 								<i className="fa fa-times"></i>
 							</button>
-        					</div>
-        				</header>
+        				</div>
+        			</header>
 
 					<main>
 					<form action="#" method="post">
