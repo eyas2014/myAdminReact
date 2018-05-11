@@ -3,14 +3,26 @@
 	background-color: #fff;
 	box-shadow: 2px 2px 2px #888;
 	border-radius: 3px;
+	transition: opacity 500ms ease-out;
 	overflow: hidden;
 	header{
 		overflow: auto;
 		padding-top: 5px;
 		padding-right: 10px;
 	}
+
+	main{
+		max-height: 600px;
+		transition: max-height 1s linear;
+	}
+
 	footer{
+		max-height: 300px;
+		transition: max-height 1s linear;
 		overflow: auto;
-		padding-bottom: 20px;
+		&>div{
+			margin-bottom: 20px;
+			overflow: hidden;
+		}
 	}
 }

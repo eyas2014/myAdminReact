@@ -7,12 +7,12 @@ import SparkLine from './sparkline.jsx';
 export default class Visitors extends React.Component{
 	componentDidMount(){
 		this.refs.toggle.onclick=()=>{
-			if(this.refs.visitors.childNodes[1].style.display=="none"){
-				this.refs.visitors.childNodes[1].style.display="block";
-				this.refs.visitors.childNodes[2].style.display="block";
+			if(this.refs.visitors.childNodes[1].style["maxHeight"]=="0px"){
+				this.refs.visitors.childNodes[1].style["maxHeight"]="400px";
+				this.refs.visitors.childNodes[2].style["maxHeight"]="300px";
 			}else {
-				this.refs.visitors.childNodes[1].style.display="none";
-				this.refs.visitors.childNodes[2].style.display="none";
+				this.refs.visitors.childNodes[1].style["maxHeight"]="0px";
+				this.refs.visitors.childNodes[2].style["maxHeight"]="0px";	
 			}
 		};	
 	}

@@ -13,15 +13,18 @@ export default class BrowserUsage extends React.Component{
 		options: pieOptions
 	});
 	
-	this.refs.remove.onclick=()=>{this.refs.browserUsage.parentNode.removeChild(this.refs.browserUsage)};
+	this.refs.remove.onclick=()=>{
+		this.refs.browserUsage.style.opacity=0.01;
+		setTimeout(()=>this.refs.browserUsage.parentNode.removeChild(this.refs.browserUsage),500);
+	};
 	this.refs.toggle.onclick= ()=>{
-		if(this.refs.browserUsage.childNodes[1].style.display=="none") {
-			this.refs.browserUsage.childNodes[1].style.display="block";
-			this.refs.browserUsage.childNodes[2].style.display="block";			
-		}else {
-			this.refs.browserUsage.childNodes[1].style.display="none";
-			this.refs.browserUsage.childNodes[2].style.display="none";
-		}
+			if(this.refs.browserUsage.childNodes[1].style["maxHeight"]=="0px"){
+				this.refs.browserUsage.childNodes[1].style["maxHeight"]="600px";
+				this.refs.browserUsage.childNodes[2].style["maxHeight"]="200px";
+			}else {
+				this.refs.browserUsage.childNodes[1].style["maxHeight"]="0px";
+				this.refs.browserUsage.childNodes[2].style["maxHeight"]="0px";
+			}
 	}
 
 	}

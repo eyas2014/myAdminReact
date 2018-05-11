@@ -47,13 +47,17 @@ export default class VisitorsReport extends React.Component{
     		});
 		});
 
-		this.refs.remove.onclick=()=>{this.refs.visitorsReport.parentNode.removeChild(this.refs.visitorsReport)};
+		this.refs.remove.onclick=()=>{
+			this.refs.visitorsReport.style.opacity=0.01;
+			setTimeout(()=>this.refs.visitorsReport.parentNode.removeChild(this.refs.visitorsReport),500);
+		};
+
 		this.refs.toggle.onclick=()=>{
 			console.log(this.refs.visitorsReport.childNodes[1].style.display);
-			if(this.refs.visitorsReport.childNodes[1].style.display=="none"){
-				this.refs.visitorsReport.childNodes[1].style.display="";
+			if(this.refs.visitorsReport.childNodes[1].style["maxHeight"]=="0px"){
+				this.refs.visitorsReport.childNodes[1].style["maxHeight"]="600px";
 			}else {
-				this.refs.visitorsReport.childNodes[1].style.display="none";
+				this.refs.visitorsReport.childNodes[1].style["maxHeight"]="0px";
 			}
 		};
 

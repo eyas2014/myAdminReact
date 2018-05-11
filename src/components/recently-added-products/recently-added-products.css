@@ -4,7 +4,8 @@
 	margin-top: 15px;
 	background-color: #fff;
 	border-radius: 3px;
-	overflow: hidden
+	overflow: hidden;
+	transition: opacity 1s ease-out;
 
 }
 
@@ -12,4 +13,20 @@
 	height: 60px;
 	line-height: 60px;
 	display: inline-block
+}
+
+.recently-added-products>main{
+	overflow: hidden;
+	max-height: 600px;
+	transition: max-height 1s ease-out;
+}
+
+.recently-added-products>footer{
+	overflow: hidden;
+	max-height: 200px;
+	transition: max-height 1s ease-out;
+}
+
+.recently-added-products>footer>div{
+	padding: 10px;
 }

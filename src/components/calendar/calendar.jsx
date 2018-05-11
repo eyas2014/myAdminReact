@@ -8,14 +8,20 @@ export default class App extends React.Component{
 		$('#calendar').datepicker();
 		$('#calendar').children('.datepicker').css('width','100%');
 		$('#calendar').children('.datepicker').children('.datepicker-days').children('table').css('width','100%');
-		this.refs.remove.onclick=()=>{this.refs.calendar.parentNode.removeChild(this.refs.calendar)};
+
+
+		this.refs.remove.onclick=()=>{
+			this.refs.calendar.style.opacity=0.01;
+			setTimeout(()=>this.refs.calendar.parentNode.removeChild(this.refs.calendar),500);
+		};
+
 		this.refs.toggle.onclick=()=>{
-			if(this.refs.calendar.childNodes[1].style.display=="none"){
-				this.refs.calendar.childNodes[1].style.display="block";
-				this.refs.calendar.childNodes[2].style.display="block";
+			if(this.refs.calendar.childNodes[1].style["maxHeight"]=="0px"){
+				this.refs.calendar.childNodes[1].style["maxHeight"]="600px";
+				this.refs.calendar.childNodes[2].style["maxHeight"]="600px";
 			}else {
-				this.refs.calendar.childNodes[1].style.display="none";
-				this.refs.calendar.childNodes[2].style.display="none";
+				this.refs.calendar.childNodes[1].style["maxHeight"]="0px";
+				this.refs.calendar.childNodes[2].style["maxHeight"]="0px";
 			}
 		};
 	}
@@ -39,6 +45,7 @@ export default class App extends React.Component{
 				<div id="calendar" className="bg-success text-white col-12"></div>
 			</main>
 			<footer>
+			<div>
 		    <div className='col-6 float-left mt-3'>
 		        <div><span>task#1</span><span className='float-right'>90%</span></div>
 			<div className="progress" style={{height: '10px'}}>
@@ -62,6 +69,7 @@ export default class App extends React.Component{
 			<div className="progress" style={{height: '10px'}}>
   				<div className="bg-success progress-bar" role="progressbar" style={{width: '10%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 			</div>
+		    </div>
 		    </div>
 			</footer>
 		</div>)

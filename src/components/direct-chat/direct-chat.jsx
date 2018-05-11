@@ -3,14 +3,18 @@ import ReactDOM from 'react-dom';
 
 export default class DirectChat extends React.Component{
 	componentDidMount(){
-		this.refs.remove.onclick=()=>{this.refs.directChat.parentNode.removeChild(this.refs.directChat)};
-		this.refs.toggle.onclick=()=>{
-			if(this.refs.directChat.childNodes[1].style.display=="none"){
-				this.refs.directChat.childNodes[1].style.display="block";
-				this.refs.directChat.childNodes[2].style.display="block";
+		this.refs.remove.onclick=()=>{
+			this.refs.directChat.style.opacity=0.01;
+			setTimeout(()=>this.refs.directChat.parentNode.removeChild(this.refs.directChat),500);
+		};
+
+		this.refs.toggle.onclick=()=>{			
+			if(this.refs.directChat.childNodes[1].style["maxHeight"]=="0px"){
+				this.refs.directChat.childNodes[1].style["maxHeight"]="600px";
+				this.refs.directChat.childNodes[2].style["maxHeight"]="100px";
 			}else {
-				this.refs.directChat.childNodes[1].style.display="none";
-				this.refs.directChat.childNodes[2].style.display="none";
+				this.refs.directChat.childNodes[1].style["maxHeight"]="0px";
+				this.refs.directChat.childNodes[2].style["maxHeight"]="0px";
 			}
 		};
 	}

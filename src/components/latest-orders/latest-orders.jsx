@@ -12,14 +12,17 @@ export default class LatestOrders extends React.Component{
 				      height  : $this.data('height') ? $this.data('height') : '30',
 				      barColor: $this.data('color') });
 		});
-		this.refs.remove.onclick=()=>{this.refs.latestOrders.parentNode.removeChild(this.refs.latestOrders)};
+		this.refs.remove.onclick=()=>{			
+			this.refs.latestOrders.style.opacity=0.01;
+			setTimeout(()=>this.refs.latestOrders.parentNode.removeChild(this.refs.latestOrders),500);
+		};
 		this.refs.toggle.onclick=()=>{
-			if(this.refs.latestOrders.childNodes[1].style.display=="none"){
-				this.refs.latestOrders.childNodes[1].style.display="block";
-				this.refs.latestOrders.childNodes[2].style.display="block";
+			if(this.refs.latestOrders.childNodes[1].style["maxHeight"]=="0px"){
+				this.refs.latestOrders.childNodes[1].style["maxHeight"]="600px";
+				this.refs.latestOrders.childNodes[2].style["maxHeight"]="100px";
 			}else {
-				this.refs.latestOrders.childNodes[1].style.display="none";
-				this.refs.latestOrders.childNodes[2].style.display="none";
+				this.refs.latestOrders.childNodes[1].style["maxHeight"]="0px";
+				this.refs.latestOrders.childNodes[2].style["maxHeight"]="0px";
 			}
 		};
 
@@ -36,7 +39,8 @@ export default class LatestOrders extends React.Component{
 				</div>
 				<div className="btn"><span>Latest Orders</span></div>
 			</header>
-			<main className="p-3 box-border-bottom">
+			<main className="box-border-bottom">
+				<div>
 				<table className="w-100">
 					<thead className="box-border-bottom">
 						<tr className="font-weight-bold">
@@ -53,10 +57,13 @@ export default class LatestOrders extends React.Component{
 						})}
 					</tbody>
 				</table>
+				</div>
 			</main>
-			<footer className="p-3">
+			<footer>
+				<div>
 					<button className="font-md px-2 py-1 bg-info text-white border-0">Place New Orders</button>
 					<button className="font-md px-2 py-1 bg-grey float-right">Place New Orders</button>
+				</div>
 			</footer>
 
 		</div>)

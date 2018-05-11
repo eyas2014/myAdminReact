@@ -3,15 +3,19 @@ import ReactDOM from 'react-dom';
 
 export default class RecentlyAP extends React.Component{
 	componentDidMount(){
-		this.refs.remove.onclick=()=>{this.refs.recentlyAP.parentNode.removeChild(this.refs.recentlyAP)};
+		this.refs.remove.onclick=()=>{
+			this.refs.recentlyAP.style.opacity=0.01;
+			setTimeout(()=>this.refs.recentlyAP.parentNode.removeChild(this.refs.recentlyAP),500);
+		};
 		this.refs.toggle.onclick=()=>{
-			if(this.refs.recentlyAP.childNodes[1].style.display=="none"){
-				this.refs.recentlyAP.childNodes[1].style.display="block";
-				this.refs.recentlyAP.childNodes[2].style.display="block";
+			if(this.refs.recentlyAP.childNodes[1].style["maxHeight"]=="0px"){
+				this.refs.recentlyAP.childNodes[1].style["maxHeight"]="600px";
+				this.refs.recentlyAP.childNodes[2].style["maxHeight"]="200px";
 			}else {
-				this.refs.recentlyAP.childNodes[1].style.display="none";
-				this.refs.recentlyAP.childNodes[2].style.display="none";
+				this.refs.recentlyAP.childNodes[1].style["maxHeight"]="0px";
+				this.refs.recentlyAP.childNodes[2].style["maxHeight"]="0px";
 			}
+
 		};
 	}
 	
@@ -30,8 +34,10 @@ export default class RecentlyAP extends React.Component{
 							return(	<ItemList key={index} data={item}></ItemList>)
 						})}
 				</main>
-				<footer className="text-center p-2 text-info">
+				<footer className="text-center text-info">
+					<div>
 					<span>View All Products</span>	
+					</div>
 				</footer>
 			</div>)
 	}

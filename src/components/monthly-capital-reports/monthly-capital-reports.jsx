@@ -28,14 +28,18 @@ export default class MonthlyCapReports extends React.Component{
 			options: salesChartOptions
 		});
 
-		this.refs.remove.onclick=()=>{this.refs.monthlyCapReports.parentNode.removeChild(this.refs.monthlyCapReports)};
+		this.refs.remove.onclick=()=>{
+			this.refs.monthlyCapReports.style.opacity=0.01;
+			setTimeout(()=>this.refs.monthlyCapReports.parentNode.removeChild(this.refs.monthlyCapReports),500);
+		};
+
 		this.refs.toggle.onclick=()=>{
-			if(this.refs.monthlyCapReports.childNodes[1].style.display=="none"){
-				this.refs.monthlyCapReports.childNodes[1].style.display="";
-				this.refs.monthlyCapReports.childNodes[2].style.display="";
+			if(this.refs.monthlyCapReports.childNodes[1].style["maxHeight"]=="0px"){
+				this.refs.monthlyCapReports.childNodes[1].style["maxHeight"]="600px";
+				this.refs.monthlyCapReports.childNodes[2].style["maxHeight"]="300px";
 			}else {
-				this.refs.monthlyCapReports.childNodes[1].style.display="none";
-				this.refs.monthlyCapReports.childNodes[2].style.display="none";
+				this.refs.monthlyCapReports.childNodes[1].style["maxHeight"]="0px";
+				this.refs.monthlyCapReports.childNodes[2].style["maxHeight"]="0px";
 			}
 		};
 

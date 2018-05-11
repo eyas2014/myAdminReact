@@ -4,7 +4,11 @@ import React from 'react';
 export default class QuickEmail extends React.Component{
 
 	componentDidMount(){
-		this.refs.remove.onclick=()=>{this.refs.quickEmail.parentNode.removeChild(this.refs.quickEmail)};
+		this.refs.remove.onclick=()=>{
+			this.refs.quickEmail.style.opacity=0.01;
+			setTimeout(()=>this.refs.quickEmail.parentNode.removeChild(this.refs.quickEmail),500);
+		};
+
 	}
 
     render(){

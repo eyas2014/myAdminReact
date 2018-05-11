@@ -31,14 +31,19 @@ export default class SalesGraph extends React.Component{
 			gridTextFamily   : 'Open Sans',
 			gridTextSize     : 10	}); 
 
-		this.refs.remove.onclick=()=>{this.refs.salesGraph.parentNode.removeChild(this.refs.salesGraph)};
+		this.refs.remove.onclick=()=>{
+			this.refs.salesGraph.style.opacity=0.01;
+			setTimeout(()=>this.refs.salesGraph.parentNode.removeChild(this.refs.salesGraph),500);
+		};
+
 		this.refs.toggle.onclick=()=>{
-			if(this.refs.salesGraph.childNodes[1].style.display=="none"){
-				this.refs.salesGraph.childNodes[1].style.display="";
-				this.refs.salesGraph.childNodes[2].style.display="";
+			if(this.refs.salesGraph.childNodes[1].style["maxHeight"]=="0px"){
+				this.refs.salesGraph.childNodes[1].style["maxHeight"]="400px";
+				this.refs.salesGraph.childNodes[2].style["maxHeight"]="300px";
 			}else {
-				this.refs.salesGraph.childNodes[1].style.display="none";
-				this.refs.salesGraph.childNodes[2].style.display="none";
+				this.refs.salesGraph.childNodes[1].style["maxHeight"]="0px";
+				this.refs.salesGraph.childNodes[2].style["maxHeight"]="0px";
+								console.log("expand");
 			}
 		};
 

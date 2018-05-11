@@ -15,10 +15,23 @@
 		}
 
 	}
+
+	main{
+		overflow: hidden;
+		max-height: 400px;
+		transition: max-height 1s ease-out;
+	}
 	
 	footer{
-		padding: 20px;
+		box-sizing: border-box;
+		overflow: hidden;
+		max-height: 300px;
+		transition: max-height 1s ease-out;
 		background-color: #fff;
+		>div{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
 		&>div>div:nth-child(2){
 			border-left: solid 1px rgba(0,0,0,0.15);
 			border-right: solid 1px rgba(0,0,0,0.15);
