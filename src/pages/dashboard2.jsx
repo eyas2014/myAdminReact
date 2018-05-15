@@ -15,7 +15,6 @@ class Dashboard2 extends React.Component{
 	render(){
 		const {monthlyCapReportsData, visitorsReportData, progressPanelsData, 
 		       directChatData, latestOrdersData, browserUsageData, recentlyAPData}=this.props;
-		console.log(recentlyAPData);
 		return(<div className='p-3'>
 						<div className="content-header">
 							<span>Dashboard</span>

@@ -12,29 +12,31 @@ export default class MonthlyCapReports extends React.Component{
 	}
 
 	componentDidUpdate(){
-		var ctx=document.getElementById('salesChart');
-		var salesChartData = this.props.data.salesChartData;
-		var salesChartOptions = {
-			scales: {
-    			xAxes: [{
-                	gridLines: {
-                    	display:false
-                	}
-            	}],
-    			yAxes: [{
-                	gridLines: {
-                    	display:false
-                	}   
-            	}]
-    		}
-		};
+		var ctx=this.refs.salesChart;
+		if(ctx){
+			var salesChartData = this.props.data.salesChartData;
+			var salesChartOptions = {
+				scales: {
+	    			xAxes: [{
+	                	gridLines: {
+	                    	display:false
+	                	}
+	            	}],
+	    			yAxes: [{
+	                	gridLines: {
+	                    	display:false
+	                	}   
+	            	}]
+	    		}
+			};
 
-		//Create the line chart
-		new Chart(ctx, {
-			type: 'line',
-			data: salesChartData,
-			options: salesChartOptions
-		});
+			//Create the line chart
+			new Chart(ctx, {
+				type: 'line',
+				data: salesChartData,
+				options: salesChartOptions
+			});
+		}
 	}
 
 
@@ -97,7 +99,7 @@ export default class MonthlyCapReports extends React.Component{
 				<CSSTransition in={this.state.collapse} classNames="componentCollapse" timeout={500} unmountOnExit>
 					<div className="wrapper">
 						<main className="box-border-bottom row mx-0">
-							<div  className='col-8 mx-0 p-3'><canvas id="salesChart"></canvas>
+							<div  className='col-8 mx-0 p-3'><canvas ref="salesChart"></canvas>
 							</div>
 							<div className="col-4 p-3">
 								<div className="pt-3 text-center">

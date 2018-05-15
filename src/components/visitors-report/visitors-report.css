@@ -4,15 +4,9 @@
 	background-color: #fff;
 	border-radius: 3px;
 	margin-top: 15px;
-	transition: opacity 500ms ease-out;
 
 }
 
 .main-content .visitors-report #world-map{
 	height: 300px
-}
-
-.main-content .visitors-report>main{
-	max-height: 600px;
-	transition: max-height 1s ease-out;
 }

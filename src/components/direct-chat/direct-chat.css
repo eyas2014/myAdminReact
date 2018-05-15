@@ -5,7 +5,6 @@
 	border-radius: 3px;
 	color: black;
 	margin-top: 15px;
-	transition: opacity 500ms ease-out;
 }
 
 .main-content .direct-chat .message img{
@@ -18,14 +17,4 @@
 .main-content .direct-chat .messages{
 	height: 400px;
 	overflow-y: scroll;
-}
-
-.main-content .direct-chat>main{
-	max-height: 600px;
-	transition: max-height 1s ease-out;
-}
-
-.main-content .direct-chat>footer{
-	max-height: 100px;
-	transition: max-height 1s ease-out;
 }

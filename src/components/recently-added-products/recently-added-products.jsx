@@ -1,27 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {CSSTransition} from "react-transition-group";
 
 export default class RecentlyAP extends React.Component{
+	constructor(){
+		super();
+		this.state={show: true,
+					collapse: true
+		}
+	}
+
 	componentDidMount(){
 		this.refs.remove.onclick=()=>{
-			this.refs.recentlyAP.style.opacity=0.01;
-			setTimeout(()=>this.refs.recentlyAP.parentNode.removeChild(this.refs.recentlyAP),500);
+			this.setState({show: false});
 		};
 		this.refs.toggle.onclick=()=>{
-			if(this.refs.recentlyAP.childNodes[1].style["maxHeight"]=="0px"){
-				this.refs.recentlyAP.childNodes[1].style["maxHeight"]="600px";
-				this.refs.recentlyAP.childNodes[2].style["maxHeight"]="200px";
-			}else {
-				this.refs.recentlyAP.childNodes[1].style["maxHeight"]="0px";
-				this.refs.recentlyAP.childNodes[2].style["maxHeight"]="0px";
-			}
-
+			this.setState(state=>({collapse:!state.collapse}));
 		};
 	}
 	
 	render(){
 		var products=this.props.products;
-		return(<div className="recently-added-products box-shadow" ref="recentlyAP">
+		return(
+		<CSSTransition in={this.state.show} classNames="componentShutdown" timeout={500} unmountOnExit>
+			<div className="recently-added-products box-shadow" ref="recentlyAP">
 				<header className="box-border-bottom clearfix">
 					<div className="btn"><span>Recently Added Products</span></div>
 					<div className="btn-group float-right">
@@ -29,17 +31,22 @@ export default class RecentlyAP extends React.Component{
 						<div className="btn" ref="remove"><i className="fas fa-times text-muted"></i></div>
 					</div>
 				</header>
-				<main className="">
-						{products.map(function(item, index){
-							return(	<ItemList key={index} data={item}></ItemList>)
-						})}
-				</main>
-				<footer className="text-center text-info">
-					<div>
-					<span>View All Products</span>	
+				<CSSTransition in={this.state.collapse} classNames="componentCollapse" timeout={500} unmountOnExit>
+					<div className="wrapper">
+						<main>
+								{products.map(function(item, index){
+									return(	<ItemList key={index} data={item}></ItemList>)
+								})}
+						</main>
+						<footer className="text-center text-info">
+							<div>
+							<span>View All Products</span>	
+							</div>
+						</footer>
 					</div>
-				</footer>
-			</div>)
+				</CSSTransition>
+			</div>
+		</CSSTransition>)
 	}
 
 }

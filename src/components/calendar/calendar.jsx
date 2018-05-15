@@ -16,8 +16,9 @@ export default class App extends React.Component{
 		$('#calendar').datepicker();
 		$('#calendar').children('.datepicker').css('width','100%');
 		$('#calendar').children('.datepicker').children('.datepicker-days').children('table').css('width','100%');
+	}
 
-
+	componentDidMount(){
 		this.refs.remove.onclick=()=>{
 			this.setState({show: false});
 		};
@@ -26,6 +27,8 @@ export default class App extends React.Component{
 			this.setState(state=>({collapse:!state.collapse}));
 		};
 	}
+
+
 
 	render(){
 
