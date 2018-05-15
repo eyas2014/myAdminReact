@@ -3,17 +3,4 @@
 	overflow: hidden;
 	border-radius:4px;
 	margin-top: 15px;
-	transition: opacity 500ms ease-out;
-}
-
-.monthly-capital-reports main{
-	max-height: 400px;
-	overflow:hidden;
-	transition: max-height 500ms ease-out;
-}
-
-.monthly-capital-reports>div{
-	max-height: 300px;
-	overflow:hidden;
-	transition: max-height 500ms ease-out;
 }

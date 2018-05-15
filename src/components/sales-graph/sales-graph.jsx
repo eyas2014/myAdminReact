@@ -6,11 +6,13 @@ import {CSSTransition} from "react-transition-group";
 export default class SalesGraph extends React.Component{
 	constructor(){
 		super();
-		this.state={show: true}
+		this.state={show: true,
+					collapse: true
+		}
 	}
 
-	componentDidMount(){
 
+	componentDidUpdate(){
 		$('.knob').knob({
 			width: '100px',
 			height: '100px',
@@ -19,53 +21,51 @@ export default class SalesGraph extends React.Component{
 
 		var {data}=this.props;
 
-		new Morris.Line({
-			element: 'line-chart',
-			resize: true,
-			data: data,
-			xkey             : 'y',
-			ykeys            : ['item1'],
-			labels           : ['Item 1'],
-			lineColors       : ['#efefef'],
-			lineWidth        : 2,
-			hideHover        : 'auto',
-			gridTextColor    : '#fff',
-			gridStrokeWidth  : 0.4,
-			pointSize        : 4,
-			pointStrokeColors: ['#efefef'],
-			gridLineColor    : '#efefef',
-			gridTextFamily   : 'Open Sans',
-			gridTextSize     : 10	}); 
+		if(this.refs.lineChart){
+			new Morris.Line({
+				element: 'line-chart',
+				resize: true,
+				data: data,
+				xkey             : 'y',
+				ykeys            : ['item1'],
+				labels           : ['Item 1'],
+				lineColors       : ['#efefef'],
+				lineWidth        : 2,
+				hideHover        : 'auto',
+				gridTextColor    : '#fff',
+				gridStrokeWidth  : 0.4,
+				pointSize        : 4,
+				pointStrokeColors: ['#efefef'],
+				gridLineColor    : '#efefef',
+				gridTextFamily   : 'Open Sans',
+				gridTextSize     : 10	}
+			); 
+		}
 
+	}
+
+
+	componentDidMount(){
 		this.refs.remove.onclick=()=>{
 			this.setState({show: false});
 		};
 
 		this.refs.toggle.onclick=()=>{
-			if(this.refs.salesGraph.childNodes[1].style["maxHeight"]=="0px"){
-				this.refs.salesGraph.childNodes[1].style["maxHeight"]="400px";
-				this.refs.salesGraph.childNodes[2].style["maxHeight"]="300px";
-			}else {
-				this.refs.salesGraph.childNodes[1].style["maxHeight"]="0px";
-				this.refs.salesGraph.childNodes[2].style["maxHeight"]="0px";
-								console.log("expand");
-			}
+			this.setState(state=>({collapse:!state.collapse}));
 		};
-
-
 	}  
 
 	render(){
-                var style = {
-                    height: '250px'
-                };
+		var style = {
+        		height: '250px'
+            };
 
-    			return (
-    				<CSSTransition in={this.state.show} classNames="shutdown" timeout={3000} unmountOnExit>
-    				<div className="sales-graph" ref="salesGraph">
+    	return (
+    		<CSSTransition in={this.state.show} classNames="componentShutdown" timeout={500} unmountOnExit>
+    			<div className="sales-graph">
 					<header className="">
 						<div className="btn">
-							<i className="fa fa-th"></i><span> Sales Graph {this.state.show?"show":"hide"}</span>
+							<i className="fa fa-th"></i><span> Sales Graph</span>
 						</div>
 						<div className="tools float-right">
 							<button className="btn btn-sm" ref="toggle">
@@ -77,30 +77,30 @@ export default class SalesGraph extends React.Component{
 						</div>
 					</header>
 
-                        		<main>
-                            			<div className="chart" id="line-chart" style={style}>
-                            			</div>
-                        		</main>
-
-                        		<footer className="row">
-						<div className="col-4">
-							<input type="text" className="knob" value="20" readOnly>
-							</input>
-						</div>
-
-						<div className="col-4">
-							<input type="text" className="knob" value="50" readOnly>
-							</input>
-						</div>
- 
-
-						<div className="col-4">
-							<input type="text" className="knob" value="80" readOnly>
-							</input>
-						</div>
- 
-                        		</footer>
-				</div></CSSTransition>
-    			)
+	    			<CSSTransition in={this.state.collapse} classNames="componentCollapse" timeout={500} unmountOnExit>
+						<div className="wrapper">
+							<main>
+								<div className="chart" id="line-chart" style={style} ref="lineChart">
+	                            </div>
+	                        </main>
+	                        <footer className="row">
+								<div className="col-4">
+									<input type="text" className="knob" value="20" readOnly>
+									</input>
+								</div>
+								<div className="col-4">
+									<input type="text" className="knob" value="50" readOnly>
+									</input>
+								</div>
+	 							<div className="col-4">
+									<input type="text" className="knob" value="80" readOnly>
+									</input>
+								</div>
+	                        </footer>
+	                    </div>
+                    </CSSTransition>
+				</div>
+			</CSSTransition>
+		)
 	}
 }    

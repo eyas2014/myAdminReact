@@ -1,12 +1,16 @@
 import React from 'react';
+import {CSSTransition} from "react-transition-group";
 
 
 export default class QuickEmail extends React.Component{
+	constructor(){
+		super();
+		this.state={show: true}
+	}
 
 	componentDidMount(){
 		this.refs.remove.onclick=()=>{
-			this.refs.quickEmail.style.opacity=0.01;
-			setTimeout(()=>this.refs.quickEmail.parentNode.removeChild(this.refs.quickEmail),500);
+			this.setState({show: false});
 		};
 
 	}
@@ -21,8 +25,9 @@ export default class QuickEmail extends React.Component{
 			padding: "10px"
 		}
 
-    			return (
-    				<div className="quick-email" ref="quickEmail">
+    	return (
+    		<CSSTransition in={this.state.show} classNames="componentShutdown" timeout={500} unmountOnExit>
+    			<div className="quick-email" ref="quickEmail">
 					<header>
 						<div className="btn">
 							<i className="fa fa-envelope"></i>
@@ -56,7 +61,8 @@ export default class QuickEmail extends React.Component{
 						</div>
 					</footer>
 				</div>
-    			)
-    		}
+			</CSSTransition>
+    	)
+    }
 
 }    

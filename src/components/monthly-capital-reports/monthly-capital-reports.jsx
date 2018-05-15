@@ -1,9 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Chart from 'chart.js';
+import {CSSTransition} from "react-transition-group";
 
 export default class MonthlyCapReports extends React.Component{
-	componentDidMount(){
+	constructor(){
+		super();
+		this.state={show: true,
+					collapse: true
+		}
+	}
+
+	componentDidUpdate(){
 		var ctx=document.getElementById('salesChart');
 		var salesChartData = this.props.data.salesChartData;
 		var salesChartOptions = {
@@ -27,24 +35,17 @@ export default class MonthlyCapReports extends React.Component{
 			data: salesChartData,
 			options: salesChartOptions
 		});
+	}
 
+
+	componentDidMount(){
 		this.refs.remove.onclick=()=>{
-			this.refs.monthlyCapReports.style.opacity=0.01;
-			setTimeout(()=>this.refs.monthlyCapReports.parentNode.removeChild(this.refs.monthlyCapReports),500);
+			this.setState({show: false});
 		};
-
 		this.refs.toggle.onclick=()=>{
-			if(this.refs.monthlyCapReports.childNodes[1].style["maxHeight"]=="0px"){
-				this.refs.monthlyCapReports.childNodes[1].style["maxHeight"]="600px";
-				this.refs.monthlyCapReports.childNodes[2].style["maxHeight"]="300px";
-			}else {
-				this.refs.monthlyCapReports.childNodes[1].style["maxHeight"]="0px";
-				this.refs.monthlyCapReports.childNodes[2].style["maxHeight"]="0px";
-			}
+			this.setState(state=>({collapse:!state.collapse}));
 		};
-
-
-
+		this.componentDidUpdate();
 	}
 
 	render(){
@@ -81,56 +82,62 @@ export default class MonthlyCapReports extends React.Component{
 						});
 
 		return(
-		<div className="monthly-capital-reports bg-white text-black box-shadow" ref="monthlyCapReports">
-			<header className='bg-white box-border-bottom'>
-				<div className="btn"><span>Monthly Recap Report</span></div>
-				<div className='btn-group float-right text-muted'>
-					<div className='btn' ref="remove"><i className='fa fa-times'></i></div>
-					<div className='btn' ref="toggle"><i className='fa fa-minus'></i></div>
-					<div className='btn'><i className='fa fa-bars'></i></div>
-				</div>
-				<div>
-				</div>
-			</header>
-			<main className="box-border-bottom row mx-0">
-				<div  className='col-8 mx-0 p-3'><canvas id="salesChart"></canvas>
-				</div>
-				<div className="col-4 p-3">
-					<div className="pt-3 text-center">
-						<span  className="text-center font-weight-bold">Goal Completion</span>
+		<CSSTransition in={this.state.show} classNames="componentShutdown" timeout={500} unmountOnExit>
+			<div className="monthly-capital-reports bg-white text-black box-shadow" ref="monthlyCapReports">
+				<header className='bg-white box-border-bottom'>
+					<div className="btn"><span>Monthly Recap Report</span></div>
+					<div className='btn-group float-right text-muted'>
+						<div className='btn' ref="remove"><i className='fa fa-times'></i></div>
+						<div className='btn' ref="toggle"><i className='fa fa-minus'></i></div>
+						<div className='btn'><i className='fa fa-bars'></i></div>
 					</div>
-					{progressBar}
-				</div>
-			</main>
-			<footer className="container-fluid bg-white">
-				<div className="row py-4">
-					<div className="col-6 col-md-3 text-center py-0">
-						<div className="text-success"><i className="fas fa-sort-up"></i><span> 17%</span></div>
-						<p className="m-0  font-weight-bold ">$35,210.43</p>
-						<p>TOTAL REVENUE</p>
+					<div>
 					</div>
+				</header>
+				<CSSTransition in={this.state.collapse} classNames="componentCollapse" timeout={500} unmountOnExit>
+					<div className="wrapper">
+						<main className="box-border-bottom row mx-0">
+							<div  className='col-8 mx-0 p-3'><canvas id="salesChart"></canvas>
+							</div>
+							<div className="col-4 p-3">
+								<div className="pt-3 text-center">
+									<span  className="text-center font-weight-bold">Goal Completion</span>
+								</div>
+								{progressBar}
+							</div>
+						</main>
+						<footer className="container-fluid bg-white">
+							<div className="row py-4">
+								<div className="col-6 col-md-3 text-center py-0">
+									<div className="text-success"><i className="fas fa-sort-up"></i><span> 17%</span></div>
+									<p className="m-0  font-weight-bold ">$35,210.43</p>
+									<p>TOTAL REVENUE</p>
+								</div>
 
-					<div style={style2} className="col-6 col-md-3 text-center py-0">
-						<div className="text-success"><i className="fas fa-sort-up"></i><span> 17%</span></div>
-						<p className="m-0  font-weight-bold ">$35,210.43</p>
-						<p>TOTAL REVENUE</p>
-					</div>
+								<div style={style2} className="col-6 col-md-3 text-center py-0">
+									<div className="text-success"><i className="fas fa-sort-up"></i><span> 17%</span></div>
+									<p className="m-0  font-weight-bold ">$35,210.43</p>
+									<p>TOTAL REVENUE</p>
+								</div>
 
-					<div style={style2} className="col-6 col-md-3 text-center py-0">
-						<div className="text-success"><i className="fas fa-sort-up"></i><span> 17%</span></div>
-						<p className="m-0  font-weight-bold ">$35,210.43</p>
-						<p>TOTAL REVENUE</p>
-					</div>
+								<div style={style2} className="col-6 col-md-3 text-center py-0">
+									<div className="text-success"><i className="fas fa-sort-up"></i><span> 17%</span></div>
+									<p className="m-0  font-weight-bold ">$35,210.43</p>
+									<p>TOTAL REVENUE</p>
+								</div>
 
-					<div style={style2} className="col-6 col-md-3 text-center py-0">
-						<div className="text-success"><i className="fas fa-sort-up"></i><span> 17%</span></div>
-						<p className="m-0  font-weight-bold ">$35,210.43</p>
-						<p>TOTAL REVENUE</p>
-					</div>
+								<div style={style2} className="col-6 col-md-3 text-center py-0">
+									<div className="text-success"><i className="fas fa-sort-up"></i><span> 17%</span></div>
+									<p className="m-0  font-weight-bold ">$35,210.43</p>
+									<p>TOTAL REVENUE</p>
+								</div>
 
-				</div>
-			</footer>
-		</div>)
+							</div>
+						</footer>
+					</div>
+				</CSSTransition>
+			</div>
+		</CSSTransition>)
 	}
 
 }

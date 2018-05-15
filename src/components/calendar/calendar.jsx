@@ -1,28 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap-datepicker';
+import {CSSTransition} from "react-transition-group";
 
 
 export default class App extends React.Component{
-	componentDidMount(){
+	constructor(){
+		super();
+		this.state={show: true,
+					collapse: true
+		}
+	}
+
+	componentDidUpdate(){
 		$('#calendar').datepicker();
 		$('#calendar').children('.datepicker').css('width','100%');
 		$('#calendar').children('.datepicker').children('.datepicker-days').children('table').css('width','100%');
 
 
 		this.refs.remove.onclick=()=>{
-			this.refs.calendar.style.opacity=0.01;
-			setTimeout(()=>this.refs.calendar.parentNode.removeChild(this.refs.calendar),500);
+			this.setState({show: false});
 		};
 
 		this.refs.toggle.onclick=()=>{
-			if(this.refs.calendar.childNodes[1].style["maxHeight"]=="0px"){
-				this.refs.calendar.childNodes[1].style["maxHeight"]="600px";
-				this.refs.calendar.childNodes[2].style["maxHeight"]="600px";
-			}else {
-				this.refs.calendar.childNodes[1].style["maxHeight"]="0px";
-				this.refs.calendar.childNodes[2].style["maxHeight"]="0px";
-			}
+			this.setState(state=>({collapse:!state.collapse}));
 		};
 	}
 
@@ -30,7 +31,8 @@ export default class App extends React.Component{
 
 
 		return(
-		<div className="calendar" ref="calendar">
+		<CSSTransition in={this.state.show} classNames="componentShutdown" timeout={500} unmountOnExit>
+ 		<div className="calendar" ref="calendar">
 		    <header className='bg-success'>
 	                <button type="button" className="btn btn-success btn-sm"><i className="fa fa-calendar"></i>
 	                </button> 
@@ -41,6 +43,8 @@ export default class App extends React.Component{
 					<button type="button" className="btn btn-success btn-sm ml-1"><i className="fa fa-bars"></i></button>
 				</div>
 		    </header>
+		    <CSSTransition in={this.state.collapse} classNames="componentCollapse" timeout={500} unmountOnExit>
+		    <div className="wrapper">
 			<main>
 				<div id="calendar" className="bg-success text-white col-12"></div>
 			</main>
@@ -72,7 +76,10 @@ export default class App extends React.Component{
 		    </div>
 		    </div>
 			</footer>
-		</div>)
+			</div>
+			</CSSTransition>
+		</div>
+		</CSSTransition>)
 	}
 
 }

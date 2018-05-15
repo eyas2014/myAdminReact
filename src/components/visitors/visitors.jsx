@@ -2,18 +2,19 @@ import React from 'react';
 import 'velocity-animate';
 import WorldMap from './world-map.jsx';
 import SparkLine from './sparkline.jsx';
+import {CSSTransition} from "react-transition-group";
+
 
 
 export default class Visitors extends React.Component{
+	constructor(){
+		super();
+		this.state={collapse: true}
+	}
+
 	componentDidMount(){
 		this.refs.toggle.onclick=()=>{
-			if(this.refs.visitors.childNodes[1].style["maxHeight"]=="0px"){
-				this.refs.visitors.childNodes[1].style["maxHeight"]="400px";
-				this.refs.visitors.childNodes[2].style["maxHeight"]="300px";
-			}else {
-				this.refs.visitors.childNodes[1].style["maxHeight"]="0px";
-				this.refs.visitors.childNodes[2].style["maxHeight"]="0px";	
-			}
+			this.setState(state=>({collapse:!state.collapse}));
 		};	
 	}
 
@@ -37,15 +38,19 @@ export default class Visitors extends React.Component{
 					</div>
                 </header>
 
-                        <main className="">
+	    		<CSSTransition in={this.state.collapse} classNames="componentCollapse" timeout={500} unmountOnExit>
+	    			<div  className="wrapper">
+                        <main>
                                             <WorldMap  id="world-map" info = {worldMap}></WorldMap>
                         </main>
 
                         <footer>
-			    <SparkLine data={sparkLine}></SparkLine>
+			    			<SparkLine data={sparkLine}></SparkLine>
                         </footer>
                     </div>
-    			)
-    		}
+                </CSSTransition>
+            </div>
+    	)
+    }
 
-    }   
+}   
