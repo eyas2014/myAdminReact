@@ -1,0 +1,1 @@
+modified from jquery.sparkline.original.js 02/21/2018
