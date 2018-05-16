@@ -53,6 +53,8 @@ export default class SalesGraph extends React.Component{
 		this.refs.toggle.onclick=()=>{
 			this.setState(state=>({collapse:!state.collapse}));
 		};
+
+		this.componentDidUpdate();
 	}  
 
 	render(){

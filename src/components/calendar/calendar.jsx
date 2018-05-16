@@ -26,6 +26,7 @@ export default class App extends React.Component{
 		this.refs.toggle.onclick=()=>{
 			this.setState(state=>({collapse:!state.collapse}));
 		};
+		this.componentDidUpdate();
 	}
 
 
