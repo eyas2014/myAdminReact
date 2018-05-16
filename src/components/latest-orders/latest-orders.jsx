@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import '../../../node_modules/sparkline/jquery.sparkline.js';
+import '../../../lib/sparkline/jquery.sparkline.js';
 import {CSSTransition} from "react-transition-group";
 
 
@@ -13,13 +13,13 @@ export default class LatestOrders extends React.Component{
 	}
 
 	componentDidUpdate(){
-/*		$(".inlineSpark").each(function () {
+		$(".inlineSpark").each(function () {
 		    var $this = $(this);
 		    $this.sparkline('html', {
 				      type    : 'bar',
 				      height  : $this.data('height') ? $this.data('height') : '30',
 				      barColor: $this.data('color') });
-		}); */
+		}); 
 	}
 
 	componentDidMount(){

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import '../../../node_modules/sparkline/jquery.sparkline.js';
-//import '../../../node_modules/jqvmap/dist/jqvmap.js';
+import '../../../lib/sparkline/jquery.sparkline.js';
 import {CSSTransition} from "react-transition-group";
+import '../../../lib/jqvmap/jqvmap.js';
 
 
 export default class VisitorsReport extends React.Component{
@@ -14,7 +14,7 @@ export default class VisitorsReport extends React.Component{
 	}
 
 	componentDidUpdate(){
-	/*	$('#world-map').vectorMap({
+		$('#world-map').vectorMap({
 			map              : 'world_mill_en',
 			normalizeFunction: 'polynomial',
 			hoverOpacity     : 0.7,
@@ -53,7 +53,7 @@ export default class VisitorsReport extends React.Component{
     			height  : $this.data('height') ? $this.data('height') : '30',
     			barColor: $this.data('color')
     		});
-		});  */
+		});  
 	}
 
 	componentDidMount(){
