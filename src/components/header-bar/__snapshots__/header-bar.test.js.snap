@@ -1,0 +1,2707 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HeaderBar />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="logo float-left"
+        >
+          <a
+            className=""
+            href="index2.html"
+          >
+            <span
+              className="logo-mini"
+            >
+              <b>
+                A
+              </b>
+              LT
+            </span>
+            <span
+              className="logo-lg"
+            >
+              <b>
+                Admin
+              </b>
+              LTE
+            </span>
+          </a>
+        </div>,
+        <nav>
+          <div
+            className="collapse-toggler"
+          >
+            <span
+              className="fas fa-bars"
+            />
+            <span
+              className="sr-only"
+            >
+              Toggle navigation
+            </span>
+          </div>
+          <div
+            className="navbar-custom-menu float-right"
+          >
+            <ul
+              className="navbar p-0"
+            >
+              <HeaderMessages />
+              <HeaderNotifications />
+              <HeaderTasks />
+              <li
+                className="dropdown profile"
+              >
+                <span
+                  className="dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="#"
+                >
+                  <img
+                    alt="User Image"
+                    className="small-user-image mr-2"
+                    src="dist/img/user2-160x160.jpg"
+                  />
+                  <span
+                    className="hidden-xs"
+                  >
+                    Alexander Pierce
+                  </span>
+                </span>
+                <ul
+                  className="dropdown-menu dropdown-menu-right p-0"
+                >
+                  <li
+                    className="user-header text-center bg-info p-2"
+                  >
+                    <img
+                      alt="User Image"
+                      className="medium-user-image m-2"
+                      src="dist/img/user2-160x160.jpg"
+                    />
+                    <p
+                      className="mb-0"
+                    >
+                      Alexander Pierce - Web Developer
+                    </p>
+                    <small>
+                      Member since Nov. 2012
+                    </small>
+                  </li>
+                  <li
+                    className="user-body text-black row m-2"
+                  >
+                    <div
+                      className="col-4 text-center"
+                    >
+                      <a
+                        className="text-black"
+                        href="#"
+                      >
+                        Followers
+                      </a>
+                    </div>
+                    <div
+                      className="col-4 text-center"
+                    >
+                      <a
+                        className="text-black"
+                        href="#"
+                      >
+                        Sales
+                      </a>
+                    </div>
+                    <div
+                      className="col-4 text-center"
+                    >
+                      <a
+                        className="text-black"
+                        href="#"
+                      >
+                        Friends
+                      </a>
+                    </div>
+                  </li>
+                  <li
+                    className="row box-border-top py-2 mx-0"
+                  >
+                    <div
+                      className="col-6 text-center"
+                    >
+                      <a
+                        className="btn btn-outline-secondary text-black"
+                        href="#"
+                      >
+                        Profile
+                      </a>
+                    </div>
+                    <div
+                      className="col-6 text-center"
+                    >
+                      <a
+                        className="btn btn-outline-secondary text-black"
+                        href="#"
+                      >
+                        Sign out
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span
+                  data-toggle="control-sidebar"
+                  href="#"
+                >
+                  <i
+                    className="fas fa-cogs"
+                  />
+                </span>
+              </li>
+            </ul>
+          </div>
+        </nav>,
+      ],
+      "className": "main-header bg-info expand",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <a
+            className=""
+            href="index2.html"
+          >
+            <span
+              className="logo-mini"
+            >
+              <b>
+                A
+              </b>
+              LT
+            </span>
+            <span
+              className="logo-lg"
+            >
+              <b>
+                Admin
+              </b>
+              LTE
+            </span>
+          </a>,
+          "className": "logo float-left",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="logo-mini"
+              >
+                <b>
+                  A
+                </b>
+                LT
+              </span>,
+              <span
+                className="logo-lg"
+              >
+                <b>
+                  Admin
+                </b>
+                LTE
+              </span>,
+            ],
+            "className": "",
+            "href": "index2.html",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <b>
+                    A
+                  </b>,
+                  "LT",
+                ],
+                "className": "logo-mini",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "A",
+                  },
+                  "ref": null,
+                  "rendered": "A",
+                  "type": "b",
+                },
+                "LT",
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <b>
+                    Admin
+                  </b>,
+                  "LTE",
+                ],
+                "className": "logo-lg",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Admin",
+                  },
+                  "ref": null,
+                  "rendered": "Admin",
+                  "type": "b",
+                },
+                "LTE",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "a",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="collapse-toggler"
+            >
+              <span
+                className="fas fa-bars"
+              />
+              <span
+                className="sr-only"
+              >
+                Toggle navigation
+              </span>
+            </div>,
+            <div
+              className="navbar-custom-menu float-right"
+            >
+              <ul
+                className="navbar p-0"
+              >
+                <HeaderMessages />
+                <HeaderNotifications />
+                <HeaderTasks />
+                <li
+                  className="dropdown profile"
+                >
+                  <span
+                    className="dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                  >
+                    <img
+                      alt="User Image"
+                      className="small-user-image mr-2"
+                      src="dist/img/user2-160x160.jpg"
+                    />
+                    <span
+                      className="hidden-xs"
+                    >
+                      Alexander Pierce
+                    </span>
+                  </span>
+                  <ul
+                    className="dropdown-menu dropdown-menu-right p-0"
+                  >
+                    <li
+                      className="user-header text-center bg-info p-2"
+                    >
+                      <img
+                        alt="User Image"
+                        className="medium-user-image m-2"
+                        src="dist/img/user2-160x160.jpg"
+                      />
+                      <p
+                        className="mb-0"
+                      >
+                        Alexander Pierce - Web Developer
+                      </p>
+                      <small>
+                        Member since Nov. 2012
+                      </small>
+                    </li>
+                    <li
+                      className="user-body text-black row m-2"
+                    >
+                      <div
+                        className="col-4 text-center"
+                      >
+                        <a
+                          className="text-black"
+                          href="#"
+                        >
+                          Followers
+                        </a>
+                      </div>
+                      <div
+                        className="col-4 text-center"
+                      >
+                        <a
+                          className="text-black"
+                          href="#"
+                        >
+                          Sales
+                        </a>
+                      </div>
+                      <div
+                        className="col-4 text-center"
+                      >
+                        <a
+                          className="text-black"
+                          href="#"
+                        >
+                          Friends
+                        </a>
+                      </div>
+                    </li>
+                    <li
+                      className="row box-border-top py-2 mx-0"
+                    >
+                      <div
+                        className="col-6 text-center"
+                      >
+                        <a
+                          className="btn btn-outline-secondary text-black"
+                          href="#"
+                        >
+                          Profile
+                        </a>
+                      </div>
+                      <div
+                        className="col-6 text-center"
+                      >
+                        <a
+                          className="btn btn-outline-secondary text-black"
+                          href="#"
+                        >
+                          Sign out
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span
+                    data-toggle="control-sidebar"
+                    href="#"
+                  >
+                    <i
+                      className="fas fa-cogs"
+                    />
+                  </span>
+                </li>
+              </ul>
+            </div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="fas fa-bars"
+                />,
+                <span
+                  className="sr-only"
+                >
+                  Toggle navigation
+                </span>,
+              ],
+              "className": "collapse-toggler",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-bars",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Toggle navigation",
+                  "className": "sr-only",
+                },
+                "ref": null,
+                "rendered": "Toggle navigation",
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ul
+                className="navbar p-0"
+              >
+                <HeaderMessages />
+                <HeaderNotifications />
+                <HeaderTasks />
+                <li
+                  className="dropdown profile"
+                >
+                  <span
+                    className="dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                  >
+                    <img
+                      alt="User Image"
+                      className="small-user-image mr-2"
+                      src="dist/img/user2-160x160.jpg"
+                    />
+                    <span
+                      className="hidden-xs"
+                    >
+                      Alexander Pierce
+                    </span>
+                  </span>
+                  <ul
+                    className="dropdown-menu dropdown-menu-right p-0"
+                  >
+                    <li
+                      className="user-header text-center bg-info p-2"
+                    >
+                      <img
+                        alt="User Image"
+                        className="medium-user-image m-2"
+                        src="dist/img/user2-160x160.jpg"
+                      />
+                      <p
+                        className="mb-0"
+                      >
+                        Alexander Pierce - Web Developer
+                      </p>
+                      <small>
+                        Member since Nov. 2012
+                      </small>
+                    </li>
+                    <li
+                      className="user-body text-black row m-2"
+                    >
+                      <div
+                        className="col-4 text-center"
+                      >
+                        <a
+                          className="text-black"
+                          href="#"
+                        >
+                          Followers
+                        </a>
+                      </div>
+                      <div
+                        className="col-4 text-center"
+                      >
+                        <a
+                          className="text-black"
+                          href="#"
+                        >
+                          Sales
+                        </a>
+                      </div>
+                      <div
+                        className="col-4 text-center"
+                      >
+                        <a
+                          className="text-black"
+                          href="#"
+                        >
+                          Friends
+                        </a>
+                      </div>
+                    </li>
+                    <li
+                      className="row box-border-top py-2 mx-0"
+                    >
+                      <div
+                        className="col-6 text-center"
+                      >
+                        <a
+                          className="btn btn-outline-secondary text-black"
+                          href="#"
+                        >
+                          Profile
+                        </a>
+                      </div>
+                      <div
+                        className="col-6 text-center"
+                      >
+                        <a
+                          className="btn btn-outline-secondary text-black"
+                          href="#"
+                        >
+                          Sign out
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span
+                    data-toggle="control-sidebar"
+                    href="#"
+                  >
+                    <i
+                      className="fas fa-cogs"
+                    />
+                  </span>
+                </li>
+              </ul>,
+              "className": "navbar-custom-menu float-right",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <HeaderMessages />,
+                  <HeaderNotifications />,
+                  <HeaderTasks />,
+                  <li
+                    className="dropdown profile"
+                  >
+                    <span
+                      className="dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="#"
+                    >
+                      <img
+                        alt="User Image"
+                        className="small-user-image mr-2"
+                        src="dist/img/user2-160x160.jpg"
+                      />
+                      <span
+                        className="hidden-xs"
+                      >
+                        Alexander Pierce
+                      </span>
+                    </span>
+                    <ul
+                      className="dropdown-menu dropdown-menu-right p-0"
+                    >
+                      <li
+                        className="user-header text-center bg-info p-2"
+                      >
+                        <img
+                          alt="User Image"
+                          className="medium-user-image m-2"
+                          src="dist/img/user2-160x160.jpg"
+                        />
+                        <p
+                          className="mb-0"
+                        >
+                          Alexander Pierce - Web Developer
+                        </p>
+                        <small>
+                          Member since Nov. 2012
+                        </small>
+                      </li>
+                      <li
+                        className="user-body text-black row m-2"
+                      >
+                        <div
+                          className="col-4 text-center"
+                        >
+                          <a
+                            className="text-black"
+                            href="#"
+                          >
+                            Followers
+                          </a>
+                        </div>
+                        <div
+                          className="col-4 text-center"
+                        >
+                          <a
+                            className="text-black"
+                            href="#"
+                          >
+                            Sales
+                          </a>
+                        </div>
+                        <div
+                          className="col-4 text-center"
+                        >
+                          <a
+                            className="text-black"
+                            href="#"
+                          >
+                            Friends
+                          </a>
+                        </div>
+                      </li>
+                      <li
+                        className="row box-border-top py-2 mx-0"
+                      >
+                        <div
+                          className="col-6 text-center"
+                        >
+                          <a
+                            className="btn btn-outline-secondary text-black"
+                            href="#"
+                          >
+                            Profile
+                          </a>
+                        </div>
+                        <div
+                          className="col-6 text-center"
+                        >
+                          <a
+                            className="btn btn-outline-secondary text-black"
+                            href="#"
+                          >
+                            Sign out
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>,
+                  <li>
+                    <span
+                      data-toggle="control-sidebar"
+                      href="#"
+                    >
+                      <i
+                        className="fas fa-cogs"
+                      />
+                    </span>
+                  </li>,
+                ],
+                "className": "navbar p-0",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="dropdown-toggle"
+                        data-toggle="dropdown"
+                        href="#"
+                      >
+                        <img
+                          alt="User Image"
+                          className="small-user-image mr-2"
+                          src="dist/img/user2-160x160.jpg"
+                        />
+                        <span
+                          className="hidden-xs"
+                        >
+                          Alexander Pierce
+                        </span>
+                      </span>,
+                      <ul
+                        className="dropdown-menu dropdown-menu-right p-0"
+                      >
+                        <li
+                          className="user-header text-center bg-info p-2"
+                        >
+                          <img
+                            alt="User Image"
+                            className="medium-user-image m-2"
+                            src="dist/img/user2-160x160.jpg"
+                          />
+                          <p
+                            className="mb-0"
+                          >
+                            Alexander Pierce - Web Developer
+                          </p>
+                          <small>
+                            Member since Nov. 2012
+                          </small>
+                        </li>
+                        <li
+                          className="user-body text-black row m-2"
+                        >
+                          <div
+                            className="col-4 text-center"
+                          >
+                            <a
+                              className="text-black"
+                              href="#"
+                            >
+                              Followers
+                            </a>
+                          </div>
+                          <div
+                            className="col-4 text-center"
+                          >
+                            <a
+                              className="text-black"
+                              href="#"
+                            >
+                              Sales
+                            </a>
+                          </div>
+                          <div
+                            className="col-4 text-center"
+                          >
+                            <a
+                              className="text-black"
+                              href="#"
+                            >
+                              Friends
+                            </a>
+                          </div>
+                        </li>
+                        <li
+                          className="row box-border-top py-2 mx-0"
+                        >
+                          <div
+                            className="col-6 text-center"
+                          >
+                            <a
+                              className="btn btn-outline-secondary text-black"
+                              href="#"
+                            >
+                              Profile
+                            </a>
+                          </div>
+                          <div
+                            className="col-6 text-center"
+                          >
+                            <a
+                              className="btn btn-outline-secondary text-black"
+                              href="#"
+                            >
+                              Sign out
+                            </a>
+                          </div>
+                        </li>
+                      </ul>,
+                    ],
+                    "className": "dropdown profile",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <img
+                            alt="User Image"
+                            className="small-user-image mr-2"
+                            src="dist/img/user2-160x160.jpg"
+                          />,
+                          <span
+                            className="hidden-xs"
+                          >
+                            Alexander Pierce
+                          </span>,
+                        ],
+                        "className": "dropdown-toggle",
+                        "data-toggle": "dropdown",
+                        "href": "#",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "User Image",
+                            "className": "small-user-image mr-2",
+                            "src": "dist/img/user2-160x160.jpg",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Alexander Pierce",
+                            "className": "hidden-xs",
+                          },
+                          "ref": null,
+                          "rendered": "Alexander Pierce",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <li
+                            className="user-header text-center bg-info p-2"
+                          >
+                            <img
+                              alt="User Image"
+                              className="medium-user-image m-2"
+                              src="dist/img/user2-160x160.jpg"
+                            />
+                            <p
+                              className="mb-0"
+                            >
+                              Alexander Pierce - Web Developer
+                            </p>
+                            <small>
+                              Member since Nov. 2012
+                            </small>
+                          </li>,
+                          <li
+                            className="user-body text-black row m-2"
+                          >
+                            <div
+                              className="col-4 text-center"
+                            >
+                              <a
+                                className="text-black"
+                                href="#"
+                              >
+                                Followers
+                              </a>
+                            </div>
+                            <div
+                              className="col-4 text-center"
+                            >
+                              <a
+                                className="text-black"
+                                href="#"
+                              >
+                                Sales
+                              </a>
+                            </div>
+                            <div
+                              className="col-4 text-center"
+                            >
+                              <a
+                                className="text-black"
+                                href="#"
+                              >
+                                Friends
+                              </a>
+                            </div>
+                          </li>,
+                          <li
+                            className="row box-border-top py-2 mx-0"
+                          >
+                            <div
+                              className="col-6 text-center"
+                            >
+                              <a
+                                className="btn btn-outline-secondary text-black"
+                                href="#"
+                              >
+                                Profile
+                              </a>
+                            </div>
+                            <div
+                              className="col-6 text-center"
+                            >
+                              <a
+                                className="btn btn-outline-secondary text-black"
+                                href="#"
+                              >
+                                Sign out
+                              </a>
+                            </div>
+                          </li>,
+                        ],
+                        "className": "dropdown-menu dropdown-menu-right p-0",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <img
+                                alt="User Image"
+                                className="medium-user-image m-2"
+                                src="dist/img/user2-160x160.jpg"
+                              />,
+                              <p
+                                className="mb-0"
+                              >
+                                Alexander Pierce - Web Developer
+                              </p>,
+                              <small>
+                                Member since Nov. 2012
+                              </small>,
+                            ],
+                            "className": "user-header text-center bg-info p-2",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "alt": "User Image",
+                                "className": "medium-user-image m-2",
+                                "src": "dist/img/user2-160x160.jpg",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "img",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Alexander Pierce - Web Developer",
+                                "className": "mb-0",
+                              },
+                              "ref": null,
+                              "rendered": "Alexander Pierce - Web Developer",
+                              "type": "p",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Member since Nov. 2012",
+                              },
+                              "ref": null,
+                              "rendered": "Member since Nov. 2012",
+                              "type": "small",
+                            },
+                          ],
+                          "type": "li",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <div
+                                className="col-4 text-center"
+                              >
+                                <a
+                                  className="text-black"
+                                  href="#"
+                                >
+                                  Followers
+                                </a>
+                              </div>,
+                              <div
+                                className="col-4 text-center"
+                              >
+                                <a
+                                  className="text-black"
+                                  href="#"
+                                >
+                                  Sales
+                                </a>
+                              </div>,
+                              <div
+                                className="col-4 text-center"
+                              >
+                                <a
+                                  className="text-black"
+                                  href="#"
+                                >
+                                  Friends
+                                </a>
+                              </div>,
+                            ],
+                            "className": "user-body text-black row m-2",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <a
+                                  className="text-black"
+                                  href="#"
+                                >
+                                  Followers
+                                </a>,
+                                "className": "col-4 text-center",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "Followers",
+                                  "className": "text-black",
+                                  "href": "#",
+                                },
+                                "ref": null,
+                                "rendered": "Followers",
+                                "type": "a",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <a
+                                  className="text-black"
+                                  href="#"
+                                >
+                                  Sales
+                                </a>,
+                                "className": "col-4 text-center",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "Sales",
+                                  "className": "text-black",
+                                  "href": "#",
+                                },
+                                "ref": null,
+                                "rendered": "Sales",
+                                "type": "a",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <a
+                                  className="text-black"
+                                  href="#"
+                                >
+                                  Friends
+                                </a>,
+                                "className": "col-4 text-center",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "Friends",
+                                  "className": "text-black",
+                                  "href": "#",
+                                },
+                                "ref": null,
+                                "rendered": "Friends",
+                                "type": "a",
+                              },
+                              "type": "div",
+                            },
+                          ],
+                          "type": "li",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <div
+                                className="col-6 text-center"
+                              >
+                                <a
+                                  className="btn btn-outline-secondary text-black"
+                                  href="#"
+                                >
+                                  Profile
+                                </a>
+                              </div>,
+                              <div
+                                className="col-6 text-center"
+                              >
+                                <a
+                                  className="btn btn-outline-secondary text-black"
+                                  href="#"
+                                >
+                                  Sign out
+                                </a>
+                              </div>,
+                            ],
+                            "className": "row box-border-top py-2 mx-0",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <a
+                                  className="btn btn-outline-secondary text-black"
+                                  href="#"
+                                >
+                                  Profile
+                                </a>,
+                                "className": "col-6 text-center",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "Profile",
+                                  "className": "btn btn-outline-secondary text-black",
+                                  "href": "#",
+                                },
+                                "ref": null,
+                                "rendered": "Profile",
+                                "type": "a",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <a
+                                  className="btn btn-outline-secondary text-black"
+                                  href="#"
+                                >
+                                  Sign out
+                                </a>,
+                                "className": "col-6 text-center",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "Sign out",
+                                  "className": "btn btn-outline-secondary text-black",
+                                  "href": "#",
+                                },
+                                "ref": null,
+                                "rendered": "Sign out",
+                                "type": "a",
+                              },
+                              "type": "div",
+                            },
+                          ],
+                          "type": "li",
+                        },
+                      ],
+                      "type": "ul",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <span
+                      data-toggle="control-sidebar"
+                      href="#"
+                    >
+                      <i
+                        className="fas fa-cogs"
+                      />
+                    </span>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <i
+                        className="fas fa-cogs"
+                      />,
+                      "data-toggle": "control-sidebar",
+                      "href": "#",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fas fa-cogs",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "i",
+                    },
+                    "type": "span",
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "nav",
+      },
+    ],
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="logo float-left"
+          >
+            <a
+              className=""
+              href="index2.html"
+            >
+              <span
+                className="logo-mini"
+              >
+                <b>
+                  A
+                </b>
+                LT
+              </span>
+              <span
+                className="logo-lg"
+              >
+                <b>
+                  Admin
+                </b>
+                LTE
+              </span>
+            </a>
+          </div>,
+          <nav>
+            <div
+              className="collapse-toggler"
+            >
+              <span
+                className="fas fa-bars"
+              />
+              <span
+                className="sr-only"
+              >
+                Toggle navigation
+              </span>
+            </div>
+            <div
+              className="navbar-custom-menu float-right"
+            >
+              <ul
+                className="navbar p-0"
+              >
+                <HeaderMessages />
+                <HeaderNotifications />
+                <HeaderTasks />
+                <li
+                  className="dropdown profile"
+                >
+                  <span
+                    className="dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                  >
+                    <img
+                      alt="User Image"
+                      className="small-user-image mr-2"
+                      src="dist/img/user2-160x160.jpg"
+                    />
+                    <span
+                      className="hidden-xs"
+                    >
+                      Alexander Pierce
+                    </span>
+                  </span>
+                  <ul
+                    className="dropdown-menu dropdown-menu-right p-0"
+                  >
+                    <li
+                      className="user-header text-center bg-info p-2"
+                    >
+                      <img
+                        alt="User Image"
+                        className="medium-user-image m-2"
+                        src="dist/img/user2-160x160.jpg"
+                      />
+                      <p
+                        className="mb-0"
+                      >
+                        Alexander Pierce - Web Developer
+                      </p>
+                      <small>
+                        Member since Nov. 2012
+                      </small>
+                    </li>
+                    <li
+                      className="user-body text-black row m-2"
+                    >
+                      <div
+                        className="col-4 text-center"
+                      >
+                        <a
+                          className="text-black"
+                          href="#"
+                        >
+                          Followers
+                        </a>
+                      </div>
+                      <div
+                        className="col-4 text-center"
+                      >
+                        <a
+                          className="text-black"
+                          href="#"
+                        >
+                          Sales
+                        </a>
+                      </div>
+                      <div
+                        className="col-4 text-center"
+                      >
+                        <a
+                          className="text-black"
+                          href="#"
+                        >
+                          Friends
+                        </a>
+                      </div>
+                    </li>
+                    <li
+                      className="row box-border-top py-2 mx-0"
+                    >
+                      <div
+                        className="col-6 text-center"
+                      >
+                        <a
+                          className="btn btn-outline-secondary text-black"
+                          href="#"
+                        >
+                          Profile
+                        </a>
+                      </div>
+                      <div
+                        className="col-6 text-center"
+                      >
+                        <a
+                          className="btn btn-outline-secondary text-black"
+                          href="#"
+                        >
+                          Sign out
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span
+                    data-toggle="control-sidebar"
+                    href="#"
+                  >
+                    <i
+                      className="fas fa-cogs"
+                    />
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </nav>,
+        ],
+        "className": "main-header bg-info expand",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              className=""
+              href="index2.html"
+            >
+              <span
+                className="logo-mini"
+              >
+                <b>
+                  A
+                </b>
+                LT
+              </span>
+              <span
+                className="logo-lg"
+              >
+                <b>
+                  Admin
+                </b>
+                LTE
+              </span>
+            </a>,
+            "className": "logo float-left",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="logo-mini"
+                >
+                  <b>
+                    A
+                  </b>
+                  LT
+                </span>,
+                <span
+                  className="logo-lg"
+                >
+                  <b>
+                    Admin
+                  </b>
+                  LTE
+                </span>,
+              ],
+              "className": "",
+              "href": "index2.html",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <b>
+                      A
+                    </b>,
+                    "LT",
+                  ],
+                  "className": "logo-mini",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "A",
+                    },
+                    "ref": null,
+                    "rendered": "A",
+                    "type": "b",
+                  },
+                  "LT",
+                ],
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <b>
+                      Admin
+                    </b>,
+                    "LTE",
+                  ],
+                  "className": "logo-lg",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Admin",
+                    },
+                    "ref": null,
+                    "rendered": "Admin",
+                    "type": "b",
+                  },
+                  "LTE",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "a",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="collapse-toggler"
+              >
+                <span
+                  className="fas fa-bars"
+                />
+                <span
+                  className="sr-only"
+                >
+                  Toggle navigation
+                </span>
+              </div>,
+              <div
+                className="navbar-custom-menu float-right"
+              >
+                <ul
+                  className="navbar p-0"
+                >
+                  <HeaderMessages />
+                  <HeaderNotifications />
+                  <HeaderTasks />
+                  <li
+                    className="dropdown profile"
+                  >
+                    <span
+                      className="dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="#"
+                    >
+                      <img
+                        alt="User Image"
+                        className="small-user-image mr-2"
+                        src="dist/img/user2-160x160.jpg"
+                      />
+                      <span
+                        className="hidden-xs"
+                      >
+                        Alexander Pierce
+                      </span>
+                    </span>
+                    <ul
+                      className="dropdown-menu dropdown-menu-right p-0"
+                    >
+                      <li
+                        className="user-header text-center bg-info p-2"
+                      >
+                        <img
+                          alt="User Image"
+                          className="medium-user-image m-2"
+                          src="dist/img/user2-160x160.jpg"
+                        />
+                        <p
+                          className="mb-0"
+                        >
+                          Alexander Pierce - Web Developer
+                        </p>
+                        <small>
+                          Member since Nov. 2012
+                        </small>
+                      </li>
+                      <li
+                        className="user-body text-black row m-2"
+                      >
+                        <div
+                          className="col-4 text-center"
+                        >
+                          <a
+                            className="text-black"
+                            href="#"
+                          >
+                            Followers
+                          </a>
+                        </div>
+                        <div
+                          className="col-4 text-center"
+                        >
+                          <a
+                            className="text-black"
+                            href="#"
+                          >
+                            Sales
+                          </a>
+                        </div>
+                        <div
+                          className="col-4 text-center"
+                        >
+                          <a
+                            className="text-black"
+                            href="#"
+                          >
+                            Friends
+                          </a>
+                        </div>
+                      </li>
+                      <li
+                        className="row box-border-top py-2 mx-0"
+                      >
+                        <div
+                          className="col-6 text-center"
+                        >
+                          <a
+                            className="btn btn-outline-secondary text-black"
+                            href="#"
+                          >
+                            Profile
+                          </a>
+                        </div>
+                        <div
+                          className="col-6 text-center"
+                        >
+                          <a
+                            className="btn btn-outline-secondary text-black"
+                            href="#"
+                          >
+                            Sign out
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span
+                      data-toggle="control-sidebar"
+                      href="#"
+                    >
+                      <i
+                        className="fas fa-cogs"
+                      />
+                    </span>
+                  </li>
+                </ul>
+              </div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="fas fa-bars"
+                  />,
+                  <span
+                    className="sr-only"
+                  >
+                    Toggle navigation
+                  </span>,
+                ],
+                "className": "collapse-toggler",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-bars",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Toggle navigation",
+                    "className": "sr-only",
+                  },
+                  "ref": null,
+                  "rendered": "Toggle navigation",
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ul
+                  className="navbar p-0"
+                >
+                  <HeaderMessages />
+                  <HeaderNotifications />
+                  <HeaderTasks />
+                  <li
+                    className="dropdown profile"
+                  >
+                    <span
+                      className="dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="#"
+                    >
+                      <img
+                        alt="User Image"
+                        className="small-user-image mr-2"
+                        src="dist/img/user2-160x160.jpg"
+                      />
+                      <span
+                        className="hidden-xs"
+                      >
+                        Alexander Pierce
+                      </span>
+                    </span>
+                    <ul
+                      className="dropdown-menu dropdown-menu-right p-0"
+                    >
+                      <li
+                        className="user-header text-center bg-info p-2"
+                      >
+                        <img
+                          alt="User Image"
+                          className="medium-user-image m-2"
+                          src="dist/img/user2-160x160.jpg"
+                        />
+                        <p
+                          className="mb-0"
+                        >
+                          Alexander Pierce - Web Developer
+                        </p>
+                        <small>
+                          Member since Nov. 2012
+                        </small>
+                      </li>
+                      <li
+                        className="user-body text-black row m-2"
+                      >
+                        <div
+                          className="col-4 text-center"
+                        >
+                          <a
+                            className="text-black"
+                            href="#"
+                          >
+                            Followers
+                          </a>
+                        </div>
+                        <div
+                          className="col-4 text-center"
+                        >
+                          <a
+                            className="text-black"
+                            href="#"
+                          >
+                            Sales
+                          </a>
+                        </div>
+                        <div
+                          className="col-4 text-center"
+                        >
+                          <a
+                            className="text-black"
+                            href="#"
+                          >
+                            Friends
+                          </a>
+                        </div>
+                      </li>
+                      <li
+                        className="row box-border-top py-2 mx-0"
+                      >
+                        <div
+                          className="col-6 text-center"
+                        >
+                          <a
+                            className="btn btn-outline-secondary text-black"
+                            href="#"
+                          >
+                            Profile
+                          </a>
+                        </div>
+                        <div
+                          className="col-6 text-center"
+                        >
+                          <a
+                            className="btn btn-outline-secondary text-black"
+                            href="#"
+                          >
+                            Sign out
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span
+                      data-toggle="control-sidebar"
+                      href="#"
+                    >
+                      <i
+                        className="fas fa-cogs"
+                      />
+                    </span>
+                  </li>
+                </ul>,
+                "className": "navbar-custom-menu float-right",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <HeaderMessages />,
+                    <HeaderNotifications />,
+                    <HeaderTasks />,
+                    <li
+                      className="dropdown profile"
+                    >
+                      <span
+                        className="dropdown-toggle"
+                        data-toggle="dropdown"
+                        href="#"
+                      >
+                        <img
+                          alt="User Image"
+                          className="small-user-image mr-2"
+                          src="dist/img/user2-160x160.jpg"
+                        />
+                        <span
+                          className="hidden-xs"
+                        >
+                          Alexander Pierce
+                        </span>
+                      </span>
+                      <ul
+                        className="dropdown-menu dropdown-menu-right p-0"
+                      >
+                        <li
+                          className="user-header text-center bg-info p-2"
+                        >
+                          <img
+                            alt="User Image"
+                            className="medium-user-image m-2"
+                            src="dist/img/user2-160x160.jpg"
+                          />
+                          <p
+                            className="mb-0"
+                          >
+                            Alexander Pierce - Web Developer
+                          </p>
+                          <small>
+                            Member since Nov. 2012
+                          </small>
+                        </li>
+                        <li
+                          className="user-body text-black row m-2"
+                        >
+                          <div
+                            className="col-4 text-center"
+                          >
+                            <a
+                              className="text-black"
+                              href="#"
+                            >
+                              Followers
+                            </a>
+                          </div>
+                          <div
+                            className="col-4 text-center"
+                          >
+                            <a
+                              className="text-black"
+                              href="#"
+                            >
+                              Sales
+                            </a>
+                          </div>
+                          <div
+                            className="col-4 text-center"
+                          >
+                            <a
+                              className="text-black"
+                              href="#"
+                            >
+                              Friends
+                            </a>
+                          </div>
+                        </li>
+                        <li
+                          className="row box-border-top py-2 mx-0"
+                        >
+                          <div
+                            className="col-6 text-center"
+                          >
+                            <a
+                              className="btn btn-outline-secondary text-black"
+                              href="#"
+                            >
+                              Profile
+                            </a>
+                          </div>
+                          <div
+                            className="col-6 text-center"
+                          >
+                            <a
+                              className="btn btn-outline-secondary text-black"
+                              href="#"
+                            >
+                              Sign out
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>,
+                    <li>
+                      <span
+                        data-toggle="control-sidebar"
+                        href="#"
+                      >
+                        <i
+                          className="fas fa-cogs"
+                        />
+                      </span>
+                    </li>,
+                  ],
+                  "className": "navbar p-0",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="dropdown-toggle"
+                          data-toggle="dropdown"
+                          href="#"
+                        >
+                          <img
+                            alt="User Image"
+                            className="small-user-image mr-2"
+                            src="dist/img/user2-160x160.jpg"
+                          />
+                          <span
+                            className="hidden-xs"
+                          >
+                            Alexander Pierce
+                          </span>
+                        </span>,
+                        <ul
+                          className="dropdown-menu dropdown-menu-right p-0"
+                        >
+                          <li
+                            className="user-header text-center bg-info p-2"
+                          >
+                            <img
+                              alt="User Image"
+                              className="medium-user-image m-2"
+                              src="dist/img/user2-160x160.jpg"
+                            />
+                            <p
+                              className="mb-0"
+                            >
+                              Alexander Pierce - Web Developer
+                            </p>
+                            <small>
+                              Member since Nov. 2012
+                            </small>
+                          </li>
+                          <li
+                            className="user-body text-black row m-2"
+                          >
+                            <div
+                              className="col-4 text-center"
+                            >
+                              <a
+                                className="text-black"
+                                href="#"
+                              >
+                                Followers
+                              </a>
+                            </div>
+                            <div
+                              className="col-4 text-center"
+                            >
+                              <a
+                                className="text-black"
+                                href="#"
+                              >
+                                Sales
+                              </a>
+                            </div>
+                            <div
+                              className="col-4 text-center"
+                            >
+                              <a
+                                className="text-black"
+                                href="#"
+                              >
+                                Friends
+                              </a>
+                            </div>
+                          </li>
+                          <li
+                            className="row box-border-top py-2 mx-0"
+                          >
+                            <div
+                              className="col-6 text-center"
+                            >
+                              <a
+                                className="btn btn-outline-secondary text-black"
+                                href="#"
+                              >
+                                Profile
+                              </a>
+                            </div>
+                            <div
+                              className="col-6 text-center"
+                            >
+                              <a
+                                className="btn btn-outline-secondary text-black"
+                                href="#"
+                              >
+                                Sign out
+                              </a>
+                            </div>
+                          </li>
+                        </ul>,
+                      ],
+                      "className": "dropdown profile",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <img
+                              alt="User Image"
+                              className="small-user-image mr-2"
+                              src="dist/img/user2-160x160.jpg"
+                            />,
+                            <span
+                              className="hidden-xs"
+                            >
+                              Alexander Pierce
+                            </span>,
+                          ],
+                          "className": "dropdown-toggle",
+                          "data-toggle": "dropdown",
+                          "href": "#",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "alt": "User Image",
+                              "className": "small-user-image mr-2",
+                              "src": "dist/img/user2-160x160.jpg",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "img",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Alexander Pierce",
+                              "className": "hidden-xs",
+                            },
+                            "ref": null,
+                            "rendered": "Alexander Pierce",
+                            "type": "span",
+                          },
+                        ],
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <li
+                              className="user-header text-center bg-info p-2"
+                            >
+                              <img
+                                alt="User Image"
+                                className="medium-user-image m-2"
+                                src="dist/img/user2-160x160.jpg"
+                              />
+                              <p
+                                className="mb-0"
+                              >
+                                Alexander Pierce - Web Developer
+                              </p>
+                              <small>
+                                Member since Nov. 2012
+                              </small>
+                            </li>,
+                            <li
+                              className="user-body text-black row m-2"
+                            >
+                              <div
+                                className="col-4 text-center"
+                              >
+                                <a
+                                  className="text-black"
+                                  href="#"
+                                >
+                                  Followers
+                                </a>
+                              </div>
+                              <div
+                                className="col-4 text-center"
+                              >
+                                <a
+                                  className="text-black"
+                                  href="#"
+                                >
+                                  Sales
+                                </a>
+                              </div>
+                              <div
+                                className="col-4 text-center"
+                              >
+                                <a
+                                  className="text-black"
+                                  href="#"
+                                >
+                                  Friends
+                                </a>
+                              </div>
+                            </li>,
+                            <li
+                              className="row box-border-top py-2 mx-0"
+                            >
+                              <div
+                                className="col-6 text-center"
+                              >
+                                <a
+                                  className="btn btn-outline-secondary text-black"
+                                  href="#"
+                                >
+                                  Profile
+                                </a>
+                              </div>
+                              <div
+                                className="col-6 text-center"
+                              >
+                                <a
+                                  className="btn btn-outline-secondary text-black"
+                                  href="#"
+                                >
+                                  Sign out
+                                </a>
+                              </div>
+                            </li>,
+                          ],
+                          "className": "dropdown-menu dropdown-menu-right p-0",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <img
+                                  alt="User Image"
+                                  className="medium-user-image m-2"
+                                  src="dist/img/user2-160x160.jpg"
+                                />,
+                                <p
+                                  className="mb-0"
+                                >
+                                  Alexander Pierce - Web Developer
+                                </p>,
+                                <small>
+                                  Member since Nov. 2012
+                                </small>,
+                              ],
+                              "className": "user-header text-center bg-info p-2",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "alt": "User Image",
+                                  "className": "medium-user-image m-2",
+                                  "src": "dist/img/user2-160x160.jpg",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "img",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "Alexander Pierce - Web Developer",
+                                  "className": "mb-0",
+                                },
+                                "ref": null,
+                                "rendered": "Alexander Pierce - Web Developer",
+                                "type": "p",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "Member since Nov. 2012",
+                                },
+                                "ref": null,
+                                "rendered": "Member since Nov. 2012",
+                                "type": "small",
+                              },
+                            ],
+                            "type": "li",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <div
+                                  className="col-4 text-center"
+                                >
+                                  <a
+                                    className="text-black"
+                                    href="#"
+                                  >
+                                    Followers
+                                  </a>
+                                </div>,
+                                <div
+                                  className="col-4 text-center"
+                                >
+                                  <a
+                                    className="text-black"
+                                    href="#"
+                                  >
+                                    Sales
+                                  </a>
+                                </div>,
+                                <div
+                                  className="col-4 text-center"
+                                >
+                                  <a
+                                    className="text-black"
+                                    href="#"
+                                  >
+                                    Friends
+                                  </a>
+                                </div>,
+                              ],
+                              "className": "user-body text-black row m-2",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": <a
+                                    className="text-black"
+                                    href="#"
+                                  >
+                                    Followers
+                                  </a>,
+                                  "className": "col-4 text-center",
+                                },
+                                "ref": null,
+                                "rendered": Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": "Followers",
+                                    "className": "text-black",
+                                    "href": "#",
+                                  },
+                                  "ref": null,
+                                  "rendered": "Followers",
+                                  "type": "a",
+                                },
+                                "type": "div",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": <a
+                                    className="text-black"
+                                    href="#"
+                                  >
+                                    Sales
+                                  </a>,
+                                  "className": "col-4 text-center",
+                                },
+                                "ref": null,
+                                "rendered": Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": "Sales",
+                                    "className": "text-black",
+                                    "href": "#",
+                                  },
+                                  "ref": null,
+                                  "rendered": "Sales",
+                                  "type": "a",
+                                },
+                                "type": "div",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": <a
+                                    className="text-black"
+                                    href="#"
+                                  >
+                                    Friends
+                                  </a>,
+                                  "className": "col-4 text-center",
+                                },
+                                "ref": null,
+                                "rendered": Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": "Friends",
+                                    "className": "text-black",
+                                    "href": "#",
+                                  },
+                                  "ref": null,
+                                  "rendered": "Friends",
+                                  "type": "a",
+                                },
+                                "type": "div",
+                              },
+                            ],
+                            "type": "li",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <div
+                                  className="col-6 text-center"
+                                >
+                                  <a
+                                    className="btn btn-outline-secondary text-black"
+                                    href="#"
+                                  >
+                                    Profile
+                                  </a>
+                                </div>,
+                                <div
+                                  className="col-6 text-center"
+                                >
+                                  <a
+                                    className="btn btn-outline-secondary text-black"
+                                    href="#"
+                                  >
+                                    Sign out
+                                  </a>
+                                </div>,
+                              ],
+                              "className": "row box-border-top py-2 mx-0",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": <a
+                                    className="btn btn-outline-secondary text-black"
+                                    href="#"
+                                  >
+                                    Profile
+                                  </a>,
+                                  "className": "col-6 text-center",
+                                },
+                                "ref": null,
+                                "rendered": Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": "Profile",
+                                    "className": "btn btn-outline-secondary text-black",
+                                    "href": "#",
+                                  },
+                                  "ref": null,
+                                  "rendered": "Profile",
+                                  "type": "a",
+                                },
+                                "type": "div",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": <a
+                                    className="btn btn-outline-secondary text-black"
+                                    href="#"
+                                  >
+                                    Sign out
+                                  </a>,
+                                  "className": "col-6 text-center",
+                                },
+                                "ref": null,
+                                "rendered": Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": "Sign out",
+                                    "className": "btn btn-outline-secondary text-black",
+                                    "href": "#",
+                                  },
+                                  "ref": null,
+                                  "rendered": "Sign out",
+                                  "type": "a",
+                                },
+                                "type": "div",
+                              },
+                            ],
+                            "type": "li",
+                          },
+                        ],
+                        "type": "ul",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <span
+                        data-toggle="control-sidebar"
+                        href="#"
+                      >
+                        <i
+                          className="fas fa-cogs"
+                        />
+                      </span>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <i
+                          className="fas fa-cogs"
+                        />,
+                        "data-toggle": "control-sidebar",
+                        "href": "#",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fas fa-cogs",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "i",
+                      },
+                      "type": "span",
+                    },
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "nav",
+        },
+      ],
+      "type": "header",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

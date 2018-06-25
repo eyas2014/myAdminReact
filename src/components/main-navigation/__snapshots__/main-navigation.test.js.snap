@@ -1,0 +1,1619 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MainNavigation />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="profile"
+        >
+          <img
+            src="./img/image.jpg"
+          />
+          <div
+            className="info"
+          >
+            <p
+              className="m-0"
+            >
+              Terrence Shao
+            </p>
+            <i
+              className="fa fa-circle text-success"
+            />
+             
+            <span>
+               offline 
+            </span>
+          </div>
+        </div>,
+        <div>
+          <div
+            className="searchbox"
+          >
+            <input
+              placeholder=" search..."
+              type="text"
+            />
+            <i
+              className="fa fa-search p-1"
+            />
+          </div>
+        </div>,
+        <p
+          className=""
+        >
+          MAIN NAVIGATION
+        </p>,
+        <ul>
+          <NavigationItem
+            data={
+              Object {
+                "logo": "fa fa-car",
+                "name": "Dashboard",
+                "sub": Array [
+                  "Dashboard1",
+                  "Dashboard2",
+                ],
+              }
+            }
+          />
+          <NavigationItem
+            data={
+              Object {
+                "logo": "far fa-copy",
+                "name": "Layout Options",
+                "sub": Array [
+                  "Top Navigation",
+                  "Boxed",
+                  "Fixed",
+                  "Collapsed Sidebar",
+                ],
+              }
+            }
+          />
+          <NavigationItem
+            data={
+              Object {
+                "logo": "fa fa-th",
+                "name": "Widgets",
+              }
+            }
+          />
+          <NavigationItem
+            data={
+              Object {
+                "logo": "fa fa-chart-pie",
+                "name": "Charts",
+                "sub": Array [
+                  "ChartJS",
+                  "Morris",
+                  "Flot",
+                  "Inline charts",
+                ],
+              }
+            }
+          />
+          <NavigationItem
+            data={
+              Object {
+                "logo": "fa fa-laptop",
+                "name": "UI Elements",
+                "sub": Array [
+                  "General",
+                  "Icons",
+                  "Buttons",
+                  "Slides",
+                  "Timeline",
+                  "Modals",
+                ],
+              }
+            }
+          />
+          <NavigationItem
+            data={
+              Object {
+                "logo": "fa fa-edit",
+                "name": "Forms",
+                "sub": Array [
+                  "General Elements",
+                  "Advanced Elements",
+                  "Editors",
+                ],
+              }
+            }
+          />
+          <NavigationItem
+            data={
+              Object {
+                "logo": "fa fa-table",
+                "name": "Tables",
+                "sub": Array [
+                  "Simple tables",
+                  "Data tables",
+                ],
+              }
+            }
+          />
+          <NavigationItem
+            data={
+              Object {
+                "logo": "fa fa-calendar",
+                "name": "Calendar",
+                "sub": Array [
+                  "Dashbord1",
+                  "Dashboard2",
+                ],
+              }
+            }
+          />
+          <NavigationItem
+            data={
+              Object {
+                "logo": "fas fa-envelope",
+                "name": "Mailbox",
+                "sub": Array [
+                  "Inbox",
+                  "Composed",
+                  "Read",
+                ],
+              }
+            }
+          />
+          <NavigationItem
+            data={
+              Object {
+                "logo": "fa fa-folder",
+                "name": "Examples",
+                "sub": Array [
+                  "Invoice",
+                  "Profile",
+                  "Login",
+                  "Register",
+                  "Lockscreen",
+                  "404 Error",
+                  "500 Error",
+                  "Blank Page",
+                  "Pace Page",
+                ],
+              }
+            }
+          />
+          <NavigationItem
+            data={
+              Object {
+                "logo": "fa fa-share",
+                "name": "Multilevel",
+                "sub": Array [
+                  "Level One",
+                  "Level Two",
+                  "Level Three",
+                ],
+              }
+            }
+          />
+          <NavigationItem
+            data={
+              Object {
+                "logo": "fas fa-book",
+                "name": "Documentation",
+                "sub": Array [
+                  "Dashbord1",
+                  "Dashboard2",
+                ],
+              }
+            }
+          />
+        </ul>,
+      ],
+      "className": "main-aside expand",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              src="./img/image.jpg"
+            />,
+            <div
+              className="info"
+            >
+              <p
+                className="m-0"
+              >
+                Terrence Shao
+              </p>
+              <i
+                className="fa fa-circle text-success"
+              />
+               
+              <span>
+                 offline 
+              </span>
+            </div>,
+          ],
+          "className": "profile",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "src": "./img/image.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="m-0"
+                >
+                  Terrence Shao
+                </p>,
+                <i
+                  className="fa fa-circle text-success"
+                />,
+                " ",
+                <span>
+                   offline 
+                </span>,
+              ],
+              "className": "info",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Terrence Shao",
+                  "className": "m-0",
+                },
+                "ref": null,
+                "rendered": "Terrence Shao",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fa fa-circle text-success",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": " offline ",
+                },
+                "ref": null,
+                "rendered": " offline ",
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="searchbox"
+          >
+            <input
+              placeholder=" search..."
+              type="text"
+            />
+            <i
+              className="fa fa-search p-1"
+            />
+          </div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                placeholder=" search..."
+                type="text"
+              />,
+              <i
+                className="fa fa-search p-1"
+              />,
+            ],
+            "className": "searchbox",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "placeholder": " search...",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fa fa-search p-1",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "MAIN NAVIGATION",
+          "className": "",
+        },
+        "ref": null,
+        "rendered": "MAIN NAVIGATION",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-car",
+                  "name": "Dashboard",
+                  "sub": Array [
+                    "Dashboard1",
+                    "Dashboard2",
+                  ],
+                }
+              }
+            />,
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "far fa-copy",
+                  "name": "Layout Options",
+                  "sub": Array [
+                    "Top Navigation",
+                    "Boxed",
+                    "Fixed",
+                    "Collapsed Sidebar",
+                  ],
+                }
+              }
+            />,
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-th",
+                  "name": "Widgets",
+                }
+              }
+            />,
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-chart-pie",
+                  "name": "Charts",
+                  "sub": Array [
+                    "ChartJS",
+                    "Morris",
+                    "Flot",
+                    "Inline charts",
+                  ],
+                }
+              }
+            />,
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-laptop",
+                  "name": "UI Elements",
+                  "sub": Array [
+                    "General",
+                    "Icons",
+                    "Buttons",
+                    "Slides",
+                    "Timeline",
+                    "Modals",
+                  ],
+                }
+              }
+            />,
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-edit",
+                  "name": "Forms",
+                  "sub": Array [
+                    "General Elements",
+                    "Advanced Elements",
+                    "Editors",
+                  ],
+                }
+              }
+            />,
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-table",
+                  "name": "Tables",
+                  "sub": Array [
+                    "Simple tables",
+                    "Data tables",
+                  ],
+                }
+              }
+            />,
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-calendar",
+                  "name": "Calendar",
+                  "sub": Array [
+                    "Dashbord1",
+                    "Dashboard2",
+                  ],
+                }
+              }
+            />,
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fas fa-envelope",
+                  "name": "Mailbox",
+                  "sub": Array [
+                    "Inbox",
+                    "Composed",
+                    "Read",
+                  ],
+                }
+              }
+            />,
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-folder",
+                  "name": "Examples",
+                  "sub": Array [
+                    "Invoice",
+                    "Profile",
+                    "Login",
+                    "Register",
+                    "Lockscreen",
+                    "404 Error",
+                    "500 Error",
+                    "Blank Page",
+                    "Pace Page",
+                  ],
+                }
+              }
+            />,
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-share",
+                  "name": "Multilevel",
+                  "sub": Array [
+                    "Level One",
+                    "Level Two",
+                    "Level Three",
+                  ],
+                }
+              }
+            />,
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fas fa-book",
+                  "name": "Documentation",
+                  "sub": Array [
+                    "Dashbord1",
+                    "Dashboard2",
+                  ],
+                }
+              }
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "fa fa-car",
+                "name": "Dashboard",
+                "sub": Array [
+                  "Dashboard1",
+                  "Dashboard2",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "far fa-copy",
+                "name": "Layout Options",
+                "sub": Array [
+                  "Top Navigation",
+                  "Boxed",
+                  "Fixed",
+                  "Collapsed Sidebar",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "fa fa-th",
+                "name": "Widgets",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "fa fa-chart-pie",
+                "name": "Charts",
+                "sub": Array [
+                  "ChartJS",
+                  "Morris",
+                  "Flot",
+                  "Inline charts",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "fa fa-laptop",
+                "name": "UI Elements",
+                "sub": Array [
+                  "General",
+                  "Icons",
+                  "Buttons",
+                  "Slides",
+                  "Timeline",
+                  "Modals",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "5",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "fa fa-edit",
+                "name": "Forms",
+                "sub": Array [
+                  "General Elements",
+                  "Advanced Elements",
+                  "Editors",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "6",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "fa fa-table",
+                "name": "Tables",
+                "sub": Array [
+                  "Simple tables",
+                  "Data tables",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "7",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "fa fa-calendar",
+                "name": "Calendar",
+                "sub": Array [
+                  "Dashbord1",
+                  "Dashboard2",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "8",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "fas fa-envelope",
+                "name": "Mailbox",
+                "sub": Array [
+                  "Inbox",
+                  "Composed",
+                  "Read",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "9",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "fa fa-folder",
+                "name": "Examples",
+                "sub": Array [
+                  "Invoice",
+                  "Profile",
+                  "Login",
+                  "Register",
+                  "Lockscreen",
+                  "404 Error",
+                  "500 Error",
+                  "Blank Page",
+                  "Pace Page",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "10",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "fa fa-share",
+                "name": "Multilevel",
+                "sub": Array [
+                  "Level One",
+                  "Level Two",
+                  "Level Three",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "11",
+            "nodeType": "class",
+            "props": Object {
+              "data": Object {
+                "logo": "fas fa-book",
+                "name": "Documentation",
+                "sub": Array [
+                  "Dashbord1",
+                  "Dashboard2",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "nav",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="profile"
+          >
+            <img
+              src="./img/image.jpg"
+            />
+            <div
+              className="info"
+            >
+              <p
+                className="m-0"
+              >
+                Terrence Shao
+              </p>
+              <i
+                className="fa fa-circle text-success"
+              />
+               
+              <span>
+                 offline 
+              </span>
+            </div>
+          </div>,
+          <div>
+            <div
+              className="searchbox"
+            >
+              <input
+                placeholder=" search..."
+                type="text"
+              />
+              <i
+                className="fa fa-search p-1"
+              />
+            </div>
+          </div>,
+          <p
+            className=""
+          >
+            MAIN NAVIGATION
+          </p>,
+          <ul>
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-car",
+                  "name": "Dashboard",
+                  "sub": Array [
+                    "Dashboard1",
+                    "Dashboard2",
+                  ],
+                }
+              }
+            />
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "far fa-copy",
+                  "name": "Layout Options",
+                  "sub": Array [
+                    "Top Navigation",
+                    "Boxed",
+                    "Fixed",
+                    "Collapsed Sidebar",
+                  ],
+                }
+              }
+            />
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-th",
+                  "name": "Widgets",
+                }
+              }
+            />
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-chart-pie",
+                  "name": "Charts",
+                  "sub": Array [
+                    "ChartJS",
+                    "Morris",
+                    "Flot",
+                    "Inline charts",
+                  ],
+                }
+              }
+            />
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-laptop",
+                  "name": "UI Elements",
+                  "sub": Array [
+                    "General",
+                    "Icons",
+                    "Buttons",
+                    "Slides",
+                    "Timeline",
+                    "Modals",
+                  ],
+                }
+              }
+            />
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-edit",
+                  "name": "Forms",
+                  "sub": Array [
+                    "General Elements",
+                    "Advanced Elements",
+                    "Editors",
+                  ],
+                }
+              }
+            />
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-table",
+                  "name": "Tables",
+                  "sub": Array [
+                    "Simple tables",
+                    "Data tables",
+                  ],
+                }
+              }
+            />
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-calendar",
+                  "name": "Calendar",
+                  "sub": Array [
+                    "Dashbord1",
+                    "Dashboard2",
+                  ],
+                }
+              }
+            />
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fas fa-envelope",
+                  "name": "Mailbox",
+                  "sub": Array [
+                    "Inbox",
+                    "Composed",
+                    "Read",
+                  ],
+                }
+              }
+            />
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-folder",
+                  "name": "Examples",
+                  "sub": Array [
+                    "Invoice",
+                    "Profile",
+                    "Login",
+                    "Register",
+                    "Lockscreen",
+                    "404 Error",
+                    "500 Error",
+                    "Blank Page",
+                    "Pace Page",
+                  ],
+                }
+              }
+            />
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fa fa-share",
+                  "name": "Multilevel",
+                  "sub": Array [
+                    "Level One",
+                    "Level Two",
+                    "Level Three",
+                  ],
+                }
+              }
+            />
+            <NavigationItem
+              data={
+                Object {
+                  "logo": "fas fa-book",
+                  "name": "Documentation",
+                  "sub": Array [
+                    "Dashbord1",
+                    "Dashboard2",
+                  ],
+                }
+              }
+            />
+          </ul>,
+        ],
+        "className": "main-aside expand",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                src="./img/image.jpg"
+              />,
+              <div
+                className="info"
+              >
+                <p
+                  className="m-0"
+                >
+                  Terrence Shao
+                </p>
+                <i
+                  className="fa fa-circle text-success"
+                />
+                 
+                <span>
+                   offline 
+                </span>
+              </div>,
+            ],
+            "className": "profile",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "src": "./img/image.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="m-0"
+                  >
+                    Terrence Shao
+                  </p>,
+                  <i
+                    className="fa fa-circle text-success"
+                  />,
+                  " ",
+                  <span>
+                     offline 
+                  </span>,
+                ],
+                "className": "info",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Terrence Shao",
+                    "className": "m-0",
+                  },
+                  "ref": null,
+                  "rendered": "Terrence Shao",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fa fa-circle text-success",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " offline ",
+                  },
+                  "ref": null,
+                  "rendered": " offline ",
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="searchbox"
+            >
+              <input
+                placeholder=" search..."
+                type="text"
+              />
+              <i
+                className="fa fa-search p-1"
+              />
+            </div>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  placeholder=" search..."
+                  type="text"
+                />,
+                <i
+                  className="fa fa-search p-1"
+                />,
+              ],
+              "className": "searchbox",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "placeholder": " search...",
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fa fa-search p-1",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "MAIN NAVIGATION",
+            "className": "",
+          },
+          "ref": null,
+          "rendered": "MAIN NAVIGATION",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "fa fa-car",
+                    "name": "Dashboard",
+                    "sub": Array [
+                      "Dashboard1",
+                      "Dashboard2",
+                    ],
+                  }
+                }
+              />,
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "far fa-copy",
+                    "name": "Layout Options",
+                    "sub": Array [
+                      "Top Navigation",
+                      "Boxed",
+                      "Fixed",
+                      "Collapsed Sidebar",
+                    ],
+                  }
+                }
+              />,
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "fa fa-th",
+                    "name": "Widgets",
+                  }
+                }
+              />,
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "fa fa-chart-pie",
+                    "name": "Charts",
+                    "sub": Array [
+                      "ChartJS",
+                      "Morris",
+                      "Flot",
+                      "Inline charts",
+                    ],
+                  }
+                }
+              />,
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "fa fa-laptop",
+                    "name": "UI Elements",
+                    "sub": Array [
+                      "General",
+                      "Icons",
+                      "Buttons",
+                      "Slides",
+                      "Timeline",
+                      "Modals",
+                    ],
+                  }
+                }
+              />,
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "fa fa-edit",
+                    "name": "Forms",
+                    "sub": Array [
+                      "General Elements",
+                      "Advanced Elements",
+                      "Editors",
+                    ],
+                  }
+                }
+              />,
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "fa fa-table",
+                    "name": "Tables",
+                    "sub": Array [
+                      "Simple tables",
+                      "Data tables",
+                    ],
+                  }
+                }
+              />,
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "fa fa-calendar",
+                    "name": "Calendar",
+                    "sub": Array [
+                      "Dashbord1",
+                      "Dashboard2",
+                    ],
+                  }
+                }
+              />,
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "fas fa-envelope",
+                    "name": "Mailbox",
+                    "sub": Array [
+                      "Inbox",
+                      "Composed",
+                      "Read",
+                    ],
+                  }
+                }
+              />,
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "fa fa-folder",
+                    "name": "Examples",
+                    "sub": Array [
+                      "Invoice",
+                      "Profile",
+                      "Login",
+                      "Register",
+                      "Lockscreen",
+                      "404 Error",
+                      "500 Error",
+                      "Blank Page",
+                      "Pace Page",
+                    ],
+                  }
+                }
+              />,
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "fa fa-share",
+                    "name": "Multilevel",
+                    "sub": Array [
+                      "Level One",
+                      "Level Two",
+                      "Level Three",
+                    ],
+                  }
+                }
+              />,
+              <NavigationItem
+                data={
+                  Object {
+                    "logo": "fas fa-book",
+                    "name": "Documentation",
+                    "sub": Array [
+                      "Dashbord1",
+                      "Dashboard2",
+                    ],
+                  }
+                }
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "fa fa-car",
+                  "name": "Dashboard",
+                  "sub": Array [
+                    "Dashboard1",
+                    "Dashboard2",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "far fa-copy",
+                  "name": "Layout Options",
+                  "sub": Array [
+                    "Top Navigation",
+                    "Boxed",
+                    "Fixed",
+                    "Collapsed Sidebar",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "fa fa-th",
+                  "name": "Widgets",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "fa fa-chart-pie",
+                  "name": "Charts",
+                  "sub": Array [
+                    "ChartJS",
+                    "Morris",
+                    "Flot",
+                    "Inline charts",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "fa fa-laptop",
+                  "name": "UI Elements",
+                  "sub": Array [
+                    "General",
+                    "Icons",
+                    "Buttons",
+                    "Slides",
+                    "Timeline",
+                    "Modals",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "5",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "fa fa-edit",
+                  "name": "Forms",
+                  "sub": Array [
+                    "General Elements",
+                    "Advanced Elements",
+                    "Editors",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "6",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "fa fa-table",
+                  "name": "Tables",
+                  "sub": Array [
+                    "Simple tables",
+                    "Data tables",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "7",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "fa fa-calendar",
+                  "name": "Calendar",
+                  "sub": Array [
+                    "Dashbord1",
+                    "Dashboard2",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "8",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "fas fa-envelope",
+                  "name": "Mailbox",
+                  "sub": Array [
+                    "Inbox",
+                    "Composed",
+                    "Read",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "9",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "fa fa-folder",
+                  "name": "Examples",
+                  "sub": Array [
+                    "Invoice",
+                    "Profile",
+                    "Login",
+                    "Register",
+                    "Lockscreen",
+                    "404 Error",
+                    "500 Error",
+                    "Blank Page",
+                    "Pace Page",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "10",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "fa fa-share",
+                  "name": "Multilevel",
+                  "sub": Array [
+                    "Level One",
+                    "Level Two",
+                    "Level Three",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "11",
+              "nodeType": "class",
+              "props": Object {
+                "data": Object {
+                  "logo": "fas fa-book",
+                  "name": "Documentation",
+                  "sub": Array [
+                    "Dashbord1",
+                    "Dashboard2",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "nav",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
