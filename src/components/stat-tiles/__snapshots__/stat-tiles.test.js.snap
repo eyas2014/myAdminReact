@@ -1,0 +1,1570 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <StatTiles
+    data={
+      Array [
+        Object {
+          "color": "bg-info",
+          "logo": "fas fa-shopping-bag",
+          "name": "New Orders",
+          "value": "150",
+        },
+        Object {
+          "color": "bg-success",
+          "logo": "fas fa-chart-bar",
+          "name": "Bounce Rate",
+          "value": "53%",
+        },
+        Object {
+          "color": "bg-warning",
+          "logo": "fas fa-users",
+          "name": "User Registrations",
+          "value": "44",
+        },
+        Object {
+          "color": "bg-danger",
+          "logo": "fas fa-chart-pie",
+          "name": "Unique Visitors",
+          "value": "65",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="col-12 col-sm-6 col-lg-3"
+        >
+          <div
+            className="bg-info stat-tile"
+          >
+            <main>
+              <p>
+                150
+              </p>
+              <span>
+                New Orders
+              </span>
+            </main>
+            <aside>
+              <i
+                className="fas fa-shopping-bag"
+              />
+            </aside>
+            <footer>
+              More Info
+              <i
+                className="fas fa-arrow-circle-right"
+              />
+            </footer>
+          </div>
+        </div>,
+        <div
+          className="col-12 col-sm-6 col-lg-3"
+        >
+          <div
+            className="bg-success stat-tile"
+          >
+            <main>
+              <p>
+                53%
+              </p>
+              <span>
+                Bounce Rate
+              </span>
+            </main>
+            <aside>
+              <i
+                className="fas fa-chart-bar"
+              />
+            </aside>
+            <footer>
+              More Info
+              <i
+                className="fas fa-arrow-circle-right"
+              />
+            </footer>
+          </div>
+        </div>,
+        <div
+          className="col-12 col-sm-6 col-lg-3"
+        >
+          <div
+            className="bg-warning stat-tile"
+          >
+            <main>
+              <p>
+                44
+              </p>
+              <span>
+                User Registrations
+              </span>
+            </main>
+            <aside>
+              <i
+                className="fas fa-users"
+              />
+            </aside>
+            <footer>
+              More Info
+              <i
+                className="fas fa-arrow-circle-right"
+              />
+            </footer>
+          </div>
+        </div>,
+        <div
+          className="col-12 col-sm-6 col-lg-3"
+        >
+          <div
+            className="bg-danger stat-tile"
+          >
+            <main>
+              <p>
+                65
+              </p>
+              <span>
+                Unique Visitors
+              </span>
+            </main>
+            <aside>
+              <i
+                className="fas fa-chart-pie"
+              />
+            </aside>
+            <footer>
+              More Info
+              <i
+                className="fas fa-arrow-circle-right"
+              />
+            </footer>
+          </div>
+        </div>,
+      ],
+      "className": "row stat-tiles",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="bg-info stat-tile"
+          >
+            <main>
+              <p>
+                150
+              </p>
+              <span>
+                New Orders
+              </span>
+            </main>
+            <aside>
+              <i
+                className="fas fa-shopping-bag"
+              />
+            </aside>
+            <footer>
+              More Info
+              <i
+                className="fas fa-arrow-circle-right"
+              />
+            </footer>
+          </div>,
+          "className": "col-12 col-sm-6 col-lg-3",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <main>
+                <p>
+                  150
+                </p>
+                <span>
+                  New Orders
+                </span>
+              </main>,
+              <aside>
+                <i
+                  className="fas fa-shopping-bag"
+                />
+              </aside>,
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>,
+            ],
+            "className": "bg-info stat-tile",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    150
+                  </p>,
+                  <span>
+                    New Orders
+                  </span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "150",
+                  },
+                  "ref": null,
+                  "rendered": "150",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "New Orders",
+                  },
+                  "ref": null,
+                  "rendered": "New Orders",
+                  "type": "span",
+                },
+              ],
+              "type": "main",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <i
+                  className="fas fa-shopping-bag"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-shopping-bag",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              "type": "aside",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "More Info",
+                  <i
+                    className="fas fa-arrow-circle-right"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "More Info",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-arrow-circle-right",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "footer",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="bg-success stat-tile"
+          >
+            <main>
+              <p>
+                53%
+              </p>
+              <span>
+                Bounce Rate
+              </span>
+            </main>
+            <aside>
+              <i
+                className="fas fa-chart-bar"
+              />
+            </aside>
+            <footer>
+              More Info
+              <i
+                className="fas fa-arrow-circle-right"
+              />
+            </footer>
+          </div>,
+          "className": "col-12 col-sm-6 col-lg-3",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <main>
+                <p>
+                  53%
+                </p>
+                <span>
+                  Bounce Rate
+                </span>
+              </main>,
+              <aside>
+                <i
+                  className="fas fa-chart-bar"
+                />
+              </aside>,
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>,
+            ],
+            "className": "bg-success stat-tile",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    53%
+                  </p>,
+                  <span>
+                    Bounce Rate
+                  </span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "53%",
+                  },
+                  "ref": null,
+                  "rendered": "53%",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Bounce Rate",
+                  },
+                  "ref": null,
+                  "rendered": "Bounce Rate",
+                  "type": "span",
+                },
+              ],
+              "type": "main",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <i
+                  className="fas fa-chart-bar"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-chart-bar",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              "type": "aside",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "More Info",
+                  <i
+                    className="fas fa-arrow-circle-right"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "More Info",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-arrow-circle-right",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "footer",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="bg-warning stat-tile"
+          >
+            <main>
+              <p>
+                44
+              </p>
+              <span>
+                User Registrations
+              </span>
+            </main>
+            <aside>
+              <i
+                className="fas fa-users"
+              />
+            </aside>
+            <footer>
+              More Info
+              <i
+                className="fas fa-arrow-circle-right"
+              />
+            </footer>
+          </div>,
+          "className": "col-12 col-sm-6 col-lg-3",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <main>
+                <p>
+                  44
+                </p>
+                <span>
+                  User Registrations
+                </span>
+              </main>,
+              <aside>
+                <i
+                  className="fas fa-users"
+                />
+              </aside>,
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>,
+            ],
+            "className": "bg-warning stat-tile",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    44
+                  </p>,
+                  <span>
+                    User Registrations
+                  </span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "44",
+                  },
+                  "ref": null,
+                  "rendered": "44",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "User Registrations",
+                  },
+                  "ref": null,
+                  "rendered": "User Registrations",
+                  "type": "span",
+                },
+              ],
+              "type": "main",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <i
+                  className="fas fa-users"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-users",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              "type": "aside",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "More Info",
+                  <i
+                    className="fas fa-arrow-circle-right"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "More Info",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-arrow-circle-right",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "footer",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="bg-danger stat-tile"
+          >
+            <main>
+              <p>
+                65
+              </p>
+              <span>
+                Unique Visitors
+              </span>
+            </main>
+            <aside>
+              <i
+                className="fas fa-chart-pie"
+              />
+            </aside>
+            <footer>
+              More Info
+              <i
+                className="fas fa-arrow-circle-right"
+              />
+            </footer>
+          </div>,
+          "className": "col-12 col-sm-6 col-lg-3",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <main>
+                <p>
+                  65
+                </p>
+                <span>
+                  Unique Visitors
+                </span>
+              </main>,
+              <aside>
+                <i
+                  className="fas fa-chart-pie"
+                />
+              </aside>,
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>,
+            ],
+            "className": "bg-danger stat-tile",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    65
+                  </p>,
+                  <span>
+                    Unique Visitors
+                  </span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "65",
+                  },
+                  "ref": null,
+                  "rendered": "65",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Unique Visitors",
+                  },
+                  "ref": null,
+                  "rendered": "Unique Visitors",
+                  "type": "span",
+                },
+              ],
+              "type": "main",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <i
+                  className="fas fa-chart-pie"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-chart-pie",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              "type": "aside",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "More Info",
+                  <i
+                    className="fas fa-arrow-circle-right"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "More Info",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-arrow-circle-right",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "footer",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="col-12 col-sm-6 col-lg-3"
+          >
+            <div
+              className="bg-info stat-tile"
+            >
+              <main>
+                <p>
+                  150
+                </p>
+                <span>
+                  New Orders
+                </span>
+              </main>
+              <aside>
+                <i
+                  className="fas fa-shopping-bag"
+                />
+              </aside>
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>
+            </div>
+          </div>,
+          <div
+            className="col-12 col-sm-6 col-lg-3"
+          >
+            <div
+              className="bg-success stat-tile"
+            >
+              <main>
+                <p>
+                  53%
+                </p>
+                <span>
+                  Bounce Rate
+                </span>
+              </main>
+              <aside>
+                <i
+                  className="fas fa-chart-bar"
+                />
+              </aside>
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>
+            </div>
+          </div>,
+          <div
+            className="col-12 col-sm-6 col-lg-3"
+          >
+            <div
+              className="bg-warning stat-tile"
+            >
+              <main>
+                <p>
+                  44
+                </p>
+                <span>
+                  User Registrations
+                </span>
+              </main>
+              <aside>
+                <i
+                  className="fas fa-users"
+                />
+              </aside>
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>
+            </div>
+          </div>,
+          <div
+            className="col-12 col-sm-6 col-lg-3"
+          >
+            <div
+              className="bg-danger stat-tile"
+            >
+              <main>
+                <p>
+                  65
+                </p>
+                <span>
+                  Unique Visitors
+                </span>
+              </main>
+              <aside>
+                <i
+                  className="fas fa-chart-pie"
+                />
+              </aside>
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>
+            </div>
+          </div>,
+        ],
+        "className": "row stat-tiles",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="bg-info stat-tile"
+            >
+              <main>
+                <p>
+                  150
+                </p>
+                <span>
+                  New Orders
+                </span>
+              </main>
+              <aside>
+                <i
+                  className="fas fa-shopping-bag"
+                />
+              </aside>
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>
+            </div>,
+            "className": "col-12 col-sm-6 col-lg-3",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <main>
+                  <p>
+                    150
+                  </p>
+                  <span>
+                    New Orders
+                  </span>
+                </main>,
+                <aside>
+                  <i
+                    className="fas fa-shopping-bag"
+                  />
+                </aside>,
+                <footer>
+                  More Info
+                  <i
+                    className="fas fa-arrow-circle-right"
+                  />
+                </footer>,
+              ],
+              "className": "bg-info stat-tile",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      150
+                    </p>,
+                    <span>
+                      New Orders
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "150",
+                    },
+                    "ref": null,
+                    "rendered": "150",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "New Orders",
+                    },
+                    "ref": null,
+                    "rendered": "New Orders",
+                    "type": "span",
+                  },
+                ],
+                "type": "main",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <i
+                    className="fas fa-shopping-bag"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-shopping-bag",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "type": "aside",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "More Info",
+                    <i
+                      className="fas fa-arrow-circle-right"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "More Info",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-arrow-circle-right",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                ],
+                "type": "footer",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="bg-success stat-tile"
+            >
+              <main>
+                <p>
+                  53%
+                </p>
+                <span>
+                  Bounce Rate
+                </span>
+              </main>
+              <aside>
+                <i
+                  className="fas fa-chart-bar"
+                />
+              </aside>
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>
+            </div>,
+            "className": "col-12 col-sm-6 col-lg-3",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <main>
+                  <p>
+                    53%
+                  </p>
+                  <span>
+                    Bounce Rate
+                  </span>
+                </main>,
+                <aside>
+                  <i
+                    className="fas fa-chart-bar"
+                  />
+                </aside>,
+                <footer>
+                  More Info
+                  <i
+                    className="fas fa-arrow-circle-right"
+                  />
+                </footer>,
+              ],
+              "className": "bg-success stat-tile",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      53%
+                    </p>,
+                    <span>
+                      Bounce Rate
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "53%",
+                    },
+                    "ref": null,
+                    "rendered": "53%",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Bounce Rate",
+                    },
+                    "ref": null,
+                    "rendered": "Bounce Rate",
+                    "type": "span",
+                  },
+                ],
+                "type": "main",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <i
+                    className="fas fa-chart-bar"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-chart-bar",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "type": "aside",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "More Info",
+                    <i
+                      className="fas fa-arrow-circle-right"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "More Info",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-arrow-circle-right",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                ],
+                "type": "footer",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="bg-warning stat-tile"
+            >
+              <main>
+                <p>
+                  44
+                </p>
+                <span>
+                  User Registrations
+                </span>
+              </main>
+              <aside>
+                <i
+                  className="fas fa-users"
+                />
+              </aside>
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>
+            </div>,
+            "className": "col-12 col-sm-6 col-lg-3",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <main>
+                  <p>
+                    44
+                  </p>
+                  <span>
+                    User Registrations
+                  </span>
+                </main>,
+                <aside>
+                  <i
+                    className="fas fa-users"
+                  />
+                </aside>,
+                <footer>
+                  More Info
+                  <i
+                    className="fas fa-arrow-circle-right"
+                  />
+                </footer>,
+              ],
+              "className": "bg-warning stat-tile",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      44
+                    </p>,
+                    <span>
+                      User Registrations
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "44",
+                    },
+                    "ref": null,
+                    "rendered": "44",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "User Registrations",
+                    },
+                    "ref": null,
+                    "rendered": "User Registrations",
+                    "type": "span",
+                  },
+                ],
+                "type": "main",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <i
+                    className="fas fa-users"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-users",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "type": "aside",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "More Info",
+                    <i
+                      className="fas fa-arrow-circle-right"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "More Info",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-arrow-circle-right",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                ],
+                "type": "footer",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="bg-danger stat-tile"
+            >
+              <main>
+                <p>
+                  65
+                </p>
+                <span>
+                  Unique Visitors
+                </span>
+              </main>
+              <aside>
+                <i
+                  className="fas fa-chart-pie"
+                />
+              </aside>
+              <footer>
+                More Info
+                <i
+                  className="fas fa-arrow-circle-right"
+                />
+              </footer>
+            </div>,
+            "className": "col-12 col-sm-6 col-lg-3",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <main>
+                  <p>
+                    65
+                  </p>
+                  <span>
+                    Unique Visitors
+                  </span>
+                </main>,
+                <aside>
+                  <i
+                    className="fas fa-chart-pie"
+                  />
+                </aside>,
+                <footer>
+                  More Info
+                  <i
+                    className="fas fa-arrow-circle-right"
+                  />
+                </footer>,
+              ],
+              "className": "bg-danger stat-tile",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      65
+                    </p>,
+                    <span>
+                      Unique Visitors
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "65",
+                    },
+                    "ref": null,
+                    "rendered": "65",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Unique Visitors",
+                    },
+                    "ref": null,
+                    "rendered": "Unique Visitors",
+                    "type": "span",
+                  },
+                ],
+                "type": "main",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <i
+                    className="fas fa-chart-pie"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-chart-pie",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "type": "aside",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "More Info",
+                    <i
+                      className="fas fa-arrow-circle-right"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "More Info",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-arrow-circle-right",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                ],
+                "type": "footer",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

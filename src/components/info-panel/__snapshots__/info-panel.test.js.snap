@@ -4,7 +4,36 @@ exports[`should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <InfoPanel />,
+  Symbol(enzyme.__unrendered__): <InfoPanel
+    data={
+      Array [
+        Object {
+          "color": "bg-info",
+          "logo": "fab fa-whmcs",
+          "number": "90%",
+          "title": "CPU TRAFFIC",
+        },
+        Object {
+          "color": "bg-danger",
+          "logo": "fab fa-google-plus-g",
+          "number": "41,410",
+          "title": "LIKES",
+        },
+        Object {
+          "color": "bg-success",
+          "logo": "fas fa-shopping-cart",
+          "number": "760",
+          "title": "SALES",
+        },
+        Object {
+          "color": "bg-warning",
+          "logo": "fas fa-users",
+          "number": "2,000",
+          "title": "NEW MEMBERS",
+        },
+      ]
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

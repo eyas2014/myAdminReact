@@ -1,35 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const data=[{logo: 'fab fa-whmcs',
-			 title: 'CPU TRAFFIC',
-			 number: '90%',
-			 color: 'bg-info'
-			 },
-			 {logo: 'fab fa-google-plus-g',
-			 title: 'LIKES',
-			 number: '41,410',
-			 color: 'bg-danger'
-			 },
-			 {logo: 'fas fa-shopping-cart',
-			 title: 'SALES',
-			 number: '760',
-			 color: 'bg-success'
-			 },
-			 {logo: 'fas fa-users',
-			 title: 'NEW MEMBERS',
-			 number: '2,000',
-			 color: 'bg-warning'
-			 }];
-
-
-
-
 export default class InfoPanel extends React.Component{
-	componentDidMount(){
-	}
-
 	render(){
+		const {data}=this.props;
 		return(
 		<div className="info-panel">
 			<div className='row'>
@@ -50,5 +24,4 @@ export default class InfoPanel extends React.Component{
 			</div>
 		</div>)
 	}
-
 }

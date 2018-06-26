@@ -9,6 +9,26 @@ import ProgressPanels from '../components/progress-panels/progress-panels.jsx';
 import BrowserUsage from '../components/browser-usage/browser-usage.jsx';
 import RecentlyAP from '../components/recently-added-products/recently-added-products.jsx';
 
+const data=[{logo: 'fab fa-whmcs',
+			 title: 'CPU TRAFFIC',
+			 number: '90%',
+			 color: 'bg-info'
+			 },
+			 {logo: 'fab fa-google-plus-g',
+			 title: 'LIKES',
+			 number: '41,410',
+			 color: 'bg-danger'
+			 },
+			 {logo: 'fas fa-shopping-cart',
+			 title: 'SALES',
+			 number: '760',
+			 color: 'bg-success'
+			 },
+			 {logo: 'fas fa-users',
+			 title: 'NEW MEMBERS',
+			 number: '2,000',
+			 color: 'bg-warning'
+			 }];
 
 
 class Dashboard2 extends React.Component{
@@ -25,7 +45,7 @@ class Dashboard2 extends React.Component{
 								<span> > Dashboard</span>
 							</div>
 						</div>
-						<InfoPanel></InfoPanel>
+						<InfoPanel data={data}></InfoPanel>
 						<MonthlyCapReports data={monthlyCapReportsData}></MonthlyCapReports>
 						<div className="row">
 							<div className="col-12 col-md-8">

@@ -63,5 +63,7 @@
    "stage-0"
   ]
  },
-  "jest":{"setupTestFrameworkScriptFile":"./src/setupJest.js"}
+ "jest": {
+  "setupTestFrameworkScriptFile": "./src/setupJest.js"
+ }
 }
