@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Conversations
+    data={
+      Array [
+        Object {
+          "attachment": Object {
+            "fileName": "Theme-thumbnail-image.jpg",
+            "groupName": "Attachments",
+          },
+          "content": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+          "displayName": "Mike Doe",
+          "displayPicture": "dist/img/user4-128x128.jpg",
+          "time": "2:15",
+        },
+        Object {
+          "content": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+          "displayName": "Alexander Pierce",
+          "displayPicture": "dist/img/user3-128x128.jpg",
+          "time": "5:15",
+        },
+        Object {
+          "content": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+          "displayName": "Susan Doe",
+          "displayPicture": "dist/img/user2-160x160.jpg",
+          "time": "5:30",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <ChatMessage
+          attachment={
+            Object {
+              "fileName": "Theme-thumbnail-image.jpg",
+              "groupName": "Attachments",
+            }
+          }
+          content="I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market"
+          displayName="Mike Doe"
+          displayPicture="dist/img/user4-128x128.jpg"
+          time="2:15"
+        />,
+        <ChatMessage
+          content="I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market"
+          displayName="Alexander Pierce"
+          displayPicture="dist/img/user3-128x128.jpg"
+          time="5:15"
+        />,
+        <ChatMessage
+          content="I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market"
+          displayName="Susan Doe"
+          displayPicture="dist/img/user2-160x160.jpg"
+          time="5:30"
+        />,
+      ],
+      "id": "chat-box",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "class",
+        "props": Object {
+          "attachment": Object {
+            "fileName": "Theme-thumbnail-image.jpg",
+            "groupName": "Attachments",
+          },
+          "content": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+          "displayName": "Mike Doe",
+          "displayPicture": "dist/img/user4-128x128.jpg",
+          "time": "2:15",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "class",
+        "props": Object {
+          "attachment": undefined,
+          "content": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+          "displayName": "Alexander Pierce",
+          "displayPicture": "dist/img/user3-128x128.jpg",
+          "time": "5:15",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "class",
+        "props": Object {
+          "attachment": undefined,
+          "content": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+          "displayName": "Susan Doe",
+          "displayPicture": "dist/img/user2-160x160.jpg",
+          "time": "5:30",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <ChatMessage
+            attachment={
+              Object {
+                "fileName": "Theme-thumbnail-image.jpg",
+                "groupName": "Attachments",
+              }
+            }
+            content="I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market"
+            displayName="Mike Doe"
+            displayPicture="dist/img/user4-128x128.jpg"
+            time="2:15"
+          />,
+          <ChatMessage
+            content="I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market"
+            displayName="Alexander Pierce"
+            displayPicture="dist/img/user3-128x128.jpg"
+            time="5:15"
+          />,
+          <ChatMessage
+            content="I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market"
+            displayName="Susan Doe"
+            displayPicture="dist/img/user2-160x160.jpg"
+            time="5:30"
+          />,
+        ],
+        "id": "chat-box",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "class",
+          "props": Object {
+            "attachment": Object {
+              "fileName": "Theme-thumbnail-image.jpg",
+              "groupName": "Attachments",
+            },
+            "content": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+            "displayName": "Mike Doe",
+            "displayPicture": "dist/img/user4-128x128.jpg",
+            "time": "2:15",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "class",
+          "props": Object {
+            "attachment": undefined,
+            "content": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+            "displayName": "Alexander Pierce",
+            "displayPicture": "dist/img/user3-128x128.jpg",
+            "time": "5:15",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "class",
+          "props": Object {
+            "attachment": undefined,
+            "content": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+            "displayName": "Susan Doe",
+            "displayPicture": "dist/img/user2-160x160.jpg",
+            "time": "5:30",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

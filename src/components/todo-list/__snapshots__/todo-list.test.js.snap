@@ -1,0 +1,1198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TodoList
+    data={
+      Array [
+        Object {},
+        Object {},
+        Object {},
+        Object {},
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header
+          className=""
+        >
+          <div
+            className="btn"
+          >
+            <i
+              className="fas fa-list-ol"
+            />
+            <span>
+              To Do List
+            </span>
+          </div>
+          <ul
+            className="pagination pagination-sm float-right"
+          >
+            <li
+              className="page-item"
+            >
+              <a
+                className="page-link"
+                href="#"
+              >
+                «
+              </a>
+            </li>
+            <li
+              className="page-item"
+            >
+              <a
+                className="page-link"
+                href="#"
+              >
+                1
+              </a>
+            </li>
+            <li
+              className="page-item"
+            >
+              <a
+                className="page-link"
+                href="#"
+              >
+                2
+              </a>
+            </li>
+            <li
+              className="page-item"
+            >
+              <a
+                className="page-link"
+                href="#"
+              >
+                3
+              </a>
+            </li>
+            <li
+              className="page-item"
+            >
+              <a
+                className="page-link"
+                href="#"
+              >
+                »
+              </a>
+            </li>
+          </ul>
+        </header>,
+        <main>
+          <ul>
+            <Todo
+              todo={Object {}}
+            />
+            <Todo
+              todo={Object {}}
+            />
+            <Todo
+              todo={Object {}}
+            />
+            <Todo
+              todo={Object {}}
+            />
+          </ul>
+        </main>,
+        <footer
+          className=""
+        >
+          <button
+            className="btn btn-sm"
+            type="button"
+          >
+            <i
+              className="fa fa-plus"
+            />
+             Add item
+          </button>
+        </footer>,
+      ],
+      "className": "todo-list",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="btn"
+            >
+              <i
+                className="fas fa-list-ol"
+              />
+              <span>
+                To Do List
+              </span>
+            </div>,
+            <ul
+              className="pagination pagination-sm float-right"
+            >
+              <li
+                className="page-item"
+              >
+                <a
+                  className="page-link"
+                  href="#"
+                >
+                  «
+                </a>
+              </li>
+              <li
+                className="page-item"
+              >
+                <a
+                  className="page-link"
+                  href="#"
+                >
+                  1
+                </a>
+              </li>
+              <li
+                className="page-item"
+              >
+                <a
+                  className="page-link"
+                  href="#"
+                >
+                  2
+                </a>
+              </li>
+              <li
+                className="page-item"
+              >
+                <a
+                  className="page-link"
+                  href="#"
+                >
+                  3
+                </a>
+              </li>
+              <li
+                className="page-item"
+              >
+                <a
+                  className="page-link"
+                  href="#"
+                >
+                  »
+                </a>
+              </li>
+            </ul>,
+          ],
+          "className": "",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fas fa-list-ol"
+                />,
+                <span>
+                  To Do List
+                </span>,
+              ],
+              "className": "btn",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-list-ol",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "To Do List",
+                },
+                "ref": null,
+                "rendered": "To Do List",
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="page-item"
+                >
+                  <a
+                    className="page-link"
+                    href="#"
+                  >
+                    «
+                  </a>
+                </li>,
+                <li
+                  className="page-item"
+                >
+                  <a
+                    className="page-link"
+                    href="#"
+                  >
+                    1
+                  </a>
+                </li>,
+                <li
+                  className="page-item"
+                >
+                  <a
+                    className="page-link"
+                    href="#"
+                  >
+                    2
+                  </a>
+                </li>,
+                <li
+                  className="page-item"
+                >
+                  <a
+                    className="page-link"
+                    href="#"
+                  >
+                    3
+                  </a>
+                </li>,
+                <li
+                  className="page-item"
+                >
+                  <a
+                    className="page-link"
+                    href="#"
+                  >
+                    »
+                  </a>
+                </li>,
+              ],
+              "className": "pagination pagination-sm float-right",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    className="page-link"
+                    href="#"
+                  >
+                    «
+                  </a>,
+                  "className": "page-item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "«",
+                    "className": "page-link",
+                    "href": "#",
+                  },
+                  "ref": null,
+                  "rendered": "«",
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    className="page-link"
+                    href="#"
+                  >
+                    1
+                  </a>,
+                  "className": "page-item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "1",
+                    "className": "page-link",
+                    "href": "#",
+                  },
+                  "ref": null,
+                  "rendered": "1",
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    className="page-link"
+                    href="#"
+                  >
+                    2
+                  </a>,
+                  "className": "page-item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "2",
+                    "className": "page-link",
+                    "href": "#",
+                  },
+                  "ref": null,
+                  "rendered": "2",
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    className="page-link"
+                    href="#"
+                  >
+                    3
+                  </a>,
+                  "className": "page-item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "3",
+                    "className": "page-link",
+                    "href": "#",
+                  },
+                  "ref": null,
+                  "rendered": "3",
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    className="page-link"
+                    href="#"
+                  >
+                    »
+                  </a>,
+                  "className": "page-item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "»",
+                    "className": "page-link",
+                    "href": "#",
+                  },
+                  "ref": null,
+                  "rendered": "»",
+                  "type": "a",
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ul>
+            <Todo
+              todo={Object {}}
+            />
+            <Todo
+              todo={Object {}}
+            />
+            <Todo
+              todo={Object {}}
+            />
+            <Todo
+              todo={Object {}}
+            />
+          </ul>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Todo
+                todo={Object {}}
+              />,
+              <Todo
+                todo={Object {}}
+              />,
+              <Todo
+                todo={Object {}}
+              />,
+              <Todo
+                todo={Object {}}
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "todo": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "todo": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "todo": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "class",
+              "props": Object {
+                "todo": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "ul",
+        },
+        "type": "main",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <button
+            className="btn btn-sm"
+            type="button"
+          >
+            <i
+              className="fa fa-plus"
+            />
+             Add item
+          </button>,
+          "className": "",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <i
+                className="fa fa-plus"
+              />,
+              " Add item",
+            ],
+            "className": "btn btn-sm",
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fa fa-plus",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+            " Add item",
+          ],
+          "type": "button",
+        },
+        "type": "footer",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header
+            className=""
+          >
+            <div
+              className="btn"
+            >
+              <i
+                className="fas fa-list-ol"
+              />
+              <span>
+                To Do List
+              </span>
+            </div>
+            <ul
+              className="pagination pagination-sm float-right"
+            >
+              <li
+                className="page-item"
+              >
+                <a
+                  className="page-link"
+                  href="#"
+                >
+                  «
+                </a>
+              </li>
+              <li
+                className="page-item"
+              >
+                <a
+                  className="page-link"
+                  href="#"
+                >
+                  1
+                </a>
+              </li>
+              <li
+                className="page-item"
+              >
+                <a
+                  className="page-link"
+                  href="#"
+                >
+                  2
+                </a>
+              </li>
+              <li
+                className="page-item"
+              >
+                <a
+                  className="page-link"
+                  href="#"
+                >
+                  3
+                </a>
+              </li>
+              <li
+                className="page-item"
+              >
+                <a
+                  className="page-link"
+                  href="#"
+                >
+                  »
+                </a>
+              </li>
+            </ul>
+          </header>,
+          <main>
+            <ul>
+              <Todo
+                todo={Object {}}
+              />
+              <Todo
+                todo={Object {}}
+              />
+              <Todo
+                todo={Object {}}
+              />
+              <Todo
+                todo={Object {}}
+              />
+            </ul>
+          </main>,
+          <footer
+            className=""
+          >
+            <button
+              className="btn btn-sm"
+              type="button"
+            >
+              <i
+                className="fa fa-plus"
+              />
+               Add item
+            </button>
+          </footer>,
+        ],
+        "className": "todo-list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="btn"
+              >
+                <i
+                  className="fas fa-list-ol"
+                />
+                <span>
+                  To Do List
+                </span>
+              </div>,
+              <ul
+                className="pagination pagination-sm float-right"
+              >
+                <li
+                  className="page-item"
+                >
+                  <a
+                    className="page-link"
+                    href="#"
+                  >
+                    «
+                  </a>
+                </li>
+                <li
+                  className="page-item"
+                >
+                  <a
+                    className="page-link"
+                    href="#"
+                  >
+                    1
+                  </a>
+                </li>
+                <li
+                  className="page-item"
+                >
+                  <a
+                    className="page-link"
+                    href="#"
+                  >
+                    2
+                  </a>
+                </li>
+                <li
+                  className="page-item"
+                >
+                  <a
+                    className="page-link"
+                    href="#"
+                  >
+                    3
+                  </a>
+                </li>
+                <li
+                  className="page-item"
+                >
+                  <a
+                    className="page-link"
+                    href="#"
+                  >
+                    »
+                  </a>
+                </li>
+              </ul>,
+            ],
+            "className": "",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="fas fa-list-ol"
+                  />,
+                  <span>
+                    To Do List
+                  </span>,
+                ],
+                "className": "btn",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-list-ol",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "To Do List",
+                  },
+                  "ref": null,
+                  "rendered": "To Do List",
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="page-item"
+                  >
+                    <a
+                      className="page-link"
+                      href="#"
+                    >
+                      «
+                    </a>
+                  </li>,
+                  <li
+                    className="page-item"
+                  >
+                    <a
+                      className="page-link"
+                      href="#"
+                    >
+                      1
+                    </a>
+                  </li>,
+                  <li
+                    className="page-item"
+                  >
+                    <a
+                      className="page-link"
+                      href="#"
+                    >
+                      2
+                    </a>
+                  </li>,
+                  <li
+                    className="page-item"
+                  >
+                    <a
+                      className="page-link"
+                      href="#"
+                    >
+                      3
+                    </a>
+                  </li>,
+                  <li
+                    className="page-item"
+                  >
+                    <a
+                      className="page-link"
+                      href="#"
+                    >
+                      »
+                    </a>
+                  </li>,
+                ],
+                "className": "pagination pagination-sm float-right",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      className="page-link"
+                      href="#"
+                    >
+                      «
+                    </a>,
+                    "className": "page-item",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "«",
+                      "className": "page-link",
+                      "href": "#",
+                    },
+                    "ref": null,
+                    "rendered": "«",
+                    "type": "a",
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      className="page-link"
+                      href="#"
+                    >
+                      1
+                    </a>,
+                    "className": "page-item",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "1",
+                      "className": "page-link",
+                      "href": "#",
+                    },
+                    "ref": null,
+                    "rendered": "1",
+                    "type": "a",
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      className="page-link"
+                      href="#"
+                    >
+                      2
+                    </a>,
+                    "className": "page-item",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "2",
+                      "className": "page-link",
+                      "href": "#",
+                    },
+                    "ref": null,
+                    "rendered": "2",
+                    "type": "a",
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      className="page-link"
+                      href="#"
+                    >
+                      3
+                    </a>,
+                    "className": "page-item",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "3",
+                      "className": "page-link",
+                      "href": "#",
+                    },
+                    "ref": null,
+                    "rendered": "3",
+                    "type": "a",
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      className="page-link"
+                      href="#"
+                    >
+                      »
+                    </a>,
+                    "className": "page-item",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "»",
+                      "className": "page-link",
+                      "href": "#",
+                    },
+                    "ref": null,
+                    "rendered": "»",
+                    "type": "a",
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ul>
+              <Todo
+                todo={Object {}}
+              />
+              <Todo
+                todo={Object {}}
+              />
+              <Todo
+                todo={Object {}}
+              />
+              <Todo
+                todo={Object {}}
+              />
+            </ul>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Todo
+                  todo={Object {}}
+                />,
+                <Todo
+                  todo={Object {}}
+                />,
+                <Todo
+                  todo={Object {}}
+                />,
+                <Todo
+                  todo={Object {}}
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "todo": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "todo": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "class",
+                "props": Object {
+                  "todo": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "3",
+                "nodeType": "class",
+                "props": Object {
+                  "todo": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "ul",
+          },
+          "type": "main",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <button
+              className="btn btn-sm"
+              type="button"
+            >
+              <i
+                className="fa fa-plus"
+              />
+               Add item
+            </button>,
+            "className": "",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fa fa-plus"
+                />,
+                " Add item",
+              ],
+              "className": "btn btn-sm",
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fa fa-plus",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " Add item",
+            ],
+            "type": "button",
+          },
+          "type": "footer",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -1,0 +1,499 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Todo
+    todo={
+      Object {
+        "color": "badge-danger",
+        "content": "Design a nice theme",
+        "time": " 2 mins",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="btn"
+        >
+          <span
+            className=""
+          >
+            <i
+              className="fa fa-ellipsis-v"
+            />
+            <i
+              className="fa fa-ellipsis-v"
+            />
+          </span>
+          <input
+            type="checkbox"
+            value=""
+          />
+          <span
+            className="text"
+          >
+            Design a nice theme
+          </span>
+          <small
+            className="badge badge-danger"
+          >
+            <i
+              className="fas fa-clock"
+            />
+             2 mins
+          </small>
+        </div>,
+        <div
+          className="tools float-right"
+        >
+          <i
+            className="fa fa-edit"
+          />
+          <i
+            className="fas fa-trash-alt"
+          />
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className=""
+            >
+              <i
+                className="fa fa-ellipsis-v"
+              />
+              <i
+                className="fa fa-ellipsis-v"
+              />
+            </span>,
+            <input
+              type="checkbox"
+              value=""
+            />,
+            <span
+              className="text"
+            >
+              Design a nice theme
+            </span>,
+            <small
+              className="badge badge-danger"
+            >
+              <i
+                className="fas fa-clock"
+              />
+               2 mins
+            </small>,
+          ],
+          "className": "btn",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fa fa-ellipsis-v"
+                />,
+                <i
+                  className="fa fa-ellipsis-v"
+                />,
+              ],
+              "className": "",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fa fa-ellipsis-v",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fa fa-ellipsis-v",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "type": "checkbox",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Design a nice theme",
+              "className": "text",
+            },
+            "ref": null,
+            "rendered": "Design a nice theme",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fas fa-clock"
+                />,
+                " 2 mins",
+              ],
+              "className": "badge badge-danger",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-clock",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " 2 mins",
+            ],
+            "type": "small",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <i
+              className="fa fa-edit"
+            />,
+            <i
+              className="fas fa-trash-alt"
+            />,
+          ],
+          "className": "tools float-right",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "fa fa-edit",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "fas fa-trash-alt",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "li",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="btn"
+          >
+            <span
+              className=""
+            >
+              <i
+                className="fa fa-ellipsis-v"
+              />
+              <i
+                className="fa fa-ellipsis-v"
+              />
+            </span>
+            <input
+              type="checkbox"
+              value=""
+            />
+            <span
+              className="text"
+            >
+              Design a nice theme
+            </span>
+            <small
+              className="badge badge-danger"
+            >
+              <i
+                className="fas fa-clock"
+              />
+               2 mins
+            </small>
+          </div>,
+          <div
+            className="tools float-right"
+          >
+            <i
+              className="fa fa-edit"
+            />
+            <i
+              className="fas fa-trash-alt"
+            />
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className=""
+              >
+                <i
+                  className="fa fa-ellipsis-v"
+                />
+                <i
+                  className="fa fa-ellipsis-v"
+                />
+              </span>,
+              <input
+                type="checkbox"
+                value=""
+              />,
+              <span
+                className="text"
+              >
+                Design a nice theme
+              </span>,
+              <small
+                className="badge badge-danger"
+              >
+                <i
+                  className="fas fa-clock"
+                />
+                 2 mins
+              </small>,
+            ],
+            "className": "btn",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="fa fa-ellipsis-v"
+                  />,
+                  <i
+                    className="fa fa-ellipsis-v"
+                  />,
+                ],
+                "className": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fa fa-ellipsis-v",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fa fa-ellipsis-v",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "type": "checkbox",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Design a nice theme",
+                "className": "text",
+              },
+              "ref": null,
+              "rendered": "Design a nice theme",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="fas fa-clock"
+                  />,
+                  " 2 mins",
+                ],
+                "className": "badge badge-danger",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-clock",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " 2 mins",
+              ],
+              "type": "small",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <i
+                className="fa fa-edit"
+              />,
+              <i
+                className="fas fa-trash-alt"
+              />,
+            ],
+            "className": "tools float-right",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fa fa-edit",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-trash-alt",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "li",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

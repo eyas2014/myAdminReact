@@ -4,7 +4,7 @@ import Conversations from './conversations.jsx';
 
 
 export default class Chat extends React.Component{
-	componentDidMount(){
+ 	componentDidMount(){
 		$("#chat-box").slimScroll({height:'250px'});
 	}
 
@@ -33,10 +33,7 @@ export default class Chat extends React.Component{
 					</div>
 
 				</footer>
-
-
-			</div>
-    			)
+			</div>)
 		}
 	}   
     

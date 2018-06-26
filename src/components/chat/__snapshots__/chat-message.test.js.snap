@@ -1,0 +1,632 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ChatMessage
+    attachment={
+      Object {
+        "fileName": "Theme-thumbnail-image.jpg",
+        "groupName": "Attachments",
+      }
+    }
+    content="I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market"
+    displayName="Mike Doe"
+    displayPicture="dist/img/user4-128x128.jpg"
+    time="2:15"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="user image"
+          className="small-user-img"
+          src="dist/img/user4-128x128.jpg"
+        />,
+        <div
+          className="message"
+        >
+          <div
+            className="message-title"
+          >
+            <span
+              className="text-info"
+            >
+              Mike Doe
+            </span>
+            <small
+              className="text-muted float-right"
+            >
+              <i
+                className="far fa-clock"
+              />
+               2:15
+            </small>
+          </div>
+          <p>
+            I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market
+          </p>
+          <div
+            className="attachment"
+          >
+            <p>
+              Attachments:
+            </p>
+            <p
+              className="filename"
+            >
+              Theme-thumbnail-image.jpg
+            </p>
+            <div
+              className="float-right"
+            >
+              <button
+                className="btn btn-info btn-sm btn-flat"
+                type="button"
+              >
+                Open
+              </button>
+            </div>
+          </div>
+        </div>,
+      ],
+      "className": "item",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "user image",
+          "className": "small-user-img",
+          "src": "dist/img/user4-128x128.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="message-title"
+            >
+              <span
+                className="text-info"
+              >
+                Mike Doe
+              </span>
+              <small
+                className="text-muted float-right"
+              >
+                <i
+                  className="far fa-clock"
+                />
+                 2:15
+              </small>
+            </div>,
+            <p>
+              I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market
+            </p>,
+            <div
+              className="attachment"
+            >
+              <p>
+                Attachments:
+              </p>
+              <p
+                className="filename"
+              >
+                Theme-thumbnail-image.jpg
+              </p>
+              <div
+                className="float-right"
+              >
+                <button
+                  className="btn btn-info btn-sm btn-flat"
+                  type="button"
+                >
+                  Open
+                </button>
+              </div>
+            </div>,
+          ],
+          "className": "message",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="text-info"
+                >
+                  Mike Doe
+                </span>,
+                <small
+                  className="text-muted float-right"
+                >
+                  <i
+                    className="far fa-clock"
+                  />
+                   2:15
+                </small>,
+              ],
+              "className": "message-title",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mike Doe",
+                  "className": "text-info",
+                },
+                "ref": null,
+                "rendered": "Mike Doe",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <i
+                      className="far fa-clock"
+                    />,
+                    " 2:15",
+                  ],
+                  "className": "text-muted float-right",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "far fa-clock",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                  " 2:15",
+                ],
+                "type": "small",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+            },
+            "ref": null,
+            "rendered": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Attachments:
+                </p>,
+                <p
+                  className="filename"
+                >
+                  Theme-thumbnail-image.jpg
+                </p>,
+                <div
+                  className="float-right"
+                >
+                  <button
+                    className="btn btn-info btn-sm btn-flat"
+                    type="button"
+                  >
+                    Open
+                  </button>
+                </div>,
+              ],
+              "className": "attachment",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Attachments:",
+                },
+                "ref": null,
+                "rendered": "Attachments:",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Theme-thumbnail-image.jpg",
+                  "className": "filename",
+                },
+                "ref": null,
+                "rendered": "Theme-thumbnail-image.jpg",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <button
+                    className="btn btn-info btn-sm btn-flat"
+                    type="button"
+                  >
+                    Open
+                  </button>,
+                  "className": "float-right",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Open",
+                    "className": "btn btn-info btn-sm btn-flat",
+                    "type": "button",
+                  },
+                  "ref": null,
+                  "rendered": "Open",
+                  "type": "button",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="user image"
+            className="small-user-img"
+            src="dist/img/user4-128x128.jpg"
+          />,
+          <div
+            className="message"
+          >
+            <div
+              className="message-title"
+            >
+              <span
+                className="text-info"
+              >
+                Mike Doe
+              </span>
+              <small
+                className="text-muted float-right"
+              >
+                <i
+                  className="far fa-clock"
+                />
+                 2:15
+              </small>
+            </div>
+            <p>
+              I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market
+            </p>
+            <div
+              className="attachment"
+            >
+              <p>
+                Attachments:
+              </p>
+              <p
+                className="filename"
+              >
+                Theme-thumbnail-image.jpg
+              </p>
+              <div
+                className="float-right"
+              >
+                <button
+                  className="btn btn-info btn-sm btn-flat"
+                  type="button"
+                >
+                  Open
+                </button>
+              </div>
+            </div>
+          </div>,
+        ],
+        "className": "item",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "user image",
+            "className": "small-user-img",
+            "src": "dist/img/user4-128x128.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="message-title"
+              >
+                <span
+                  className="text-info"
+                >
+                  Mike Doe
+                </span>
+                <small
+                  className="text-muted float-right"
+                >
+                  <i
+                    className="far fa-clock"
+                  />
+                   2:15
+                </small>
+              </div>,
+              <p>
+                I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market
+              </p>,
+              <div
+                className="attachment"
+              >
+                <p>
+                  Attachments:
+                </p>
+                <p
+                  className="filename"
+                >
+                  Theme-thumbnail-image.jpg
+                </p>
+                <div
+                  className="float-right"
+                >
+                  <button
+                    className="btn btn-info btn-sm btn-flat"
+                    type="button"
+                  >
+                    Open
+                  </button>
+                </div>
+              </div>,
+            ],
+            "className": "message",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="text-info"
+                  >
+                    Mike Doe
+                  </span>,
+                  <small
+                    className="text-muted float-right"
+                  >
+                    <i
+                      className="far fa-clock"
+                    />
+                     2:15
+                  </small>,
+                ],
+                "className": "message-title",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mike Doe",
+                    "className": "text-info",
+                  },
+                  "ref": null,
+                  "rendered": "Mike Doe",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <i
+                        className="far fa-clock"
+                      />,
+                      " 2:15",
+                    ],
+                    "className": "text-muted float-right",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "far fa-clock",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "i",
+                    },
+                    " 2:15",
+                  ],
+                  "type": "small",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+              },
+              "ref": null,
+              "rendered": "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Attachments:
+                  </p>,
+                  <p
+                    className="filename"
+                  >
+                    Theme-thumbnail-image.jpg
+                  </p>,
+                  <div
+                    className="float-right"
+                  >
+                    <button
+                      className="btn btn-info btn-sm btn-flat"
+                      type="button"
+                    >
+                      Open
+                    </button>
+                  </div>,
+                ],
+                "className": "attachment",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Attachments:",
+                  },
+                  "ref": null,
+                  "rendered": "Attachments:",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Theme-thumbnail-image.jpg",
+                    "className": "filename",
+                  },
+                  "ref": null,
+                  "rendered": "Theme-thumbnail-image.jpg",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <button
+                      className="btn btn-info btn-sm btn-flat"
+                      type="button"
+                    >
+                      Open
+                    </button>,
+                    "className": "float-right",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Open",
+                      "className": "btn btn-info btn-sm btn-flat",
+                      "type": "button",
+                    },
+                    "ref": null,
+                    "rendered": "Open",
+                    "type": "button",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
