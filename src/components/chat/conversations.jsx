@@ -1,7 +1,11 @@
 import React from 'react';
 import ChatMessage from './chat-message.jsx';
+import 'jquery-slimscroll';
 
 export default class Conversations extends React.Component{
+ 	componentDidMount(){
+		$("#chat-box").slimScroll({height:'250px'});
+	}
 
 	componentWillMount(){
 		this.setState({
