@@ -28,9 +28,12 @@ var messages = [
 ];
 
 
+jest.mock('./chat-message.jsx');
 
-const wrapper=enzyme.shallow(<Conversations data={messages}></Conversations>);
+document.body.innerHTML='<div  id="root"></div>';
+
+const wrapper=enzyme.mount(<Conversations data={messages}/>, {attachTo: document.getElementById('root')});
 
 it ('should match the snapshot', ()=>{
-	expect(wrapper).toMatchSnapshot();
+   expect($('#root').html()).toMatchSnapshot();
 })

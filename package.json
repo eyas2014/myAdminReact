@@ -51,7 +51,7 @@
   "script-loader": "^0.7.2"
  },
  "scripts": {
-  "test": "jest",
+  "test": "jest conversations --watch",
   "dev": "webpack-dev-server"
  },
  "author": "",

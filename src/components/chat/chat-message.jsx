@@ -2,16 +2,10 @@ import React from 'react';
 
 export default class ChatMessage extends React.Component{
 	render(){
-				var style2 = {
-				    overflow: "hidden", 
-				    width: "auto",
-				    height: "250px"
-				} ;
-
 				var attachment = "";
 
 				if(this.props.attachment){
-					attachment = <div className="attachment">
+					 attachment = <div className="attachment">
 					            <p>{this.props.attachment.groupName+":"}</p>
 
 					            <p className="filename">
@@ -27,10 +21,9 @@ export default class ChatMessage extends React.Component{
 				return (
 				    <div className="item">
 				        <img src={this.props.displayPicture} alt="user image" className="small-user-img" />
-
 				        <div className="message">
 				            <div className="message-title">
-						<span className="text-info">{this.props.displayName}</span>
+								<span className="text-info">{this.props.displayName}</span>
 				                <small className="text-muted float-right">
 				                	<i className="far fa-clock"></i> 
 				                	{" "+this.props.time}
@@ -43,3 +36,23 @@ export default class ChatMessage extends React.Component{
 				)
 			}
 	}
+
+
+	/*
+
+					    <div className="item">
+				        <img src={this.props.displayPicture} alt="user image" className="small-user-img" />
+				        <div className="message">
+				            <div className="message-title">
+								<span className="text-info">{this.props.displayName}</span>
+				                <small className="text-muted float-right">
+				                	<i className="far fa-clock"></i> 
+				                	{" "+this.props.time}
+				                </small> 
+				            </div>
+				            <p>{this.props.content}</p>
+				       	    {attachment}
+				        </div>
+				    </div>
+
+	*/
