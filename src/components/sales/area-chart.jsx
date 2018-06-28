@@ -3,7 +3,7 @@ import Morris from '../../library/morris/morris.js';
 
 export default class AreaChart extends React.Component{
 	componentDidMount(){
-		var area = new Morris.Area({
+		var area = Morris.Area({
                     element: this.props.id,
                     resize: true,
                     data: this.props.data,

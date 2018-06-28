@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `"<div class=\\"chart tab-pane active\\" id=\\"sales-chart\\" style=\\"position: relative; height: 300px;\\"></div>"`;

@@ -1,9 +1,11 @@
-let result;
-
 function Area(data){
-    result=data;
+    this.isCalledWith=data;
 }
 
-let Morris={Area, result};
+function Donut(data){
+    this.isCalledWith=data;
+}
+
+let Morris={Area, Donut};
 
 module.exports=Morris

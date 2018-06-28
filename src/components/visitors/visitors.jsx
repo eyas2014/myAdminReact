@@ -12,27 +12,24 @@ export default class Visitors extends React.Component{
 		this.state={collapse: true}
 	}
 
-	componentDidMount(){
-		this.refs.toggle.onclick=()=>{
-			this.setState(state=>({collapse:!state.collapse}));
-		};	
+	handleClick(){	
+		this.setState(state=>({collapse:!state.collapse}));
 	}
 
 	render(){
 		const {worldMap, sparkLine}=this.props.data;
 		return (
-			<div className="visitors" ref="visitors">
+			<div className="visitors">
 				<header className="ui-sortable-handle">
 					<div className='btn'>
 						<i className="fa fa-map-marker"></i>
 						<span> Visitors</span>
 					</div>
-
 					<div className="float-right tools">
 						<button className="btn btn-sm">
 							<i className="fa fa-calendar"></i>
 						</button>
-						<button className="btn btn-sm ml-1" ref="toggle">
+						<button className="btn btn-sm ml-1" ref="toggle" onClick={this.handleClick.bind(this)}>
 							<i className="fa fa-minus"></i>
 						</button>
 					</div>
@@ -41,9 +38,8 @@ export default class Visitors extends React.Component{
 	    		<CSSTransition in={this.state.collapse} classNames="componentCollapse" timeout={500} unmountOnExit>
 	    			<div  className="wrapper">
                         <main>
-                                            <WorldMap  id="world-map" info = {worldMap}></WorldMap>
+                            <WorldMap  id="world-map" info = {worldMap}></WorldMap>
                         </main>
-
                         <footer>
 			    			<SparkLine data={sparkLine}></SparkLine>
                         </footer>
@@ -54,3 +50,6 @@ export default class Visitors extends React.Component{
     }
 
 }   
+
+
+//this.setState(state=>({collapse:!state.collapse}));

@@ -11,7 +11,6 @@ import Calendar from '../components/calendar/calendar.jsx';
 import Chat from '../components/chat/chat.jsx';
 import SalesGraph from '../components/sales-graph/sales-graph.jsx';
 
-
 class Dashboard1 extends React.Component{
 	componentDidMount(){
 		this.dispatch({type: 'ADD_MESSAGE', message: {

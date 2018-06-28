@@ -4,7 +4,7 @@ import Morris from '../../library/morris/morris.js';
 export default class DonutChart extends React.Component{
 
 	componentDidMount(){
-                var donut = new Morris.Donut({
+                var donut = Morris.Donut({
                     element: this.props.id,
                     resize: true,
                     colors: this.props.colors,
