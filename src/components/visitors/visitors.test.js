@@ -13,13 +13,8 @@ const wrapper=enzyme.mount(<Visitors data={data}></Visitors>, {attachTo: documen
 
 it ('should renders correct htmls', ()=>{
 	expect(document.getElementById('root').innerHTML).toMatchSnapshot();
-	expect(document.getElementsByClassName('wrapper')[0].innerHTML).toEqual('<main></main><footer></footer>');
+	expect(document.getElementsByClassName('wrapper')[0].innerHTML).toEqual('<main><div id="world-map"></div></main><footer><div id="sparkline"></div></footer>');
 });
-
-
-
-
-
 
 it ('CSSTransition should be passed with correct args', ()=>{
 	let transitionParam={ in: true,
@@ -34,12 +29,14 @@ it ('CSSTransition should be passed with correct args', ()=>{
 	expect(require('react-transition-group').calledWith()).toEqual(transitionParam);
 });
 
-
-
-it('wrapper should collapse after clicking toggle button', ()=>{
-	console.log(document.getElementById('root').innerHTML);
-
-
+it('worldmap should be called with correct arguments', ()=>{
+	expect(require('./world-map.jsx').calledWith()).toEqual({id:'world-map', info:'worldmap'});
 });
+
+it('sparkline should be called with correct arguments', ()=>{
+	expect(require('./sparkline.jsx').calledWith()).toEqual({data:'sparkline'});
+});
+
+
 
 

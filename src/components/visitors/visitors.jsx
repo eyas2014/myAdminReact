@@ -50,6 +50,3 @@ export default class Visitors extends React.Component{
     }
 
 }   
-
-
-//this.setState(state=>({collapse:!state.collapse}));
