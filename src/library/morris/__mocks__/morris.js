@@ -6,6 +6,10 @@ function Donut(data){
     this.isCalledWith=data;
 }
 
-let Morris={Area, Donut};
+function Line(data){
+    this.isCalledWith=data;
+}
+
+let Morris={Area, Donut, Line};
 
 module.exports=Morris

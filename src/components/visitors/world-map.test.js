@@ -34,6 +34,6 @@ var data={
 
 it('$.sparkline should be called with correct arguments', ()=>{
 	const wrapper=enzyme.mount(<WorldMap info={'world-map'}></WorldMap>, {attachTo: document.getElementById('root')});
-	expect(JSON.stringify($.calledWithResult)).toEqual(JSON.stringify(data));
+	expect(JSON.stringify($.isCalledWith)).toEqual(JSON.stringify(data));
 
 });

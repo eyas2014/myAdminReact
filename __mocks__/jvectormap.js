@@ -1,3 +1,3 @@
 $.fn.vectorMap=function (args){
-	$.calledWithResult=args;
+	$.isCalledWith=args;
 }

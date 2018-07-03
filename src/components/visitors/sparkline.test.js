@@ -14,10 +14,9 @@ it('renders correct htmls',()=>{
 	expect(wrapper.html()).toMatchSnapshot();
 });
 
-beforeEach(()=>{$.calledWithResult=[]});
+beforeEach(()=>{$.isCalledWith=[]});
 
 it('$.sparkline should be called with correct arguments', ()=>{
 	const wrapper=enzyme.mount(<SparkLine data={data}></SparkLine>, {attachTo: document.getElementById('root')});
-	expect($.calledWithResult).toEqual(data);
-
+	expect($.isCalledWith).toEqual(data);
 });

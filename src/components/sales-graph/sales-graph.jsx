@@ -22,7 +22,7 @@ export default class SalesGraph extends React.Component{
 		var {data}=this.props;
 
 		if(this.refs.lineChart){
-			new Morris.Line({
+			Morris.Line({
 				element: 'line-chart',
 				resize: true,
 				data: data,
@@ -44,18 +44,17 @@ export default class SalesGraph extends React.Component{
 
 	}
 
+	handleClose(){
+		this.setState({show: false});
+	}
+
+	handleToggle(){
+		this.setState(state=>({collapse:!state.collapse}));
+	}
 
 	componentDidMount(){
-		this.refs.remove.onclick=()=>{
-			this.setState({show: false});
-		};
-
-		this.refs.toggle.onclick=()=>{
-			this.setState(state=>({collapse:!state.collapse}));
-		};
-
 		this.componentDidUpdate();
-	}  
+	}
 
 	render(){
 		var style = {
@@ -70,10 +69,10 @@ export default class SalesGraph extends React.Component{
 							<i className="fa fa-th"></i><span> Sales Graph</span>
 						</div>
 						<div className="tools float-right">
-							<button className="btn btn-sm" ref="toggle">
+							<button className="btn btn-sm" onClick={this.handleToggle.bind(this)}>
 								<i className="fa fa-minus"></i>
 							</button>
-							<button className="ml-1 btn btn-sm" ref="remove">
+							<button className="ml-1 btn btn-sm" onClick={this.handleClose.bind(this)}>
 								<i className="fa fa-times"></i>
 							</button>
 						</div>

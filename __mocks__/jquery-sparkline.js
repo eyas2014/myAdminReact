@@ -1,3 +1,3 @@
 $.fn.sparkline=function (args){
-	$.calledWithResult.push(args);
+	$.isCalledWith.push(args);
 }

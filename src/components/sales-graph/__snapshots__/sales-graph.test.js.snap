@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correct htmls 1`] = `"<header class=\\"\\"><div class=\\"btn\\"><i class=\\"fa fa-th\\"></i><span> Sales Graph</span></div><div class=\\"tools float-right\\"><button class=\\"btn btn-sm\\"><i class=\\"fa fa-minus\\"></i></button><button class=\\"ml-1 btn btn-sm\\"><i class=\\"fa fa-times\\"></i></button></div></header>"`;

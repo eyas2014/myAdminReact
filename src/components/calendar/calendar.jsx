@@ -1,14 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import 'bootstrap-datepicker';
 import {CSSTransition} from "react-transition-group";
+import Progress from './progress.jsx';
 
 
 export default class App extends React.Component{
 	constructor(){
 		super();
 		this.state={show: true,
-					collapse: true
+					collapse: true,
+					tasks:[90,70,50,10]
 		}
 	}
 
@@ -19,17 +20,16 @@ export default class App extends React.Component{
 	}
 
 	componentDidMount(){
-		this.refs.remove.onclick=()=>{
-			this.setState({show: false});
-		};
-
-		this.refs.toggle.onclick=()=>{
-			this.setState(state=>({collapse:!state.collapse}));
-		};
 		this.componentDidUpdate();
 	}
 
+	handleClose(){
+		this.setState({show: false});
+	}
 
+	handleToggle(){
+		this.setState(state=>({collapse:!state.collapse}));
+	}
 
 	render(){
 
@@ -42,8 +42,8 @@ export default class App extends React.Component{
 	                </button> 
 	                <button type="button" className="btn btn-success  btn-sm">Calendar</button>
 				<div className='float-right tools'>
-					<button type="button" className="btn btn-success btn-sm ml-1" ref="remove"><i className="fa fa-times"></i></button> 
-					<button type="button" className="btn btn-success btn-sm ml-1" ref="toggle"><i className="fa fa-minus"></i></button> 
+					<button type="button" className="btn btn-success btn-sm ml-1" onClick={this.handleClose.bind(this)}><i className="fa fa-times"></i></button> 
+					<button type="button" className="btn btn-success btn-sm ml-1" onClick={this.handleToggle.bind(this)}><i className="fa fa-minus"></i></button> 
 					<button type="button" className="btn btn-success btn-sm ml-1"><i className="fa fa-bars"></i></button>
 				</div>
 		    </header>
@@ -53,6 +53,22 @@ export default class App extends React.Component{
 				<div id="calendar" className="bg-success text-white col-12"></div>
 			</main>
 			<footer>
+				{this.state.tasks.map((item, index)=>{
+					return <Progress key={index} progress={item} title={`task#${index+1}`}></Progress>
+				})}
+			</footer>
+			</div>
+			</CSSTransition>
+		</div>
+		</CSSTransition>)
+	}
+
+}
+
+
+/*
+
+
 			<div>
 		    <div className='col-6 float-left mt-3'>
 		        <div><span>task#1</span><span className='float-right'>90%</span></div>
@@ -79,11 +95,6 @@ export default class App extends React.Component{
 			</div>
 		    </div>
 		    </div>
-			</footer>
-			</div>
-			</CSSTransition>
-		</div>
-		</CSSTransition>)
-	}
 
-}
+
+*/

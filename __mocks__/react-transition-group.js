@@ -1,17 +1,22 @@
 import React from 'react';
 
-let result
+let result=[]
 function calledWith(){
 
 	return result;
 };
 
+function reset(){
+
+	result=[];
+};
+
 function CSSTransition(props){
 	const {classNames, timeout, unmountOnExit}=props;
-	result={in: props.in, classNames, timeout, unmountOnExit};
+	result.push({in: props.in, classNames, timeout, unmountOnExit});
 	return (props.children);
 }
 
 
 
-export {CSSTransition, calledWith};
+export {CSSTransition, calledWith, reset};
