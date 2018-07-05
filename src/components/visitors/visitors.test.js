@@ -16,18 +16,20 @@ it ('should renders correct htmls', ()=>{
 	expect(document.getElementsByClassName('wrapper')[0].innerHTML).toEqual('<main><div id="world-map"></div></main><footer><div id="sparkline"></div></footer>');
 });
 
-it ('CSSTransition should be passed with correct args', ()=>{
-	let transitionParam={ in: true,
-    						classNames: 'componentCollapse',
-    						timeout: 500,
-      						unmountOnExit: true };
-	expect(require('react-transition-group').calledWith()).toEqual(transitionParam);
-
-	let toggleButton=wrapper.find('header div button');
-	toggleButton.at(1).simulate('click');
-	transitionParam.in=false;
-	expect(require('react-transition-group').calledWith()).toEqual(transitionParam);
+it('should collapse after clicking toggle', ()=>{
+	require('react-transition-group').reset();
+	wrapper.find('.visitors header').childAt(1).childAt(1).simulate('click');
+	expect(require('react-transition-group').isCalledWith()[0].classNames).toEqual('componentCollapse');
+	expect(require('react-transition-group').isCalledWith()[0].in).toEqual(false);
 });
+
+it('should expand after clicking toggle', ()=>{
+	require('react-transition-group').reset();
+	wrapper.find('.visitors header').childAt(1).childAt(1).simulate('click');
+	expect(require('react-transition-group').isCalledWith()[0].classNames).toEqual('componentCollapse');
+	expect(require('react-transition-group').isCalledWith()[0].in).toEqual(true);
+});
+
 
 it('worldmap should be called with correct arguments', ()=>{
 	expect(require('./world-map.jsx').calledWith()).toEqual({id:'world-map', info:'worldmap'});

@@ -62,26 +62,26 @@ it ('CSSTransition should be passed with correct args', ()=>{
     						classNames: 'componentShutdown',
     						timeout: 500,
       						unmountOnExit: true };
-	expect(require('react-transition-group').calledWith()[0]).toEqual(transitionParam);
+	expect(require('react-transition-group').isCalledWith()[0]).toEqual(transitionParam);
 	transitionParam.classNames='componentCollapse';
-	expect(require('react-transition-group').calledWith()[1]).toEqual(transitionParam);
+	expect(require('react-transition-group').isCalledWith()[1]).toEqual(transitionParam);
 
 	require('react-transition-group').reset();
 	let toggleButton=wrapper.find('header div button');
 	toggleButton.at(0).simulate('click');
 	transitionParam.classNames='componentShutdown';
-	expect(require('react-transition-group').calledWith()[0]).toEqual(transitionParam);
+	expect(require('react-transition-group').isCalledWith()[0]).toEqual(transitionParam);
 	transitionParam.in=false;
 	transitionParam.classNames='componentCollapse';
-	expect(require('react-transition-group').calledWith()[1]).toEqual(transitionParam);
+	expect(require('react-transition-group').isCalledWith()[1]).toEqual(transitionParam);
 
 	require('react-transition-group').reset();	
 	toggleButton.at(0).simulate('click');
 	transitionParam.in=true;
 	transitionParam.classNames='componentShutdown';
-	expect(require('react-transition-group').calledWith()[0]).toEqual(transitionParam);
+	expect(require('react-transition-group').isCalledWith()[0]).toEqual(transitionParam);
 	transitionParam.classNames='componentCollapse';
-	expect(require('react-transition-group').calledWith()[1]).toEqual(transitionParam);
+	expect(require('react-transition-group').isCalledWith()[1]).toEqual(transitionParam);
 });
 
 
@@ -108,5 +108,5 @@ it('component should close after clicking close', ()=>{
       						unmountOnExit: true };
     transitionParam.in=false;
 	transitionParam.classNames='componentShutdown';
-	expect(require('react-transition-group').calledWith()[0]).toEqual(transitionParam);
+	expect(require('react-transition-group').isCalledWith()[0]).toEqual(transitionParam);
 });

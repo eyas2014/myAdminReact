@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {CSSTransition} from "react-transition-group";
+import Message from "./message.jsx";
 
 export default class DirectChat extends React.Component{
 	constructor(){
@@ -9,16 +9,16 @@ export default class DirectChat extends React.Component{
 					collapse: true
 		}
 	}
-
-	componentDidMount(){
-		this.refs.remove.onclick=()=>{
-			this.setState({show: false});
-		};
-		this.refs.toggle.onclick=()=>{
-			this.setState(state=>({collapse:!state.collapse}));
-		};
-	}
 	
+	handleToggle(){
+		this.setState(state=>({collapse:!state.collapse}));
+	}
+
+	handleClose(){
+		this.setState({show: false})
+	}
+
+
 	render(){
 		var message=this.props.data;
 
@@ -29,18 +29,17 @@ export default class DirectChat extends React.Component{
 					<div className="btn"><span>Direct Chat</span></div>
 					<div className="float-right btn-group">
 						<div className="btn"><span className="bg-warning badge badge-pill text-white font-weight-bold">3</span></div>
-						<div className="btn" ref="toggle"><i className="fa fa-minus text-muted"></i></div>
+						<div className="btn" onClick={this.handleToggle.bind(this)}><i className="fa fa-minus text-muted"></i></div>
 						<div className="btn"><i className="fas fa-comments text-muted"></i></div>
-						<div className="btn" ref="remove"><i className="fa fa-times text-muted"></i></div>
+						<div className="btn" onClick={this.handleClose.bind(this)}><i className="fa fa-times text-muted"></i></div>
 					</div> 
-				
 				</header>
+				
 				<CSSTransition in={this.state.collapse} classNames="componentCollapse" timeout={500} unmountOnExit>
 					<div className="wrapper">
 						<main className="messages box-border-bottom">
 							{message.map(function(item, index){
-								if(item.name=='Sarah Bullock') return (<MessageSelf key={index} item={item}/>);
-								else return (<MessageOther key={index} item={item}/>);
+										return <Message item={item} key={index}></Message>
 								})
 							}
 						</main>
@@ -56,56 +55,4 @@ export default class DirectChat extends React.Component{
 		</CSSTransition>)
 	}
 
-}
-
-class MessageOther extends React.Component{
-	render(){
-		return (<div className="message">
-				<div className='float-right mr-3'>
-					<p>{this.props.item.name}</p>
-				</div>
-				<div className='ml-3'><p>{this.props.item.time.toString().substr(0,21)}</p>
-				</div>
-				<div className='clearfix'>
-					<div className="col-3 float-left">
-						<img src='./img/alexis.jpg' className="small-user-image"/>
-					</div>
-					<div className='col-8 px-0 float-left'>
-						<div className="float-left text-secondary ml-3 h3">
-							<i className="fas fa-caret-left"></i>
-						</div>
-						<div className="ml-2 px-3 pb-3">
-							<div className="px-3 py-1 text-black rounded bg-secondary">
-								<p>{this.props.item.message}</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>)
-	}
-}
-
-class MessageSelf extends React.Component{
-	render(){
-		return (<div className="message">
-				<div className='float-right mr-3'>
-					<p>{this.props.item.name}</p>
-				</div>
-				<div className='ml-3'><p>{this.props.item.time.toString().substr(0,21)}</p>
-				</div>
-				<div className='clearfix'>
-					<div className="col-3 float-right">
-						<img src='./img/sarah.jpg' className="small-user-image"></img>
-					</div>
-					<div className="float-right pb-3 pr-0 col-8">
-						<div className="float-right text-warning m-0 h3">
-							<i className="fas fa-caret-right"></i>
-						</div>
-						<div className="pl-3 py-1 mr-2 rounded text-white bg-warning">
-							<p>{this.props.item.message}</p>
-						</div>
-					</div>
-				</div>
-			</div>)
-	}
 }

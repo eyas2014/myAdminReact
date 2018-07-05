@@ -29,7 +29,7 @@ export default class Visitors extends React.Component{
 						<button className="btn btn-sm">
 							<i className="fa fa-calendar"></i>
 						</button>
-						<button className="btn btn-sm ml-1" ref="toggle" onClick={this.handleClick.bind(this)}>
+						<button className="btn btn-sm ml-1" onClick={this.handleClick.bind(this)}>
 							<i className="fa fa-minus"></i>
 						</button>
 					</div>

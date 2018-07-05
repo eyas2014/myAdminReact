@@ -1,7 +1,7 @@
 import React from 'react';
 
 let result=[]
-function calledWith(){
+function isCalledWith(){
 
 	return result;
 };
@@ -19,4 +19,4 @@ function CSSTransition(props){
 
 
 
-export {CSSTransition, calledWith, reset};
+export {CSSTransition, isCalledWith, reset};

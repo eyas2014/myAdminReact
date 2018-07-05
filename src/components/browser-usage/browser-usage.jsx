@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Chart from 'chart.js';
+import {Doughnut} from "react-chartjs-2";
 import {CSSTransition} from "react-transition-group";
 
 export default class BrowserUsage extends React.Component{
@@ -11,30 +11,14 @@ export default class BrowserUsage extends React.Component{
 		}
 	}
 
-	componentDidUpdate(){
-		if(this.refs.pieChart){
-			var pieChartCanvas = this.refs.pieChart.getContext('2d');
-			var PieData = this.props.data.data;
-			var pieOptions = {cutoutPercentage: 45 };
-			new Chart(pieChartCanvas, {
-				type: 'pie',
-				data: PieData,
-				options: pieOptions
-			});
-		}
-	}
-
-	componentDidMount(){	
-		this.refs.remove.onclick=()=>{
+	handleClose(){
 			this.setState({show: false});
-		};
-		this.refs.toggle.onclick=()=>{
-			this.setState(state=>({collapse:!state.collapse}));
-		};
-		this.componentDidUpdate();
 	}
 
-
+	handleToggle(){
+			this.setState(state=>({collapse:!state.collapse}));
+	}
+	
 	render(){
 		return(
 			<CSSTransition in={this.state.show} classNames="componentShutdown" timeout={500} unmountOnExit>
@@ -42,15 +26,15 @@ export default class BrowserUsage extends React.Component{
 					<header className="box-header box-border-bottom clearfix">
 						<div className="btn"><span>Browser Usage</span></div>
 						<div className="btn-group float-right">
-							<div className="btn" ref ="toggle"><i className="fas fa-minus text-muted"></i></div>
-							<div className="btn" ref ="remove"><i className="fas fa-times text-muted"></i></div>
+							<div className="btn" onClick={this.handleToggle.bind(this)}><i className="fas fa-minus text-muted"></i></div>
+							<div className="btn" onClick={this.handleClose.bind(this)}><i className="fas fa-times text-muted"></i></div>
 						</div>
 					</header>
 					<CSSTransition in={this.state.collapse} classNames="componentCollapse" timeout={500} unmountOnExit>
 						<div className="wrapper">
 							<main className="box-border-bottom">
 								<div className="chart-responsive">
-									<canvas ref="pieChart" height="150"></canvas>
+									<Doughnut data={this.props.data.data} options={{cutoutPercentage: 45 }}></Doughnut>
 								</div>
 
 								<div>
