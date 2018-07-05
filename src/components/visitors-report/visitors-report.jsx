@@ -57,13 +57,15 @@ export default class VisitorsReport extends React.Component{
 	}
 
 	componentDidMount(){
-		this.refs.remove.onclick=()=>{
-			this.setState({show: false});
-		};
-		this.refs.toggle.onclick=()=>{
-			this.setState(state=>({collapse:!state.collapse}));
-		};
 		this.componentDidUpdate();
+	}
+
+	handleToggle(){
+			this.setState(state=>({collapse:!state.collapse}));	
+	}
+
+	handleClose(){
+		this.setState({show: false});
 	}
 
 	render(){
@@ -72,8 +74,8 @@ export default class VisitorsReport extends React.Component{
 			<div className="visitors-report box-shadow" ref="visitorsReport">
 				<header className="box-border-bottom" >
 					<div className="float-right btn-group">
-						<div className="btn" ref="remove"><i className="fa fa-times text-muted"></i></div>
-						<div className="btn" ref="toggle"><i className="fa fa-minus text-muted"></i></div>
+						<div className="btn" onClick={this.handleClose.bind(this)}><i className="fa fa-times text-muted"></i></div>
+						<div className="btn" onClick={this.handleToggle.bind(this)}><i className="fa fa-minus text-muted"></i></div>
 					</div> 
 					<div className="btn"><p  className="mb-0 text-black">Visitors Report</p></div>
 				</header>

@@ -8,13 +8,10 @@ export default class QuickEmail extends React.Component{
 		this.state={show: true}
 	}
 
-	componentDidMount(){
-		this.refs.remove.onclick=()=>{
-			this.setState({show: false});
-		};
-
+	handleClose(){
+		this.setState({show: false});
 	}
-
+    
     render(){
         var style = {
 			width:"100%", 
@@ -27,14 +24,14 @@ export default class QuickEmail extends React.Component{
 
     	return (
     		<CSSTransition in={this.state.show} classNames="componentShutdown" timeout={500} unmountOnExit>
-    			<div className="quick-email" ref="quickEmail">
+    			<div className="quick-email">
 					<header>
 						<div className="btn">
 							<i className="fa fa-envelope"></i>
 							<span className=""> Quick Email</span>
 						</div>
                         <div className="float-right tools">
-							<button className="btn btn-sm" ref="remove">
+							<button className="btn btn-sm" onClick={this.handleClose.bind(this)}>
 								<i className="fa fa-times"></i>
 							</button>
         				</div>

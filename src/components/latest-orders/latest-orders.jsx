@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import '../../../lib/sparkline/jquery.sparkline.js';
 import {CSSTransition} from "react-transition-group";
+import ListItem from './list-item.jsx';
 
 
 export default class LatestOrders extends React.Component{
@@ -23,13 +23,15 @@ export default class LatestOrders extends React.Component{
 	}
 
 	componentDidMount(){
-		this.refs.remove.onclick=()=>{
-			this.setState({show: false});
-		};
-		this.refs.toggle.onclick=()=>{
-			this.setState(state=>({collapse:!state.collapse}));
-		};
 		this.componentDidUpdate();
+	}
+
+	handleToggle(){
+		this.setState(state=>({collapse:!state.collapse}));
+	}
+
+	handleClose(){
+		this.setState({show: false});
 	}
 
 	render(){
@@ -39,8 +41,8 @@ export default class LatestOrders extends React.Component{
 			<div className="latest-orders box-shadow" ref="latestOrders">
 				<header className="box-border-bottom">
 					<div className="float-right btn-group text-muted">
-						<div className="btn pull-right" ref="toggle"><i className="fas fa-minus"></i></div>
-						<div className="btn pull-right" ref="remove"><i className="fas fa-times"></i></div>
+						<div className="btn pull-right" onClick={this.handleToggle.bind(this)}><i className="fas fa-minus"></i></div>
+						<div className="btn pull-right" onClick={this.handleClose.bind(this)}><i className="fas fa-times"></i></div>
 					</div>
 					<div className="btn"><span>Latest Orders</span></div>
 				</header>
@@ -59,7 +61,7 @@ export default class LatestOrders extends React.Component{
 								</thead>
 								<tbody>
 									{orderList.map(function(item, index){
-										return(<ItemList key={index} data={item}></ItemList>)
+										return(<ListItem key={index} data={item}></ListItem>)
 
 									})}
 								</tbody>
@@ -77,33 +79,5 @@ export default class LatestOrders extends React.Component{
 			</div>
 		</CSSTransition>)
 	}
-
-}
-
-class ItemList extends React.Component{
-	render(){
-		var bgColor;
-		switch(this.props.data.Status){
-			case 'shipped': bgColor='bg-success';
-					break;
-			case 'pending': bgColor='bg-warning';
-					break;
-			case 'delivered': bgColor='bg-danger';
-					break;
-			case 'processing': bgColor='bg-info';
-					break;
-			default: console.log(this.props.data.Status);
-						}
-		bgColor+=" badge p-2";
-
-		return(<tr className="box-border-top">
-				<td className="p-2 text-info"><span>{this.props.data.orderId}</span></td>
-				<td className=""><span>{this.props.data.Item}</span></td>
-				<td className=""><span className={bgColor}>{this.props.data.Status}</span></td>
-				<td className="text-center"><span className="inlineSpark">{this.props.data.Popularity.join(",")}</span></td>
-		       </tr>)
-
-	}
-
 
 }
