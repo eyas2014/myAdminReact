@@ -27,7 +27,7 @@ export default class HeaderBar extends React.Component{
                                         <HeaderTasks />
                                         <li className="dropdown profile">
                                             <span href="#" className="dropdown-toggle" data-toggle="dropdown">
-                                                <img src="dist/img/user2-160x160.jpg" className="small-user-image mr-2" alt="User Image" />
+                                                <img src="img/user2-160x160.jpg" className="small-user-image mr-2" alt="User Image" />
                                                 <span className="hidden-xs">Alexander Pierce</span>
                                             </span>
                                             <ul className="dropdown-menu dropdown-menu-right p-0">

@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
 	devServer: {
-		contentBase: './views',
+		contentBase: './dist',
 		port: 8088,
 		
 	},

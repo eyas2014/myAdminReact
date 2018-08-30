@@ -15,6 +15,11 @@ import Fixed from './pages/fixed.jsx';
 import TopNavigation from './pages/top-navigation.jsx';
 import Widgets from './pages/widgets.jsx';
 import Reducers from './widgets/reducers.jsx';
+import Reactotron from 'reactotron-react-js';
+
+Reactotron
+  .configure()
+  .connect();
 
 $.get("data/data.txt", function(data, status){
 	JSON.parse(data);
@@ -43,6 +48,7 @@ class App extends React.Component{
 							<Route path="/fixed" component={Fixed} />
 							<Route path="/top-navigation" component={TopNavigation} />
 							<Route path="/widgets" component={Widgets} />
+							<Route path="*" component={Dashboard1} />
 						</Switch>
 					</Provider>
 					<footer className="box-border-top bg-white">

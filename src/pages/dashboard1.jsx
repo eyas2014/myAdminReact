@@ -15,7 +15,7 @@ class Dashboard1 extends React.Component{
 	componentDidMount(){
 		this.dispatch({type: 'ADD_MESSAGE', message: {
 						displayName: "Alexander Pierce",
-						displayPicture: "dist/img/user3-128x128.jpg",
+						displayPicture: "img/user3-128x128.jpg",
 						time: "5:15",
 						content: "new message"
 					}}); 

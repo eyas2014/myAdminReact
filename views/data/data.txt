@@ -1,5 +1,0 @@
-{"statTile": {"New_Orders" : "150",
-	      "Bounce_Rate": "53%",
-	      "User_Registrations": "44",
-	      "Unique Visitors": "65"}
-}

@@ -290,7 +290,7 @@ function chat(state, action){
 				var messages = [
 					{
 						displayName:"Mike Doe",
-						displayPicture: "dist/img/user4-128x128.jpg",
+						displayPicture: "img/user4-128x128.jpg",
 						time: "2:15",
 						content: "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market",
 						attachment: {
@@ -300,14 +300,14 @@ function chat(state, action){
 					},
 					{
 						displayName: "Alexander Pierce",
-						displayPicture: "dist/img/user3-128x128.jpg",
+						displayPicture: "img/user3-128x128.jpg",
 						time: "5:15",
 						content: "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market"
 						
 					},
 					{
 						displayName: "Susan Doe",
-						displayPicture: "dist/img/user2-160x160.jpg",
+						displayPicture: "img/user2-160x160.jpg",
 						time: "5:30",
 						content: "I would like to meet you to discuss the latest news about the arrival of the new theme. They say it is going to be one the best themes on the market"
 						

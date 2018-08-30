@@ -49,11 +49,13 @@
   "mocha": "^5.1.1",
   "morris": "^0.1.4",
   "raphael": "^2.2.7",
+  "reactotron-react-js": "^2.0.0",
   "script-loader": "^0.7.2"
  },
  "scripts": {
-  "test": "jest visitors-report --watch",
-  "dev": "webpack-dev-server"
+  "test": "jest",
+  "dev": "webpack-dev-server",
+  "build": "webpack"
  },
  "author": "",
  "license": "ISC",
